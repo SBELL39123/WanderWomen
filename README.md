@@ -79,6 +79,8 @@ Ready to get started? Head to the **Planner** now and start discovering your nex
 
 ## Technologies Used
 
+The WanderWomen website features a locally hosted backend server built with Node.js and Express, utilizing a local database for data storage. The frontend is deployed on Netlify, providing a seamless and responsive user experience.
+
 - **Frontend**:
   - HTML5: Used to structure the website’s content.
   - CSS3: Custom styles applied to make the website visually appealing.
@@ -94,6 +96,11 @@ Ready to get started? Head to the **Planner** now and start discovering your nex
   - **CORS**: To handle cross-origin requests between different servers (for dynamic data fetching).
 
 ---
+
+
+
+
+
 
 ## Installation
 
