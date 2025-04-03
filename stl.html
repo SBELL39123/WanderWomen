@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>ST. LOUIS Guide</h3>
+
+      <!--h6 bc needed to cenger this and font it differntly -->
+      <h6>Midwestern city with southern charm </h6>
+      
+
+
+      
+        <!-- Container for Images -->
+        <div class="stlimage-container">
+          <!-- Left image -->
+          <div class="stl-guide-image-container">
+            <img src="assets/stlgguideimage1.jpg" alt="Arch and Courthouse">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-stl-images">
+            <!-- Top right image -->
+            <div class="stl-guide-2-image-container">
+              <img src="assets/stlguideiamge2.jpg" alt="Baseball Stadium">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="stl-guide-3-image-container">
+              <img src="assets/stlguideimage3.jpg" alt="St. Louis park">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <section class="city-info">
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+          Always time for baseball, blues, and bbq
+          </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="arch">
+              <h5>St. Louis Arch</h5>
+              <div class="hidden-content">
+                <img src="assets/stlarch.jpg" alt="Arch">
+                <p>
+                  The St. Louis Arch, also known as the Gateway Arch, stands as a symbol of the city's role in the westward expansion of the United States. At 630 feet, it is the tallest arch in the world and offers spectacular views from the top.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="cardinal">
+              <h5>Cardinal's Stadium</h5>
+              <div class="hidden-content">
+                <img src="assets/stlcards.jpg" alt="Baseball Stadium">
+                <p>
+                  Busch Stadium, home of the St. Louis Cardinals, offers fans a chance to experience Major League Baseball in a beautiful downtown setting. The stadium features a state-of-the-art design and incredible views of the St. Louis skyline.
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="forest-park">
+              <h5>Forest Part</h5>
+              <div class="hidden-content">
+               
+                <p>
+                  Forest Park is one of the largest urban parks in the U.S., offering over 1,300 acres of green space, museums, and outdoor activities. Visitors can explore the Saint Louis Art Museum, the Missouri History Museum, and more, making it a perfect family destination.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="city-museum">
+              <h5>City Museum</h5>
+              <div class="hidden-content">
+              
+                <p>
+                  The City Museum is a one-of-a-kind museum in St. Louis, offering interactive exhibits and a giant playground. With features like tunnels, slides, and a rooftop Ferris wheel, it's fun for all ages.
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="basilica">
+              <h5>Cathedral Basilica of St. Louis</h5>
+              <div class="hidden-content">
+                <img src="assets/stlbas.jpg" alt="Cathedral">
+                <p>
+                 
+                  The Cathedral Basilica of St. Louis is a stunning example of Byzantine-style architecture, featuring beautiful mosaics that cover the interior. It's a peaceful place for reflection and admiration of its artwork and history.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="cahokia-mounds">
+                <h5>Cahokia Mounds</h5>
+                <div class="hidden-content">
+               
+                  <p>
+                    Cahokia Mounds is a UNESCO World Heritage Site located near St. Louis. This ancient Native American site is home to massive earthen mounds and was once the center of a thriving civilization, offering visitors a glimpse into pre-Columbian life.
+      
+                  </p>
+                </div>
+              </div>
+    
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+    
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                  ​St. Louis is home to numerous lesser-known attractions that showcase its rich history and culture.                </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="vintag-vinyl">
+                    <h5>Vintage Vinyl</h5>
+                    <div class="hidden-content">
+                     
+                      <img src="assets/stlvinyl.jpg" alt="Vinyl">
+              
+                      <p> 
+                        Vintage Vinyl is a popular record store and local hub for music lovers in St. Louis. With an extensive collection of vinyl records and live performances, it’s a must-visit for anyone who enjoys music and local culture.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="delmar">
+                    <h5>Delmar Loop</h5>
+                    <div class="hidden-content">
+                      <p>
+                        The Delmar Loop is a lively St. Louis neighborhood known for its eclectic mix of restaurants, shops, and entertainment venues. It's home to live music spots, vintage theaters, and plenty of local art, making it a cultural hotspot.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="grand">
+                    <h5>Grand Blvd</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Grand Blvd is a historically rich area in St. Louis that offers a mix of local shops, restaurants, and cultural sites. It's perfect for exploring St. Louis's unique neighborhoods, offering both old-world charm and modern amenities.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="central-west">
+                    <h5>Central West End</h5>
+                    <div class="hidden-content">
+                      
+    
+                  
+                      <p>
+                        The Central West End is an upscale neighborhood in St. Louis, known for its beautiful architecture, boutique shopping, and vibrant dining scene. It's also home to the renowned Missouri Botanical Garden and Forest Park, making it a perfect spot for both relaxation and exploration.
+                      </p>
+                    </div>
+                  </div>
+    
+    
+    
+                  <div class="tourist-spot-box" id="soualrd">
+                    <h5>Soulard Market</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Soulard Market is one of the oldest farmers' markets in the United States, located in the Soulard neighborhood. It's a great place to find fresh produce, local meats, and unique crafts, offering a taste of St. Louis’s vibrant community culture.
+                      </p>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                St. Louis, affectionately known as the "Gateway to the West," boasts a rich tapestry of cultural influences that have shaped its unique identity. From its historic landmarks to its vibrant arts scene, the city offers a diverse array of experiences that reflect its storied past and dynamic present.
+              </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="black-culture">
+                  <h5>Black Culture in St. Louis</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>The Griot Museum of Black History:</strong> Dedicated to preserving and sharing the rich stories of Black history and culture, featuring life-size wax figures, historical artifacts, and immersive exhibits. <a href="https://www.thegriotmuseum.com/">Learn more</a></li>
+                        <li><strong>Old St. Louis Courthouse:</strong> The site of the Dred Scott decision, this historic courthouse has been restored and offers insights into significant events in African American history. <a href="https://www.thetelegraph.com/news/article/st-louis-courthouse-dred-scott-renovation-20243661.php">Read more</a></li>
+                        <li><strong>The Black Rep:</strong> Founded in 1976, this theater company is committed to producing works by Black playwrights, creating opportunities for new voices, and celebrating the rich cultural heritage of the community. <a href="https://explorestlouis.com/guide/black-culture/">Discover their mission</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourist-spot-box" id="cherokee-street">
+                  <h5>Cherokee Street</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Cherokee Street is a vibrant cultural district known for its eclectic mix of antique shops, art galleries, and diverse restaurants. The street hosts various cultural events throughout the year, reflecting the city's rich heritage.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourist-spot-box" id="bosnian-culture">
+                  <h5>Bosnian Culture in St. Louis</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Bevo Mill Neighborhood:</strong> Known as "Little Bosnia," this area is a hub for Bosnian culture, offering authentic cuisine, shops, and the Sebilj Fountain, a replica of the one in Sarajevo. <a href="https://missourilife.com/next-little-bosnians-2/">Explore the neighborhood</a></li>
+                        <li><strong>St. Louis Bosnians, Inc.: </strong> An organization dedicated to sharing Bosnian-American culture, language, history, and cuisine through educational programs and events. <a href="https://www.stlbosnians.org/">Get involved</a></li>
+                        <li><strong>International Institute of St. Louis:</strong> Since 1993, this institute has resettled over 6,500 Bosnian refugees, contributing to the city's diverse cultural tapestry. <a href="https://www.iistl.org/bosnia/">Learn more</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourist-spot-box" id="creole-cajun-culture">
+                  <h5>Creole/Cajun Culture in St. Louis</h5>
+                  <div class="hidden-content">
+                    <p>
+                      St. Louis's Creole and Cajun communities contribute to the city's cultural diversity through:
+                      <ul>
+                        <li><strong>Culinary Delights:</strong> Restaurants offering dishes like gumbo, jambalaya, and crawfish étouffée.</li>
+                        <li><strong>Festivals:</strong> Events such as the St. Louis Cajun Festival celebrate music, dance, and cuisine native to the Louisiana region.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="southern-influence">
+                  <h5>Southern Charm and Midwestern Spirit</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Historical Context:</strong> Founded in 1764 by French fur traders, St. Louis later came under Spanish control, which influenced its cultural landscape. Post the Louisiana Purchase in 1803, the city became a significant point for Southern migrants heading westward, introducing Southern customs and traditions. </li>
+                        <li><strong>Culinary Traditions:</strong> The city's barbecue scene reflects Southern flavors, with establishments like Expat BBQ offering traditional American barbecue infused with international tastes. </li>
+                        <li><strong>Music and Festivals:</strong> St. Louis hosts events such as the Festival of Nations, celebrating diverse cultures, including those with Southern roots, through music, dance, and cuisine. </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourist-spot-box" id="music-scene">
+                  <h5>St. Louis Music Legends</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Chuck Berry:</strong> Born in 1926, Chuck Berry was a pioneering figure in rock and roll, known for hits like "Maybellene" and "Johnny B. Goode." His innovative guitar riffs and energetic performances laid the foundation for future rock musicians. 
+                        <li><strong>Miles Davis:</strong> Born in 1926, Miles Davis was a legendary jazz musician who pushed the boundaries of jazz with albums like "Kind of Blue." He spent his formative years in East St. Louis, influencing the city's jazz scene. 
+                        <li><strong>Tina Turner:</strong> Moving to St. Louis at age 16, Tina Turner became a global icon with hits like "What's Love Got to Do with It." Her dynamic voice and stage presence earned her the title "Queen of Rock and Roll."
+                        <li><strong>Grace Bumbry:</strong> Born in 1937, Grace Bumbry is a renowned mezzo-soprano opera singer who gained international acclaim for her powerful voice and performances in major opera houses worldwide. 
+                        <li><strong>Fontella Bass:</strong> Known for her hit "Rescue Me," Fontella Bass was a soul and gospel singer whose powerful vocals left a lasting impact on the music industry. 
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+
+               
+    
+    
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                St. Louis cuisine is a flavorful blend of comfort food staples, featuring iconic dishes like toasted ravioli, gooey butter cake, and the savory St. Louis-style barbecue. *All can be veganized or vegetarianized.*
+              </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                          
+                            <li><strong>St. Louis BBQ:</strong>
+                            
+                              A culinary tradition in St. Louis, this barbecue style features spare ribs that are typically grilled, resulting in a flavorful and tender dish. Renowned establishments like Pappy's Smokehouse and Salt + Smoke BBQ are celebrated for their exceptional barbecue offerings. 
+                            </li>
+                            <li><strong>Toasted Ravioli:</strong>
+                              <img src="assets/stlrav.jpg" alt="Toasted Ravioli">
+                              A beloved appetizer in St. Louis, toasted ravioli consists of breaded and fried pasta filled with seasoned beef, often served with marinara dipping sauce. This dish is a staple in many local Italian restaurants.
+                            </li>
+                            <li><strong>Gooey Butter Cake:</strong>
+                              A sweet dessert originating from St. Louis, gooey butter cake features a rich, buttery crust topped with a creamy, custard-like filling. It's a must-try treat for visitors and locals alike.
+                            </li>
+
+                            
+                            <li><strong>Frozen Custard Concrete:</strong>
+                          
+                              A popular frozen dessert in St. Louis, concretes are made by blending frozen custard with various mix-ins, creating a thick and indulgent treat. Local favorite Ted Drewes serves this delightful concoction. 
+                            </li>
+
+                            <li><strong>St. Paul Sandwiches:</strong>
+                          
+                              A unique St. Louis creation, the St. Paul sandwich features a breaded and fried egg foo young patty served between two slices of white bread, typically garnished with lettuce, tomato, and mayonnaise. 
+                            </li>
+
+                           
+                            <li><strong>St. Louis Style Pizza:</strong>
+                          
+                              A distinctive regional pizza, St. Louis-style pizza features a thin, cracker-like crust made without yeast, topped with sweet tomato sauce, and cut into square pieces. It's traditionally topped with Provel cheese, a processed blend of cheddar, Swiss, and provolone. 
+                            </li>
+
+                            <li><strong>Gus' Pretzels:</strong>
+                          
+                              Bring home the taste of St. Louis with Gus' Pretzels. These hand-twisted pretzels are a local favorite and make for a delicious souvenir. 
+                            </li>
+
+                           
+            
+            
+            
+            
+                          </ul>
+    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                          <li>Meskereem Ethiopian 
+                          </li>
+                          <li>Brasilia Restauarnt
+                          </li>
+                          <li>Protagonist Cafe
+                          </li>
+                            <li>Session Taco
+                            </li>
+                            <li>Sweet Art
+                            </li>
+                            <li>Mai Lee
+                            </li>
+                            <li>Imo's Pizza
+                            </li>
+                            <li>Ted Drew's
+                            </li>
+                            <li>Pappy's BBQ
+                            </li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                
+                St. Louis is renowned for its diverse neighborhoods, each offering unique experiences for visitors.               </p>
+              <div class="tourist-spot-list">
+
+              <div class="tourist-spot-box" id="central-west-end">
+                <h5>Central West End</h5>
+                <div class="hidden-content">
+                  <p>
+                    Renowned for its historic mansions, the Central West End offers a mix of antique stores, restaurants, and cafes. It's also home to the Cathedral Basilica of Saint Louis and the World Chess Hall of Fame. 
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="downtown">
+                <h5>Downtown St. Louis</h5>
+                <div class="hidden-content">
+                  <p>
+                    Staying downtown provides proximity to major attractions like the Gateway Arch, City Museum, and Busch Stadium. The area also offers a variety of dining and entertainment options. 
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="forest-park">
+                <h5>Forest Park</h5>
+                <div class="hidden-content">
+                  <p>
+                    Larger than New York's Central Park, Forest Park features museums, walking trails, and the Saint Louis Zoo, making it ideal for families and nature enthusiasts. 
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="the-hill">
+                <h5>The Hill</h5>
+                <div class="hidden-content">
+                  <p>
+                    Known for its Italian-American heritage, The Hill offers authentic cuisine and a variety of restaurants, making it a food lover's destination.
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="lafayette-square">
+                <h5>Lafayette Square</h5>
+                <div class="hidden-content">
+                  <p>
+                    Featuring historic Victorian homes and a central park, Lafayette Square provides a charming and picturesque setting for visitors. 
+                  </p>
+                </div>
+              </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>
+                Things to remember St. Louis by:              
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="gateway-arch-replica">
+                    <h5>Gateway Arch Replica</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Bring home a miniature version of the iconic Gateway Arch. These replicas are available in various sizes and materials, serving as a lasting reminder of your visit. 
+                      </p>
+                    </div>
+                  </div>
+
+                  
+                <div class="tourist-spot-box" id="chicago-sports-team-merchandise">
+                  <h5>Chicago Sports Team Merchandise</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Chicago is home to several beloved sports teams. Official merchandise such as jerseys, hats, and other memorabilia from the Chicago Bears (NFL), Chicago Bulls (NBA), Chicago Cubs (MLB), and Chicago Blackhawks (NHL) make for great souvenirs. 
+    
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourist-spot-box" id="stl-souvenir-collectibles">
+                  <h5>St. Louis Souvenir Collectibles</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Explore various souvenir shops for items like postcards, shot glasses, keychains, mugs, and snow globes featuring St. Louis landmarks and symbols. 
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="tourist-spot-box" id="provel-cheese">
+                 <h5>Provel Cheese</h5>
+                  <div class="hidden-content">
+                    <p>
+                      A St. Louis culinary staple, Provel cheese is known for its unique blend of cheddar, Swiss, and provolone. Purchase some to recreate local dishes like St. Louis-style pizza at home. 
+                    </p>
+                  </div>
+                  </div>
+              
+    
+    
+              </div>
+
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+    
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="stay-aware">
+                    <h5>Stay Aware of Your Surroundings</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Remain vigilant and attentive to your environment. Avoid distractions such as excessive phone use or wearing headphones, especially in crowded or unfamiliar areas. 
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                  <div class="tourist-spot-box" id="secure-belongings">
+                    <h5>Keep Personal Belongings Secure</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Keep wallets, phones, and other valuables in secure, concealed locations. Consider using anti-theft bags or money belts. 
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                <div class="tourist-spot-box" id="avoid-risky-areas">
+                  <h5>Avoid High-Risk Areas</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Be cautious in neighborhoods known for higher crime rates, especially after dark. It's advisable to research and identify areas to avoid before your visit. 
+
+                    </p>
+                    </div>
+                    </div>
+                    
+
+
+
+                <div class="tourist-spot-box" id="report-suspicious-activity">
+                  <h5>Report Suspicious Activity</h5>
+                  <div class="hidden-content">
+                    <p>
+                      If you observe suspicious behavior or feel unsafe, contact local authorities immediately. Trust your instincts and seek assistance when needed.
+
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="informed-prepared">
+                  <h5>Stay Informed and Prepared</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate. </li>
+                        <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+              
+    
+    
+    
+    
+    
+               
+    
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                          <ul>
+                            <li><strong>Address:</strong> 737 North Michigan Avenue, Suite 1100, Chicago, IL 60611</li>
+                            <li><strong>Phone:</strong> +1-312-280-0400</li>
+                            <li><strong>Emergency After-Hours Phone:</strong> +1-312-280-0400 (ask for American Citizen Services)</li>
+                            <li><strong>Fax:</strong> +1-312-280-0722</li>
+                            <li><strong>Email:</strong> <a href="mailto:acschicago@state.gov">acschicago@state.gov</a></li>
+                            <li><strong>Website:</strong> <a href="https://jp.usembassy.gov/embassy-consulates/chicago/">U.S. Consulate General Chicago</a></li>
+                            <li><strong>Travel Information:</strong> <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/UnitedStates.html">U.S. Department of State: United States Travel Information</a></li>
+                          </ul>
+                          </li>
+
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across St. Louis:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="trolley">
+                  <h5>St. Louis Narrated Trolley Tour</h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.tripadvisor.com/AttractionProductReview-g44881-d25392047-St_Louis_Narrated_Trolley_Tour-Saint_Louis_Missouri.html" >More Info</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="tourist-spot-box" id="brew">
+                  <h5>Brewery Experiences</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.budweisertours.com/stltours#closure-dates" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="360">
+                  <h5>Rooftop 360</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.360-stl.com/downtown/" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="language-container">
+              <h4>Language</h4>
+              <p>
+                English works great:            
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Practice</h5>
+                  <div class="hidden-content">
+                    <p>
+                        English works great
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+         
+              
+            </p>
+            </div>
+        </div>
+
+
+</section>
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map  -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+ 
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([38.6270, -90.1994], 12); // Coordinates for St. Louis, MO
+
+// Add the tile layer (OpenStreetMap)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Gateway Arch
+var gatewayArch = L.marker([38.624691, -90.184776]).addTo(map);
+gatewayArch.bindPopup("<b>Gateway Arch</b><br>A 630-foot-tall monument symbolizing the westward expansion of the United States.");
+
+// Busch Stadium
+var buschStadium = L.marker([38.6222, -90.1923]).addTo(map);
+buschStadium.bindPopup("<b>Busch Stadium</b><br>The home field of the St. Louis Cardinals baseball team.");
+
+// Forest Park
+var forestPark = L.marker([38.6369, -90.2995]).addTo(map);
+forestPark.bindPopup("<b>Forest Park</b><br>A large urban park featuring museums, a zoo, and recreational areas.");
+
+// City Museum
+var cityMuseum = L.marker([38.6244, -90.2005]).addTo(map);
+cityMuseum.bindPopup("<b>City Museum</b><br>An interactive museum housed in a former shoe factory, offering unique exhibits and play areas.");
+
+// Cathedral Basilica of Saint Louis
+var cathedralBasilica = L.marker([38.641884, -90.254845]).addTo(map);
+cathedralBasilica.bindPopup("<b>Cathedral Basilica of Saint Louis</b><br>A historic cathedral known for its stunning mosaics and architecture.");
+
+// Cahokia Mounds
+var cahokiaMounds = L.marker([38.6532, -90.0631]).addTo(map);
+cahokiaMounds.bindPopup("<b>Cahokia Mounds</b><br>An archaeological site preserving remnants of a pre-Columbian Native American city.");
+
+
+    // Optionally, add a circle marker to indicate a location
+    L.circle([38.6270, -90.1994], {
+      color: 'green',
+      radius: 500
+    }).addTo(map).bindPopup("This is the center of St. Louis!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>

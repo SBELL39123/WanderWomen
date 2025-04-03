@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>BARCELONA Guide</h3>
+      <h6>Should you move here? Yes.</h6>
+      
+        <!-- Container for Images -->
+        <div class="barcelonaimage-container">
+          <!-- Left image -->
+          <div class="barcelona-guide-image-container">
+            <img src="assets/barnalasag.jpg" alt="Sagrada-Familia">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-barcelona-images">
+            <!-- Top right image -->
+            <div class="barcelona-guide-2-image-container">
+              <img src="assets/barnamarket1.jpg" alt="Barcelona Market">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="barcelona-guide-3-image-container">
+              <img src="assets/barnagaudi.jpg" alt="Barcelona Gaudí">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+
+      <section class="city-info">
+
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Discover Barcelona’s iconic landmarks and hidden gems, from historic churches to beautiful beaches. Whether you’re an art lover, a history enthusiast, or a beachgoer, Barcelona offers something for every traveler.            </p>
+        </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="sagrada-familia">
+              <h5>La Sagrada Familia</h5>
+              <div class="hidden-content">
+                <img src="assets/sagrada.jpg" alt="La Sagrada Familia">
+                <p>
+                    This stunning basilica designed by Antoni Gaudí is an architectural masterpiece, with its towering spires and intricate facades. It’s an iconic symbol of Barcelona’s rich cultural heritage.</li>
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="la-rambla">
+              <h5>La Rambla</h5>
+              <div class="hidden-content">
+                <img src="assets/barnalarambla.jpg" alt="Las ramblas">
+                <p>
+                    Barcelona’s most famous street, La Rambla is a bustling promenade lined with shops, restaurants, and street performers. It’s the perfect spot for a leisurely stroll, offering a vibrant mix of culture and entertainment.</li>
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="barceloneta-beach">
+              <h5>Barceloneta</h5>
+              <div class="hidden-content">
+                <img src="assets/barnabeach.jpg" alt="Barceloneta Beach">
+                <p>
+                    Located near the Barceloneta neighborhood, this popular beach is known for its golden sands and lively atmosphere. It's ideal for swimming, sunbathing, and enjoying delicious seafood at the nearby restaurants.</li>
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="parc-guell">
+              <h5>Parc Güell</h5>
+              <div class="hidden-content">
+                <img src="assets/barnaparcg.jpg" alt="Parc Güell">
+                <p>
+                    A UNESCO World Heritage site, Park Güell is another of Gaudí’s creations, featuring whimsical architecture and lush gardens. Visitors can explore its colorful mosaics, sweeping views of the city, and the famous lizard sculpture, “El Drac.”</li>
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="camp-nou">
+              <h5>Camp Nou</h5>
+              <div class="hidden-content">
+                <p>
+                    Home to FC Barcelona, Camp Nou is the largest football stadium in Europe. It’s an iconic venue for sports fans and visitors can tour the stadium to explore its history, locker rooms, and trophy collection.</li>
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            
+            
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+    <!--change this to include soemthing about guris for hidden gems-->
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                    Discover Barcelona's vibrant cultural scene in neighborhoods like Gràcia and El Born, where colorful murals, historic sites, and unique shops tell the city's rich and artistic story. These hidden gems offer a more intimate experience of the city's cultural side, far from the tourist crowds.
+                </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="one-euro">
+                    <h5>Tot 1 Euro Bar</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located at Carrer d'Aribau 15, this lively bar offers a unique concept where everything, from drinks to snacks, is priced at just 1 euro. 
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="encants-market">
+                    <h5>Els Encants Market</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Situated in the L'Eixample district, this historic market features a vast array of stalls selling everything from antiques to clothing, all under a striking mirrored canopy.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="gracia-neighborhood">
+                    <h5>Gràcia Neighborhoods</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Known for its narrow winding streets, colonial-style houses, and vibrant street art, Gràcia offers a glimpse of Barcelona's authentic cultural scene, filled with art galleries, cozy bars, and unique shops.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="montserrat">
+                    <h5>Montserrat</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located about 30 kilometers northwest of Barcelona, is a multi-peaked mountain range famed for its unique rock formations and the Benedictine Monastery housing the revered Black Madonna. ​
+                    </p>
+                    </div>
+                  </div>
+    
+
+
+
+               
+
+                </div>
+              </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    <!--prayers-->
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Immerse yourself in Barcelona's rich cultural heritage by visiting its numerous museums, historical sites, and vibrant festivals.
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="music">
+                  <h5>Music</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Barcelona's music and dance scene is a vibrant fusion of genres and styles, from the passionate rhythms of rumba catalana pioneered by Antonio González 'El Pescaílla' to the contemporary sounds of artists like Rosalía and Manel, complemented by traditional dances such as flamenco, sardana, and hip-hop, reflecting the city's rich cultural tapestry.                </li>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="eventts">
+                  <h5>Events</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                          
+                         
+                          
+                            <li><strong>La Mercè:</strong> 
+                              <a href="https://www.flickr.com/photos/vosh/4030860572/in/photolist-5sPmoH-RDZnpq-79cdq5-PranAV-yQbrR1-8nVfEY-8yLpza-8JMuuT-3bTz4m-3bP7Tr-MiYmoS-3bTzbC-798nuZ-dmNGpo-798mWZ-aCn8wW-2CPaQM-2CTCif-2CPbiF-2npXG98-5a9Wtu-8WnK5L-3kAXQ-28Auvc7-8WnKeN-5sTPUJ-9tHzQg-YCiyMf-5sPna2-zY7Db6-8WnKcC-2jJRnZw-8WnKaL-fZWv1B-6TLP7-p4AW7-8WjEMk-2gHC1NH-apJyPa-5sTMC7-8WnK1w-Fw8YvQ-aqG7Jk-5hFi37-7a1N4p-5sPmKM-8X3K7K-5sTP3u-5sTPpY-aqJMn7/" >
+                                <img src="assets/lamerce-credit.jpg" alt="La Mercè">
+                              </a>
+                              An annual festival held in September, featuring vibrant parades, traditional Catalan music, and street parties that fill the city with energy and colour.</li>
+                            
+                            <li><strong>Primavera Sound:</strong> A renowned music festival celebrated in June, attracting international artists and music lovers from around the globe. </li>
+
+                            <li><strong>Calçot Season:</strong>
+                              <img src="assets/barnacalcot.jpg" alt="Calçot">
+                            </a>
+                               ​Barcelona's calçot season, from January to April, is a must-try culinary experience, with traditional calçotadas and innovative dishes like calçot-filled taiyaki delighting food enthusiasts. ​
+        
+        
+                            </li>
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="sports">
+                  <h5>Sports</h5>
+                  <div class="hidden-content">
+                    <img src="assets/barcagame.jpg" alt="Barcelona Game">
+                    <p>
+                        Barcelona's sports culture is vibrant, with football being the most popular. The city is home to FC Barcelona, whose matches at Camp Nou are a must-see for sports enthusiasts.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="lifestyle-nightlife">
+                  <h5>Relaxed Lifestyle and Nightlife</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Barcelona offers a laid-back lifestyle, with locals enjoying leisurely meals and late-night socializing. At night, the city comes alive with numerous clubs and bars, particularly in areas like El Raval and the Port Olímpic, offering diverse music genres and vibrant atmospheres.
+    
+                    </p>
+                  </div>
+                </div>
+                 
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                Delight in Barcelona's rich culinary scene, where traditional Catalan dishes and international fusion cuisine come together to offer a variety of flavors.  *All can be veganized or vegetarianized*
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                            <ul>
+                              
+                                <li><strong>Paella:</strong>
+                                  A traditional Spanish rice dish originating from Valencia, paella combines saffron-infused rice with a variety of ingredients such as seafood, chicken, rabbit, and vegetables. It's renowned for its rich flavors and vibrant colors.
+                                </li>
+                                <li><strong>Tinto de Verano:</strong>
+                                  A refreshing Spanish cocktail made by mixing red wine with lemon soda or gaseosa, served over ice. It's a popular beverage, especially during the summer months.
+                                </li>
+                                <li><strong>Churros:</strong>
+                                  Fried dough pastries, typically sprinkled with sugar or cinnamon, and sometimes filled with chocolate, dulce de leche, or cream. They are a popular breakfast treat or snack in many Spanish-speaking countries.
+                                </li>
+                                
+                                <li><strong>Pan amb tomàquet (Pan con Tomate):</strong>
+                                  <img src="assets/barnapan.jpg" alt="Pan con Tomate">
+                                  A classic Catalan tapa consisting of toasted bread rubbed with fresh garlic, topped with grated ripe tomatoes, drizzled with olive oil, and sprinkled with salt. It's a simple yet flavorful dish. 
+                                </li>
+                                
+                                <li><strong>Patatas Bravas:</strong>
+                                  <img src="assets/barnapatata.jpg" alt="Patatas Bravas">
+                                  A traditional Spanish tapa featuring fried potato cubes topped with a spicy tomato sauce known as 'salsa brava'. The sauce typically includes ingredients like tomato paste, olive oil, paprika, and sometimes garlic. 
+                                </li>
+                              </ul>
+                         
+                    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li>Veggie Garden
+                            </li>
+      
+                            <li>CroisSants 
+                            </li>
+                            <li>Euros Bar
+                            </li>
+                            <li>Honest Greens
+                            </li>
+                            <li>Xurreria Trebol</li>
+                            <li>Green & Berry</li>
+                            <li>Sabor d’Etiòpia</li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                Immerse yourself in Barcelona's dynamic hospitality landscape, where each neighborhood presents a distinctive fusion of character, heritage, and excitement.            </p>
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="kabul-party">
+                  <h5>Kabul Party Hostel</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Located in the heart of Barcelona's vibrant Plaça Reial, Kabul Party Hostel is renowned for its lively atmosphere and social environment. As one of Europe's premier party hostels, it offers guests an unforgettable experience with nightly events and a central location just steps away from Las Ramblas and the Gothic Quarter.
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="gràcia">
+                  <h5>Gràcia Neighborhood</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Situated just a short walk from the iconic Passeig de Gràcia, the Gràcia neighborhood is known for its bohemian vibe, lively squares, and a plethora of bars and restaurants. It's an ideal area for travelers seeking a vibrant atmosphere and proximity to cultural landmarks.
+    
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="tourist-spot-box" id="el-born">
+                  <h5>El Born Neighborhood</h5>
+                  <div class="hidden-content">
+                    <img src="assets/elborn.jpg" alt="El born">
+                    <p>
+                        El Born is a trendy district known for its narrow streets, boutique shops, and vibrant nightlife. It's also home to cultural attractions like the Picasso Museum and the beautiful Santa Maria del Mar church. Staying in this area offers a blend of historical charm and modern amenities.
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="tourist-spot-box" id="leixample">
+                  <h5>L'Eixample Neighborhood</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Renowned for its modernist architecture and wide, grid-like streets, L'Eixample is a central district that offers a mix of shopping, dining, and cultural experiences. It's also home to iconic landmarks such as the Sagrada Familia and Casa Batlló.
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>
+                Things to remember Barcelona by:              
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="ceramic-tiles">
+                  <h5>Ceramic Tiles (Azulejos)</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Hand-painted tiles featuring colorful mosaics and traditional Catalan designs, perfect for adding a touch of Barcelona's artistic heritage to your home. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="espadrilles">
+                  <h5>Espadrilles (Espardenyes)</h5>
+                  
+                  <div class="hidden-content">
+                    <img src="assets/barnaespad.jpg" alt="Espadrilles">
+                    <p>
+                        Traditional Catalan footwear made from canvas or esparto rope, known for their comfort and timeless style. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="cava">
+                  <h5>Cava</h5>
+                  <div class="hidden-content">
+                    <p>
+                        A bottle of this renowned sparkling wine from the Penedès region encapsulates the celebratory spirit of Catalonia. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="hand-fans">
+                  <h5>Hand-Fans</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Delicately crafted fans that are both practical and stylish, reflecting the city's flair for design. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="tourist-spot-box" id="panot-tiles">
+                    <h5>Panot Tiles</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Inspired by Gaudí's mosaics, these tiles serve as a colorful reminder of Barcelona's architectural genius. 
+      
+                      </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+    
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="secure-belongings">
+                  <h5>Secure Your Belongings</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                            <li><strong>Use Anti-Theft Accessories:</strong> Opt for cross-body bags or money belts with secure closures to keep your valuables safe. Anti-theft backpacks are also highly recommended. 
+                            <li><strong>Avoid Displaying Valuables:</strong> Keep expensive items like jewelry, cameras, and large amounts of cash out of sight to minimize attracting unwanted attention. 
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="stay-vigilant">
+                  <h5>Popular Tourist Scams</h5>
+                  <div class="hidden-content">
+                    <p>
+                        
+                        <ul>
+                            <li><strong>Be Cautious in Tourist Hotspots:</strong> Be extra aware of your surroundings in crowded places such as public transportation, markets, and popular tourist sites, as these are common spots for pickpockets. 
+                            <li><strong>Be Aware of Common Scams:</strong> Watch out for distractions or approaches that may be tactics used by thieves. Always keep an eye on your possessions. 
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+              
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="informed-prepared">
+                    <h5>Stay Informed and Prepared</h5>
+                    <div class="hidden-content">
+                      <p>
+                        <ul>
+                          <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate. </li>
+                          <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+    
+               
+    
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                            <ul>
+                                <li><strong>Address:</strong> Paseo Reina Elisenda de Montcada, 23, 08034 Barcelona, Spain</li>
+                                <li><strong>Phone:</strong> +34 93-280-2227</li>
+                                <li><strong>Emergency After-Hours Phone:</strong> +34 91-587-2200 (ask to speak to the Duty Officer)</li>
+                                <li><strong>Fax:</strong> +34 93-280-6175</li>
+                                <li><strong>Email:</strong> <a href="mailto:BarcelonaACS@state.gov">BarcelonaACS@state.gov</a></li>
+                                <li><strong>Website:</strong> <a href="https://es.usembassy.gov/embassy-consulates/barcelona/">U.S. Consulate General Barcelona</a></li>
+                                <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Spain.html" >More Info Before You Go</a>
+                              </ul>
+                          </li>
+                    </p>
+                  </div>
+                </div>
+                </div>
+                </div>
+    </div>
+    
+    
+    
+    
+    
+ 
+                <div class="info-container">
+                    <div class="info-box" id="events">
+                      <h4>Tours + Parties</h4>
+                      <p>
+                        Can't miss events across Barcelona:
+                      </p>             
+                        <div class="tourist-spot-list">
+                        <div class="tourist-spot-box" id="jamboree-club">
+                          <h5>Jamboree Club</h5>
+                          <div class="hidden-content">
+                            <p>
+                          <a href="https://jamboreejazz.com/en/" >More Info</a>
+                        </p>
+                      </div>
+                        </div>
+                        <div class="tourist-spot-box" id="pub-crawl">
+                          <h5>Pub Crawl Barcelona</h5>
+                          <div class="hidden-content">
+                            <p>
+                                <a href="https://www.pubcrawl.barcelona/" >More Info</a>
+            
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tourist-spot-box" id="free-walk">
+                          <h5>Free Walking Tours Barcelona</h5>
+                          <div class="hidden-content">
+                            <p>
+                                <a href="https://freewalkingtoursbarcelona.com/" >More Info</a>
+            
+                            </p>
+                          </div>
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+      
+    
+    
+    
+    
+    
+    
+              <div class="info-container">
+                <div class="info-box" id="souvenir-ideas">
+                  <h4>Lanugage</h4>
+                  <p>
+                    ¿No hablas??? :
+                    <div class="tourist-spot-list">
+                      <div class="tourist-spot-box" id="language">
+                        <h5>Practice</h5>
+                        <div class="hidden-content">
+                          <p>
+                            <ul>
+                              <li><strong>¿Dónde está...?</strong> (Where is...?)</li>
+                              <li><strong>¿Cuánto cuesta?</strong> (How much does it cost?)</li>
+                              <li><strong>No entiendo.</strong> (I don't understand.)</li>
+                              <li><strong>¿Habla inglés?</strong> (Do you speak English?)</li>
+                              <li><strong>¡Buenos días!</strong> (Good morning!)</li>
+                              <li><strong>¡Buenas tardes!</strong> (Good afternoon!)</li>
+                              <li><strong>¡Buenas noches!</strong> (Good evening!)</li>
+                              <li><strong>Gracias</strong> (Thank you)</li>
+                              <li><strong>Por favor</strong> (Please)</li>
+                              <li><strong>De nada</strong> (You're welcome)</li>
+                              <li><strong>Perdón</strong> (Excuse me / Sorry)</li>
+                            
+                            <p><strong>Language Learning Resources:</strong></p>
+                                <li><strong>Duolingo:</strong> A free app to learn Spanish/Catalan with interactive lessons. [Learn Spanish on Duolingo](https://www.duolingo.com/course/es/en/Learn-Spanish)</li>
+                                <li><strong>Memrise:</strong> A free platform with courses in Spanish, focusing on vocabulary and pronunciation. [Learn Spanish with Memrise](https://www.memrise.com/course/2021572/spanish-1/)</li>
+                                <li><strong>Rosetta Stone:</strong> Offers comprehensive Spanish courses with immersive learning methods. [Learn Spanish with Rosetta Stone](https://www.rosettastone.com/learn-spanish/)</li>
+                                <li><strong>Busuu:</strong> A free language learning app that helps with speaking, listening, and reading Spanish. [Learn Spanish with Busuu](https://www.busuu.com/en)</li>
+                              </ul>
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              
+                
+                                
+                        
+    
+    
+               
+    
+    
+    
+                    </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map</h3> -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([41.390205, 2.154007], 13);  // Coordinates 
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add markers for important locations
+    var laSagradaFam = L.marker([41.403706, 2.173504]).addTo(map);
+    laSagradaFam.bindPopup("<b>La Sagrada Familia</b><br>Iconic basilica designed by Antoni Gaudí, still under construction after more than a century.");
+
+    var laRambla = L.marker([41.3800, 2.1736]).addTo(map);
+    laRambla.bindPopup("<b>La Rambla</b><br>Famous pedestrian street lined with shops, restaurants, and cultural sites.");
+
+    var barcelonetaBeach = L.marker([41.3784, 2.1925]).addTo(map);
+    barcelonetaBeach.bindPopup("<b>Barceloneta Beach</b><br>Popular urban beach offering sun, sand, and seaside dining.");
+
+    var parkGuell = L.marker([41.4145, 2.1527]).addTo(map);
+    parkGuell.bindPopup("<b>Park Güell</b><br>Public park featuring colorful mosaics, serpentine benches, and panoramic city views.");
+
+    var campNou = L.marker([41.3784, 2.1916]).addTo(map);
+    campNou.bindPopup("<b>Camp Nou</b><br>Home stadium of FC Barcelona, offering tours and a museum showcasing the club's history.");
+
+
+
+
+    // Optionally, add a circle marker to indicate a location
+    L.circle([41.390205, 2.154007], {
+      color: 'green',
+      radius: 500
+    }).addTo(map).bindPopup("This is the center of Barcelona!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  //this js is so that the mini boxes can open indivudlaly
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>

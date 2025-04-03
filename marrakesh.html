@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>MARRAKESH Guide</h3>
+      <h6>The best sensory overload</h6>
+        <!-- Container for Images -->
+        <div class="marrakeshimage-container">
+          <!-- Left image -->
+          <div class="marrakesh-guide-image-container">
+            <img src="assets/marrakeshmosque.jpg" alt="Mosque">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-marrakesh-images">
+            <!-- Top right image -->
+            <div class="marrakesh-guide-2-image-container">
+              <img src="assets/marrakeshorange.jpg" alt="Oranges">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="rio-guide-3-image-container">
+              <img src="assets/marrakeshbuild.jpg" alt="Building in Marrakesh">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <section class="city-info">
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Marrakesh enchants visitors with its rich history and vibrant culture, featuring must-see sites like the Jardin Majorelle and the Medina of Marrakesh. 
+        </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="jardin-majorelle">
+              <h5>Jardin Majorelle</h5>
+              <div class="hidden-content">
+                <p>
+                  <img src="assets/marrajardin.jpg" alt="Jardin Majorelle">
+                    <li>A captivating garden featuring a vibrant blue villa, once owned by Yves Saint Laurent, showcasing exotic plants and serene pathways.</li> <a href="https://www.lonelyplanet.com/morocco/marrakesh/attractions/jardin-majorelle/a/poi-sig/1130549/360358">Learn more</a>
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="medina">
+              <h5>Medina of Marrakesh</h5>
+              <div class="hidden-content">
+                <p>
+                  <img src="assets/marramedina.jpg" alt="Medina">
+                    <li>A UNESCO World Heritage Site, the Medina is a labyrinth of narrow streets, bustling souks, and historic sites, offering an immersive cultural experience.</li> <a href="https://whc.unesco.org/en/list/331/">Learn more</a></li>
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="koutoubia-mosque">
+              <h5>Koutoubia Mosque</h5>
+              <div class="hidden-content">
+                <p>
+                    Renowned for its impressive 77-meter minaret, this mosque is a masterpiece of Almohad architecture and a prominent feature of Marrakesh's skyline. <a href="https://www.lonelyplanet.com/morocco/marrakesh/attractions/koutoubia-mosque/a/poi-sig/1130547/360358">Learn more</a></li>
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="bahia-palace">
+              <h5>Bahia Palace</h5>
+              <div class="hidden-content">
+                <p>
+                    An exquisite 19th-century palace showcasing intricate Moroccan design, with lush gardens and grand courtyards reflecting the opulence of its era. <a href="https://www.introducingmarrakech.com/monuments-attractions/bahia-palace">Learn more</a></li>
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="jemaa">
+              <h5>Jemaa el-Fnaa</h5>
+              <div class="hidden-content">
+                <p>
+                    The city's main square comes alive, especially in the evening, with street performers, food stalls, and a vibrant atmosphere that captures the essence of Marrakesh's lively spirit. <a href="https://www.lonelyplanet.com/morocco/marrakesh/attractions/jemaa-el-fnaa/a/poi-sig/1130546/360358">Learn more</a></li>
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="saadian-tombs">
+                <h5>Saadian Tombs</h5>
+                <div class="hidden-content">
+                  <p>
+                    These tombs, dating back to the Saadian dynasty, are known for their luxurious design and historical significance. <a href="https://www.introducingmarrakech.com/monuments-attractions/saadian-tombs">Learn more</a></li>
+      
+                  </p>
+                </div>
+              </div>
+    
+    
+    
+    
+            <div class="tourist-spot-box" id="ben-youssef">
+                <h5>Ben Youssef Madrasa</h5>
+                <div class="hidden-content">
+                  <p>
+                    Once one of the largest Islamic schools in North Africa, this madrasa is celebrated for its stunning architecture and intricate tilework. <a href="https://www.introducingmarrakech.com/monuments-attractions/ben-youssef-madrasa">Learn more</a></li>
+      
+                  </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+    
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                    Marrakesh dazzles with its vibrant souks, historic sites, and lively streets, offering a sensory overload that transports visitors to a time and world so unique.             </p>
+                </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="le-jardin">
+                    <h5>Le Jardin Secret</h5>
+                    <div class="hidden-content">
+                      <p>
+                        A beautifully restored historic garden in the heart of the medina, featuring Islamic and Moorish design elements, providing a peaceful retreat from the bustling streets.</li>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="souks">
+                    <h5>Marrakesh Souks</h5>
+                    <div class="hidden-content">
+                      <img src="assets/marrasouk.jpg" alt="Souk">
+                      <p>
+                        A maze of markets offering everything from spices and textiles to jewelry and pottery, providing a sensory overload and a shopper's paradise.</li>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="atlas-mountains">
+                    <h5>Atlas Mountains</h5>
+                    <div class="hidden-content">
+                      <img src="assets/marraatlas.jpg" alt="Atlas Mountains">
+                      <p>
+                        A short drive from Marrakesh, these mountains provide breathtaking landscapes, traditional Berber villages, and opportunities for hiking and exploring rural life. </li>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="lalla-takerkoust">
+                    <h5>Lalla Takerkoust</h5>
+                    <div class="hidden-content">
+                      <img src="assets/marralalla.jpg" alt="Lalla Takerkoust">
+                      <p>
+                        Just 30 km from Marrakesh, this trendy spot features a picturesque lake and a variety of adventure activities, including quad biking, camel rides, and paragliding. </li>
+                    </p>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Delve into Marrakesh's rich heritage by exploring its bustling souks and experiencing the Berber culture that permeates the city.            </p>
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Language</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Arabic and Berber are Morocco's official languages, with French widely spoken in urban areas. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="music">
+                  <h5>Music</h5>
+                  <div class="hidden-content">
+                    <img src="assets/marramusic.jpg" alt="Man singing">
+                    <p>
+                        Moroccan music is diverse, featuring styles like Andalusian, Gnaoua, and Al-Shaabi, reflecting the country's rich cultural tapestry. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="climate">
+                  <h5>Climate</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Marrakesh experiences a hot semi-arid climate, with scorching summers and mild winters. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="clothing">
+                  <h5>Clothing Styles</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Traditional attire includes long, loose-fitting garments like djellabas and kaftans, suitable for the hot climate. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="berber">
+                    <h5>Berber People</h5>
+                    <div class="hidden-content">
+                      <p>
+                        The Berbers, or Amazigh, are Morocco's indigenous inhabitants, known for their unique language, traditions, and crafts. 
+     
+                      </p>
+                    </div>
+                  </div>
+    
+    
+    
+                  <div class="tourist-spot-box" id="argan-oil">
+                    <h5>Argan Oil</h5>
+                    <div class="hidden-content">
+                      <img src="assets/marraargan.jpg" alt="Woman Making Argan Oil">
+                      <p>
+                        Produced primarily by women's cooperatives in southwestern Morocco, argan oil is prized for its cosmetic and culinary uses.
+      
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                  <div class="tourist-spot-box" id="architecture">
+                    <h5>Architecture</h5>
+                    <div class="hidden-content">
+                      <img src="assets/marraarch.jpg" alt="Architecture">
+                      <p>
+                        Marrakesh showcases stunning examples of Islamic architecture, including the Koutoubia Mosque and Bahia Palace. 
+      
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                  <div class="tourist-spot-box" id="souks">
+                    <h5>Souks</h5>
+                    <div class="hidden-content">
+                      <p>
+                        The city's bustling markets offer a sensory feast of spices, textiles, and handcrafted goods. 
+      
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                  <div class="tourist-spot-box" id="respect-prayer-times">
+                    <h5>Respecting Prayer Times</h5>
+                    <div class="hidden-content">
+                      <p>
+                        In Morocco, the call to prayer (adhan) resonates from mosques five times daily, marking significant moments for reflection and community gathering. These prayer times are integral to Moroccan life and culture. Being mindful of prayer times not only shows respect for local customs but also enriches your cultural experience in Morocco.
+                      </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                Marrakesh's culinary scene is a feast for the senses, blending traditional Moroccan flavors with modern twists, offering a variety of delectable dishes. *All can be veganized or vegetarianized*
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                    
+                            <li><strong>Tagine:</strong>
+                              <img src="assets/maarratagine.jpg" alt="Tagine">
+                              <p>
+                                A slow-cooked stew prepared in a traditional conical pot, tagine combines meats, seafood, or vegetables with a blend of spices, dried fruits, and nuts, offering a rich and aromatic flavor profile. 
+                              </p>
+                            </li>
+                            <li><strong>Couscous:</strong>
+                              <p>
+                                Made from steamed semolina wheat granules, couscous is a staple side dish in Moroccan cuisine, often served with stews or salads, and can be prepared in various ways, including sweet versions with dried fruits and nuts. 
+                              </p>
+                            </li>
+                            <li><strong>Moroccan Salads:</strong>
+                              <p>
+                                Moroccan salads are diverse, ranging from fresh tomato and cucumber salads to cooked dishes like caramelized carrots and roasted peppers, typically seasoned with herbs and spices, and served as appetizers or side dishes. 
+                              </p>
+                            </li>
+                            <li><strong>Dates:</strong>
+                              <p>
+                                Dates are a common and cherished fruit in Morocco, often enjoyed as a snack, used in desserts, or incorporated into savory dishes, reflecting the country's agricultural heritage. 
+                              </p>
+                            </li>
+                            <li><strong>Orange Juice:</strong>
+                              <p>
+                                Freshly squeezed orange juice is a popular beverage in Morocco, especially in Marrakesh, where the abundance of citrus groves ensures a sweet and refreshing drink. 
+                              </p>
+                            </li>
+                            <li><strong>Mint Tea:</strong>
+                              <img src="assets/marramint.jpg" alt="Mint Tea">
+                              <p>
+                                Known as "Moroccan whisky," this sweet green tea infused with fresh mint is a symbol of hospitality and is traditionally served to guests in ornate glasses. 
+                              </p>
+                            </li>
+                         
+                          
+          
+          
+                        </ul>
+    
+    
+                        
+    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li>Fine Mama
+                            </li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                Staying in a riad offers an authentic experience of Marrakesh's unique architecture and hospitality, providing a tranquil retreat amidst the city's vibrant life.           
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="hotel-atlas">
+                  <h5>Hotel Atlas</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Located in Marrakesh's historic Medina, Hotel Atlas is just a 2-minute stroll from the iconic Jemaa el-Fnaa square. This riad combines traditional Moroccan décor with modern comforts, featuring air-conditioned rooms, some with private bathrooms, and a rooftop terrace offering panoramic city views. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="hotel-amalou">
+                  <h5>Hôtel Résidence Amalou</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Situated in the Gueliz district, Hôtel Résidence Amalou offers comfortable accommodations with amenities like air conditioning, satellite TV, and an outdoor pool. Guests can enjoy a buffet breakfast and easy access to local attractions, with the vibrant Jemaa el-Fnaa square just a short drive away. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="tourist-spot-box" id="maison-arabe">
+                  <h5>La Maison Arabe</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Nestled in the Medina, La Maison Arabe is renowned for its luxurious ambiance, featuring elegantly decorated rooms, a serene courtyard, and a renowned cooking school. Its proximity to local markets and attractions makes it a favored choice for travelers seeking an authentic Moroccan experience.
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="tourist-spot-box" id="equity-point">
+                  <h5>Equity Point Marrakech</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Located near Jemaa el-Fnaa, Equity Point Marrakech is a vibrant hostel offering both dormitory and private rooms. With a lively atmosphere, rooftop terrace, and organized activities, it's ideal for travelers seeking social engagement and cultural immersion.
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>
+                Things to remember Marrakesh by:              
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="leather">
+                  <h5>Leather Goods</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Marrakesh's souks are renowned for high-quality leather products, including bags, wallets, jackets, and traditional slippers known as babouches. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="silver">
+                  <h5>Silver Jewelry</h5>
+                  <div class="hidden-content">
+                    <p>
+                        High-quality silk ties, often adorned with traditional Indian patterns and motifs, make for elegant and practical souvenirs. They blend classic style with a touch of Indian artistry. Markets like Dilli Haat are excellent places to find such items. </p>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="argan-oil">
+                  <h5>Argan Oil</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Argan oil, sourced from the argan tree native to Morocco, is popular for its nourishing properties, used in cosmetics and culinary delights.
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="rugs">
+                  <h5>Handwoven Rugs and Carpets</h5>
+                  <div class="hidden-content">
+                    <img src="assets/marrarug.jpg" alt="Rugs and Carpets">
+                    <p>
+                        Marrakesh is known for its handwoven rugs and carpets, each reflecting the city's rich cultural heritage. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="tourist-spot-box" id="teapots">
+                    <h5>Teapots</h5>
+                    <div class="hidden-content">
+                      <img src="assets/marrateapot.jpg" alt="Teapot">
+                      <p>
+                        Indulging in Morocco's signature mint tea is a sensory journey; the sweet, aromatic brew is a symbol of hospitality and is traditionally served in ornate teapots. After experiencing this ritual, owning a handcrafted Moroccan teapot becomes a cherished memento, allowing you to recreate the authentic tea experience at home. 
+      
+                      </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+    
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="modest-dress">
+                  <h5>Modest Dress</h5>
+                  <div class="hidden-content">
+                    <p>
+                        In Marrakesh, dressing modestly is a sign of respect for local customs and culture. Women are advised to cover their shoulders, chests, and knees. Opt for lightweight, loose-fitting clothing such as long skirts, maxi dresses, or linen trousers paired with long-sleeved tops. This attire helps you blend in with the local community and shows cultural sensitivity. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="tourist-scams">
+                  <h5>Popular Tourist Scams</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Be cautious of individuals offering unsolicited assistance or services, such as guiding you through the souks or taking photos with you, and then demanding high fees. Always agree on prices beforehand and be wary of "free" services that may come with unexpected charges.
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="food-water">
+                  <h5>Food and Water Safety</h5>
+                  <div class="hidden-content">
+                    <p>
+                        To avoid foodborne illnesses, eat at reputable establishments where food is prepared hygienically. It's advisable to drink bottled water and avoid ice cubes, as tap water quality can vary.
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="prices-before">
+                  <h5>Verify Prices Before Paying</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Always confirm the price of goods and services before accepting them. In markets (souks), haggling is customary, but ensure you agree on a final price before the transaction. For taxis, it's best to agree on the fare before starting your journey or ensure the meter is used. This practice helps prevent misunderstandings and ensures fair transactions. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="tipping-scams">
+                  <h5>Tipping Scams</h5>
+                  <div class="hidden-content">
+                    <p>
+                        While tipping is customary, be cautious of individuals who expect tips for unsolicited services or assistance. It's best to offer tips directly to the person providing the service and to be aware of any hidden fees added to bills.
+    
+                  </div>
+                </div>
+    
+    
+    
+                <div class="tourist-spot-box" id="informed-prepared">
+                    <h5>Stay Informed and Prepared</h5>
+                    <div class="hidden-content">
+                      <p>
+                        <ul>
+                          <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate. </li>
+                          <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+    
+               
+    
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                            <ul>
+                                <li><strong>Address:</strong> Km 5.7, Avenue Mohamed VI Souissi, Rabat 10170, Morocco</li>
+                                <li><strong>Phone:</strong> +212 537 637 200</li>
+                                <li><strong>Emergency After-Hours Phone:</strong> +212 661 13 19 39</li>
+                                <li><strong>Fax:</strong> +212 537 637 201</li>
+                                <li><strong>Email:</strong> <a href="mailto:acscasablanca@state.gov">acscasablanca@state.gov</a></li>
+                                <li><strong>Website:</strong> <a href="https://ma.usembassy.gov/embassy-consulate/rabat/">U.S. Embassy Rabat</a></li>
+                                <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Morocco.html">More Info Before You Go</a>
+                              </ul>
+                          </li>
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across Marrakesh:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="agafay-dessert">
+                  <h5>Agafay Desert Sunset, Camel Ride and Dinner from Marrakech</h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.viator.com/tours/Marrakech/Atlas-Mountains-and-Three-Valleys-and-Camel-ride-Private-Day-Trip-from-Marrakech/d5408-8479P8?m=28353&supag=167797063411&supca=21265125336&supsc=dsa-1583450326707&supai=698995496813&supdv=c&supnt=g&suplp=9060252&supli=&supti=dsa-1583450326707&tsem=true&supci=dsa-1583450326707&supap1=&supap2=&gad_source=1&gclid=Cj0KCQjw1um-BhDtARIsABjU5x5EkwXzADGVCuLU3Yad0Yx0_GKMGA8PmxxioRd81196Nf2V0Knnbi8aAubpEALw_wcB" >More Info</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="tourist-spot-box" id="shopping-souk">
+                  <h5>Shopping in the Souks of Marrakech Private Tour</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.viator.com/tours/Marrakech/Private-Tour-The-Art-of-Shopping-in-the-Souks-of-Marrakech/d5408-11402P2" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="waterfall">
+                  <h5>Ouzoud Waterfalls Guided Hike and Boat Trip from Marrakech</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.viator.com/tours/Marrakech/Ouzoud-Waterfalls-Full-Day-Trip-from-Marrakech/d5408-7674P21" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="language-container">
+              <h4>Language</h4>
+              <p>
+                English, French, Arabic, or Amazigh            
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Practice</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>As-salaam alaykum:</strong> Peace be upon you; a common greeting.</li>
+                        <li><strong>Shukran:</strong> Thank you.</li>
+                        <li><strong>La shukran:</strong> No thank you.</li>
+                        <li><strong>Ma'a as-salama:</strong> Goodbye.</li>
+                        <li><strong>Afak:</strong> Please.</li>
+                        
+            
+                        <p><strong>Language Learning Resources:</strong></p>
+                        <li><strong>Duolingo:</strong> A free app to learn Arabic with interactive lessons. [Learn Arabic on Duolingo](https://www.duolingo.com/course/ar/en/Learn-Arabic)</li>
+                        <li><strong>Rosetta Stone:</strong> Offers comprehensive Arabic courses with immersive learning methods. [Learn Arabic with Rosetta Stone](https://www.rosettastone.com/learn-arabic/)</li>
+                        <li><strong>Al Jazeera Learning Arabic:</strong> A free open educational source presenting the Arabic language interactively. [Learn Arabic with Al Jazeera](https://learning.aljazeera.net/en)</li>
+                        <li><strong>HelloTalk:</strong> An app that lets you chat with native Arabic speakers to enhance your learning. [Learn Arabic with HelloTalk](https://www.hellotalk.com/)</li>
+                        <li><strong>StoryLearning:</strong> Offers guides to essential Moroccan Arabic phrases to get you speaking with confidence. [Learn Moroccan Arabic Phrases](https://storylearning.com/learn/arabic/arabic-tips/moroccan-arabic-phrases)</li>
+            
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+               
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map  -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+ 
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([31.6295, -7.9811], 13);  // Coordinates 
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+          // Add markers for important locations
+          var jardinMajorelle = L.marker([31.6349, -8.0029]).addTo(map);
+        jardinMajorelle.bindPopup("<b>Jardin Majorelle</b><br>Famous garden designed by French painter Jacques Majorelle, known for its vibrant colors and exotic plants.");
+
+        var medinaMarrakesh = L.marker([31.6258, -7.9891]).addTo(map);
+        medinaMarrakesh.bindPopup("<b>Medina of Marrakesh</b><br>A UNESCO World Heritage site, the medina is a maze of narrow streets filled with markets, palaces, and historical sites.");
+
+        var koutoubiaMosque = L.marker([31.6248, -7.9896]).addTo(map);
+        koutoubiaMosque.bindPopup("<b>Koutoubia Mosque</b><br>The largest mosque in Marrakesh, famous for its stunning 77-meter-high minaret.");
+
+        var bahiaPalace = L.marker([31.6250, -7.9885]).addTo(map);
+        bahiaPalace.bindPopup("<b>Bahia Palace</b><br>A 19th-century palace with beautiful gardens and stunning Moroccan architecture, once home to a grand vizier.");
+
+        var jamaaElFnaa = L.marker([31.6255, -7.9890]).addTo(map);
+        jamaaElFnaa.bindPopup("<b>Jamaa El-Fnaa</b><br>The vibrant main square of Marrakesh, known for its street performers, food stalls, and lively atmosphere.");
+
+        var saadianTombs = L.marker([31.6286, -7.9883]).addTo(map);
+        saadianTombs.bindPopup("<b>Saadian Tombs</b><br>Historical burial site of the Saadian dynasty, rediscovered in 1917, featuring intricate decoration and tranquil gardens.");
+
+        var benYoussefMadrasa = L.marker([31.6293, -7.9855]).addTo(map);
+        benYoussefMadrasa.bindPopup("<b>Ben Youssef Madrasa</b><br>A historical Islamic school, famous for its beautiful architecture and intricate tilework, dating back to the 14th century.");
+
+
+
+    // Optionally, add a circle marker to indicate a location
+    L.circle([31.6295, -7.9811], {
+      color: 'green',
+      radius: 500
+    }).addTo(map).bindPopup("This is the center of Marrakesh!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>

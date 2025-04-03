@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>RIO DE JANEIRO Guide</h3>
+
+      <h6>You'll want to be a carioca too!</h6>
+      
+        <!-- Container for Images -->
+        <div class="rioimage-container">
+          <!-- Left image -->
+          <div class="rio-guide-image-container">
+            <img src="assets/riodejaneiroguide.jpg" alt="Rio De Janeiro Overhead">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-rio-images">
+            <!-- Top right image -->
+            <div class="rio-guide-2-image-container">
+              <img src="assets/riodejaneiroguide2.jpg" alt="Christ Statue Brazil">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="rio-guide-3-image-container">
+              <img src="assets/riodejaneiroguide3.jpg" alt="Coconuts">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+     <section class="city-info">
+
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Discover Rio’s iconic landmarks and hidden gems, from the famous beaches to breathtaking viewpoints. Whether you’re a thrill-seeker or a relaxation enthusiast, Rio de Janeiro offers something for every traveler.
+          </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="christ-the-redeemer">
+              <h5>Christ the Redeemer</h5>
+              <div class="hidden-content">
+                <img src="assets/christrio.jpg" alt="Christ Statue">
+                <p>One of the New Seven Wonders of the World, this towering statue stands atop Corcovado Mountain, offering panoramic views of Rio and the surrounding bay. A must-see for anyone visiting the city, symbolizing Rio’s spirit and beauty.</p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="ipanema-beach">
+              <h5>Ipanema Beach</h5>
+              <div class="hidden-content">
+                <img src="assets/ipanema.jpg" alt="Ipanema Beach">
+                <p>Known globally, Ipanema Beach is a lively destination with vibrant nightlife, cultural attractions, and golden sands. Perfect for sunbathing, surfing, and people-watching, it offers an authentic Rio experience and is famous for the song "The Girl from Ipanema."</p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="copacabana-beach">
+              <h5>Copacabana Beach</h5>
+              <div class="hidden-content">
+                <img src="assets/copacabana.jpg" alt="Copacabana Beach">
+                <p>Famous for its 4 km stretch of golden sand, Copacabana Beach is perfect for beach lovers. A bustling spot with restaurants, bars, and beach sports, it provides a lively atmosphere perfect for relaxation or activity.</p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="sugarloaf-mountain">
+              <h5>Sugarloaf Mountain</h5>
+              <div class="hidden-content">
+                <img src="assets/sugarloafmountain.jpg" alt="Sugarloaf Mountains">
+                <p>A signature sight in Rio, Sugarloaf Mountain offers stunning 360-degree views of the city. A cable car ride takes visitors to the top for unforgettable views of the beaches, bay, and surrounding mountains. It’s a must-do for panoramic vistas of Rio.</p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="selaron-steps">
+              <h5>Escadaria Selarón (Selarón Steps)</h5>
+              <div class="hidden-content">
+                <img src="assets/selaronsteps.jpg" alt="Selarón Steps">
+                <p>A colorful and vibrant staircase located in the Lapa neighborhood, the Escadaria Selarón is a true work of art. Covered in over 2,000 brightly colored tiles, it is one of Rio’s most iconic landmarks and a perfect spot for photos and artistic exploration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+      
+      
+  
+
+
+
+
+
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                  Explore Rio's vibrant street art scene in neighborhoods like Lapa and Santa Teresa, where colorful murals and graffiti tell the city's unique and artistic story. These hidden gems offer a more intimate experience of the city's cultural side, far from the tourist crowds.
+                </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="ilha-grande">
+                    <h5>Ilha Grande</h5>
+                    <div class="hidden-content">
+                      <p> A peaceful island getaway located off the coast of Rio, Ilha Grande offers crystal-clear waters, sandy beaches, and lush rainforests. It's perfect for those seeking seclusion and adventure, accessible via boat or a scenic hike.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="santa-teresa">
+                    <h5>Santa Teresa</h5>
+                    <div class="hidden-content">
+                      <p>
+                        This charming and bohemian neighborhood in the hills of Rio is known for its narrow winding streets, colonial-style houses, and vibrant street art. Santa Teresa offers a glimpse of Rio's authentic cultural scene, filled with art galleries, cozy bars, and unique shops.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="feira-hippie">
+                    <h5>Feira do Hippie</h5>
+                    <div class="hidden-content">
+                      <p>
+                        A hidden gem in the heart of Ipanema, the Feira do Hippie (Hippie Market) is a vibrant weekend market where you can find handmade crafts, vintage items, and local art. It’s an ideal spot for those looking for unique souvenirs or just enjoying the local culture.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="marina-gloria">
+                    <h5>Marina da Glória</h5>
+                    <div class="hidden-content">
+                      <img src="assets/marinadagloria.jpg" alt="Marina da Glória">
+
+                      <p>
+                       This quiet marina offers stunning views of the bay, Sugarloaf Mountain, and the surrounding landscape. With a peaceful atmosphere away from the busy beaches, Marina da Glória is perfect for a relaxing stroll or a boat ride along the coastline.
+                      </p>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Immerse yourself in Rio's rich cultural heritage by visiting its numerous museums and historical sites.
+              </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="Music">
+                  <h5>Music</h5>
+                  <div class="hidden-content">
+                    <p>
+                      ​Rio de Janeiro's music scene is defined by samba's lively rhythms, bossa nova's smooth melodies, and funk carioca's energetic beats. 
+                      Samba, deeply rooted in Afro-Brazilian tradition, is central to Rio's Carnival. 
+                      Bossa nova, emerging in the late 1950s, blends samba with jazz influences. 
+                      Funk carioca, originating from the favelas, combines electronic beats with traditional rhythms. 
+                      Artists like João Gilberto, Antônio Carlos Jobim, and Anitta have significantly shaped these genres. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="events">
+                  <h5>Events</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Carnival:</strong> 
+                          <a href="https://www.flickr.com/photos/83011695@N00/8623648490/">
+
+                            <img src="assets/riocarnival-credit.jpg" alt="Carnival">
+                          </a>
+
+                          
+                           An annual festival held before Lent, featuring vibrant parades, samba dancing, and street parties that fill the city with energy and color.</li>
+                        <li><strong>New Year's Eve (Réveillon):</strong> 
+                          <a href="https://www.flickr.com/photos/portobayevents/4434958919">
+
+                            <img src="assets/rionewyear-credit.jpg" alt="New Year">
+                          </a>
+                          A massive celebration on Copacabana Beach, where millions gather to watch fireworks, listen to live music, and celebrate the coming year.</li>
+                        <li><strong>Festa Junina:</strong> Celebrated throughout June, these festivals honor saints like Santo Antônio, São João, and São Pedro with traditional foods, music, and dances such as the quadrilha. </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="sports">
+                  <h5>Sports</h5>
+                  <div class="hidden-content">
+                    <img src="assets/sports.jpg" alt="Braszil Soccer Fan">
+
+                    <p>
+                      In Rio de Janeiro, soccer isn't just a game—it's a vibrant cultural heartbeat, pulsing through legendary matches at the historic Maracanã Stadium and igniting fierce rivalries among iconic clubs like Flamengo, Fluminense, Botafogo, and Vasco da Gama. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="carioca">
+                  <h5>Carioca</h5>
+                  <div class="hidden-content">
+                    <p>Radiating the quintessential Carioca vibe, Rio's locals effortlessly blend sun-kissed beach days, lively samba nights, and a warm, welcoming spirit, all while rocking their signature bleach blonde hair.
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                Savor the flavors of Rio through its diverse culinary offerings, from traditional Brazilian dishes to international fusion cuisine. *All can be veganized or vegetarianized*
+              </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Feijoada:</strong>
+                          <img src="assets/feijoada.jpg" alt="Feijoada">
+
+                          A hearty black bean stew with various cuts of pork, traditionally enjoyed on Saturdays. It's typically served with rice, collard greens, and orange slices. 
+                        </li>
+                        <li><strong>Açaí:</strong>
+                          <img src="assets/acai.jpg" alt="Açaí">
+
+                          A refreshing bowl of frozen açaí pulp blended into a smoothie, topped with granola, bananas, and other fruits. It's a popular choice for breakfast or as a healthy snack. 
+                        </li>
+                        <li><strong>Pão de Queijo:</strong>
+                          Cheese-filled bread bites made from tapioca flour, crispy on the outside and soft inside. Enjoyed as a snack or breakfast treat, best paired with strong Brazilian coffee. 
+                        </li>
+                        <li><strong>Coxinha:</strong>
+                          Deep-fried croquettes filled with shredded chicken, shaped like a teardrop, and coated in breadcrumbs. A savory snack commonly found at street vendors and parties.
+                        </li>
+                        <li><strong>Brigadeiro:</strong>
+                          A beloved chocolate truffle made from condensed milk, cocoa powder, butter, and chocolate sprinkles. Often served at celebrations and as a sweet treat.
+                        </li>
+                      </ul>
+
+
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                          <li>Açougue Vegano
+                          </li>
+            
+                          <li>ASA Açaí Ipanema 
+                          </li>
+                          <li>Leme
+                          </li>
+                          <li>Buffet Gloria
+                          </li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="beach-eats">
+                  <h5>Beach Eats</h5>
+                  <div class="hidden-content">
+                    <img src="assets/beachfood.jpg" alt="Beach Food">
+
+                    <p>
+                      <ul>
+                        <li>Coconut Water</li>
+                        <li>Queijo Coalho</li>
+                        <li>Empada</li>
+                        <li>Açaí</li>
+                        <li>Corn</li>
+                        <li>Biscoito Globo</li>
+                        <li>Mate</li>
+                        </ul>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                Dive into Rio's vibrant hospitality scene, where each neighborhood offers a unique blend of style, culture, and adventure.
+              </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="discovery-hostel">
+                  <h5>Discovery Hostel</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Located in the historic Glória neighborhood, Discovery Hostel is set in a restored colonial building, just 50 meters from Glória Subway Station and 300 meters from Flamengo Beach. The hostel offers a clean, open, and friendly social environment, making it an ideal base for travelers exploring Rio. Amenities include a fully equipped kitchen, computer lounge, reception with tourist information desk, TV area, bar, and a chill-out patio. Guests can also enjoy customized beds with thick mattresses, large lockers, personal control lights, and air conditioning for a comfortable stay. 
+
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="el-misti">
+                  <h5>El Misti Hostel Ipanema</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Situated just a 40-second walk from Ipanema Beach and close to various bars and restaurants, El Misti Hostel offers a vibrant atmosphere in the heart of the Ipanema neighborhood. The hostel provides mixed dormitories accommodating 4 to 12 people, as well as private rooms, all equipped with air conditioning and private bathrooms. Guests can enjoy amenities such as free Wi-Fi, a 24-hour front desk, an on-site bar, and a partnership with a nearby beach tent offering discounted drinks and affordable beach chair and sunshade rentals.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="che-lagarto">
+                  <h5>Che Lagarto Hostel Copacabana</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Located just two blocks from Copacabana Beach and one block from Cardeal Arcoverde subway station, this hostel offers an unbeatable location for travelers. Guests can enjoy amenities such as free internet, a rooftop pool, bar/lounge, breakfast buffet, rooftop terrace, and shared bathrooms. 
+
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="selina-hostel">
+                  <h5>Selina Lapa Rio de Janeiro</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Situated in the historic Lapa neighborhood, Selina offers proximity to theaters, concert halls, museums, and Rio's vibrant nightlife. The hostel features a rooftop terrace with impressive views, an on-site restaurant, bar/lounge, and individually decorated rooms with en-suite facilities, some with balconies. 
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>
+                Things to remember Rio by:              
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="havaianas">
+                  <h5>Havaianas</h5>
+                  <div class="hidden-content">
+                    <img src="assets/havaianas.jpg" alt="Flip Flops">
+
+                    <p>
+                      Slip into Rio's laid-back beach vibe with these colorful, comfortable sandals. A staple since '62, they're perfect for the sun-soaked streets and sands. 
+
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="canga">
+                  <h5>Canga</h5>
+                  <div class="hidden-content">
+                    <p>
+                      These versatile, vibrant wraps serve as both beach towels and stylish cover-ups, adding a tropical touch to any setting.
+
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="dental-floss-swim">
+                  <h5>Dental Floss Swimsuits</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Embrace Rio's bold beach fashion by rocking these ultra-minimalist swimsuits, known locally as 'fio dental.' These daring designs, popularized in the 1970s, offer minimal coverage and are a staple on Rio's sun-drenched shores. Whether you're soaking up the sun or taking a dip, these swimsuits ensure you do it in true Carioca style. 
+
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="brasil-flag">
+                  <h5>Brasil Flag Shirts and Shorts</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Show off your Brazilian pride with stylish clothing featuring the vibrant green, yellow, and blue of the national flag. From casual tees to sporty shorts, these pieces are perfect for embracing Rio's lively spirit. Whether you're hitting the beach or exploring the city, wearing the flag's colors adds a festive touch to your look. Plus, during major events like the World Cup, these items become even more popular, symbolizing national unity and celebration. 
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="secure-belongins">
+                  <h5>Secure Your Belongings</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Use Anti-Theft Accessories:</strong> Opt for cross-body bags or money belts with secure closures to keep your valuables safe. Anti-theft backpacks are also highly recommended.</li>
+                        <li><strong>Be Cautious with Phones:</strong> Avoid using your phone in crowded areas or on the beach to minimize the risk of theft. If you must use it, do so discreetly and keep it secured via phone chains. </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="blend-in">
+                  <h5>Blend in with Local Culture</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Beach Attire:</strong> Brazilians typically use sarongs or "cangas" instead of towels on the beach. Women often wear thong-style bikinis, while men wear tight-fitting trunks known as "sungas." Embracing this attire can help you blend in with locals. </li>
+                        <li><strong>Clubbing Dress Code:</strong> When visiting nightclubs, dress stylishly but modestly. Avoid overly revealing clothing and flashy accessories. Many venues have a dress code, so it's advisable to check in advance.</li>
+                        <li><strong>Use of Portuguese Phrases:</strong> Learning basic Portuguese phrases such as "Olá" (Hello), "Por favor" (Please), and "Obrigado/Obrigada" (Thank you) can enhance your interactions with locals and show respect for their culture.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="caution-strangers">
+                  <h5>Exercise Caution with Strangers</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Avoid Overly Friendly Approaches:</strong> Be cautious if strangers approach you with overly friendly gestures, as this can be a tactic used by pickpockets. Always maintain awareness of your surroundings.</li>
+                        <li><strong>Stay Alert to Common Scams:</strong> Be aware of common scams, such as individuals claiming you have pigeon droppings on your shoulder and offering to help clean it off, which can be a distraction for theft.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+               
+
+                <div class="tourist-spot-box" id="transportation-safety">
+                  <h5>Transportation Safety</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Use Reputable Ride-Sharing Services:</strong> When traveling by car, use reputable ride-sharing apps like Uber or 99. Avoid accepting rides from unmarked vehicles or unsolicited offers.</li>
+                        <li><strong>Be Cautious with Taxi Services:</strong> If using taxis, ensure they are registered and use the meter. Agree on the fare beforehand if the meter is not available.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="tourist-spot-box" id="beach-safety">
+                  <h5>Beach Safety</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Rent Beach Equipment from Authorized Vendors:</strong> On Rio's beaches, renting chairs and umbrellas from authorized vendors ensures fair pricing and reduces the risk of scams. Prices for two beach chairs and an umbrella should not exceed 30 BRL for the entire day. </li>
+                        <li><strong>Stay Vigilant on the Beach:</strong> Keep an eye on your belongings at all times. Avoid leaving valuables unattended, even for short periods, and be cautious when approached by beach vendors.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+                <div class="tourist-spot-box" id="phones">
+                  <h5>Phone Theft Awareness</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Be Vigilant in Public Spaces:</strong> Using a cell phone in public spaces can make you a target for thieves. Criminals can often identify tourists and may attempt to snatch your phone without you realizing. </li>
+                        <li><strong>Keep Phones Secure:</strong> Consider using anti-theft apps that can remotely lock or erase your phone if stolen. Report stolen devices to local authorities promptly.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="informed-prepared">
+                  <h5>Stay Informed and Prepared</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate.</li>
+                        <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+
+
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Address:</strong> Avenida Presidente Wilson, 147 – Castelo<br>
+                          20030-020 – Rio de Janeiro, RJ, Brazil
+                        </li>
+                        <li><strong>Phone:</strong> +55-21-3823-2000</li>
+                        <li><strong>Emergency After-Hours Phone:</strong> +55-21-3823-2029</li>
+                        <li><strong>Fax:</strong> +55-21-3823-2003</li>
+                        <li><strong>Email:</strong> <a href="mailto:RioACS@state.gov">RioACS@state.gov</a></li>
+                        <li><strong>Website:</strong> <a href="https://br.usembassy.gov/embassy-consulates/riodejaneiro/">U.S. Consulate General Rio de Janeiro</a></li>
+                        <li><a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Brazil.html">More Info Before You Go</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across Rio:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="ilha-grande">
+                  <h5>Rio de Janeiro: Angra dos Reis and Ilha Grande Full-Day Tour</h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.getyourguide.com/rio-de-janeiro-l9/excursao-de-dia-inteiro-a-angra-dos-reis-e-ilha-grande-t530101/" >More Info</a>
+                  </p>
+                  </div>
+
+                </div>
+                <div class="tourist-spot-box" id="free-walk">
+                  <h5>Free Walking Tour</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <a href="https://freewalkertours.com/"> More Info </a>
+
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="boat-party">
+                  <h5>"Festa do Barco- Boat Party"</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <a href="https://www.bembrasilrio.net/event-details/festa-do-barco-boat-party-2025-07-22-23-45?lang=en" >More Info</a>
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="language-container">
+              <h4>Language</h4>
+              <p>
+                Você não fala????             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Practice</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Onde fica...?</strong> (Where is...?)</li>
+                        <li><strong>Qual é o preço?</strong> (What is the price?)</li>
+                        <li><strong>Eu não entendo.</strong> (I don't understand.)</li>
+                        <li><strong>Você fala inglês?</strong> (Do you speak English?)</li>
+                        <li><strong>Bom dia!</strong> (Good morning!)</li>
+                        <li><strong>Boa noite!</strong> (Good night!)</li>
+                        <li><strong>Obrigado/Obrigada</strong> (Thank you)</li>
+                        <li><strong>Tá/ tá bom</strong> (Okay)</li>
+                
+                        <p><strong>Language Learning Resources:</strong></p>
+                        <li><strong>Duolingo:</strong> A free app to learn Portuguese with interactive lessons.</li>
+                        <li><strong>Memrise:</strong> A free platform with courses in Portuguese, focusing on vocabulary and pronunciation.</li>
+                        <li><strong>BBC Languages:</strong> Offers free resources for learning Portuguese, including audio and video lessons.</li>
+                        <li><strong>Busuu:</strong> A free language learning app that helps with speaking, listening, and reading Portuguese.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+               
+
+              </div>
+            </div>
+          </div>
+
+
+         
+              
+            </p>
+            </div>
+        </div>
+
+
+</section>
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+
+  <!--<h3>Interactive Map of Rio de Janeiro</h3> -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> 
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+ 
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+    var map = L.map('map').setView([-22.9068, -43.1729], 12);  // Coordinates for Rio de Janeiro
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add markers for important locations
+    var christRedeemer = L.marker([-22.9519, -43.2105]).addTo(map);
+    christRedeemer.bindPopup("<b>Christ the Redeemer</b><br>Iconic statue on Corcovado Mountain.");
+
+    var sugarloafMountain = L.marker([-22.9486, -43.1566]).addTo(map);
+    sugarloafMountain.bindPopup("<b>Sugarloaf Mountain</b><br>Famous mountain peak offering panoramic views.");
+
+    var ipanemaBeach = L.marker([-22.9833, -43.1977]).addTo(map);
+    ipanemaBeach.bindPopup("<b>Ipanema Beach</b><br>Famous beach known for its vibrant nightlife.");
+
+    var copacabanaBeach = L.marker([-22.9714, -43.1822]).addTo(map);
+    copacabanaBeach.bindPopup("<b>Copacabana Beach</b><br>Iconic beach with restaurants, bars, and beach sports.");
+
+    var seláronSteps = L.marker([-22.9358, -43.2107]).addTo(map);
+    seláronSteps.bindPopup("<b>Seláron Steps</b><br>Vibrant staircase as tribute to Brazillians.");
+
+
+
+
+    // Optionally, add a circle marker to indicate a location
+    L.circle([-22.9068, -43.1729], {
+      color: 'green',
+      radius: 500
+    }).addTo(map).bindPopup("This is the center of Rio de Janeiro!");
+  </script>
+
+
+
+
+
+<!---
+
+
+  <script>
+    $(document).ready(function() {
+      $('.info-box').click(function() {
+        $(this).toggleClass('expanded');
+
+
+
+
+      $(this).toggleClass('clicked');
+      });
+    });
+  </script>
+-->
+
+
+
+
+
+<script>
+$(document).ready(function() {
+  // Toggle the 'expanded' class for each tourist spot box when clicked
+  $('.tourist-spot-box').click(function() {
+    $(this).toggleClass('expanded');
+  });
+});
+
+</script>
+
+
+
+
+  
+</body>
+</html>
+
+
+            

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>DELHI Guide</h3>
+
+      <h6>In India for the best Indian food</h6>
+      
+
+
+        <!-- Container for Images -->
+        <div class="delhiimage-container">
+          <!-- Left image -->
+          <div class="delhi-guide-image-container">
+            <img src="assets/delhigate.jpg" alt="Delhi Gate">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-delhi-images">
+            <!-- Top right image -->
+            <div class="delhi-guide-2-image-container">
+              <img src="assets/delhituk.jpg" alt="Tuk Tuk ">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="delhi-guide-3-image-container">
+              <img src="assets/delhimarket.jpg" alt="Delhi Market">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <section class="city-info">
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Delhi: Where history meets hustle.
+          </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="qutub">
+              <h5>Qutub Minar</h5>
+              <div class="hidden-content">
+                <img src="assets/delhiqutubminar.jpg" alt="Qutub Minar">
+                <p>
+                    A UNESCO World Heritage Site, this towering minaret stands at 72.5 meters and is the tallest brick minaret in the world. It's renowned for its intricate carvings and inscriptions.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="red-fort">
+              <h5>Red Fort (Lal Qila)</h5>
+              <div class="hidden-content">
+                <img src="assets/delhiredfort.jpg" alt="Red Fort">
+                <p>
+                    A 17th-century fortification, the Red Fort is a symbol of India's sovereignty. Its massive red sandstone walls enclose a complex of museums and gardens.
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="humayun-tomb">
+              <h5>Humayun's Tomb</h5>
+              <div class="hidden-content">
+                <p>
+                    This Mughal-era tomb is the first garden tomb in India and is believed to have inspired the Taj Mahal. Its symmetrical gardens and Persian-style architecture are a visual treat.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="india-gate">
+              <h5>India Gate</h5>
+              <div class="hidden-content">
+                <img src="assets/delhiindiagate.jpg" alt="India Gate">
+                <p>
+                    A war memorial dedicated to soldiers who died during World War I, India Gate is an iconic landmark. The surrounding lawns are a popular spot for picnics and evening outings.
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="connaught-place">
+              <h5>Connaught Place</h5>
+              <div class="hidden-content">
+                <img src="assets/delhiconnaughtplace.jpg" alt="Connaught Place">
+                <p>
+                  
+                    A bustling commercial and financial hub in New Delhi, Connaught Place features a circular market with two concentric circles housing numerous shops, restaurants, and entertainment venues. Visitors can explore a variety of retail outlets, from international brands to local handicrafts, making it a shopper's paradise.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="taj-mahal">
+                <h5>Taj Mahal</h5>
+                <div class="hidden-content">
+                  <img src="assets/delhitajmahal.jpg" alt="Taj Mahal">
+                  <p>
+                    Located in Agra, approximately a 3-hour drive from Delhi, the Taj Mahal is a white marble mausoleum commissioned in 1631 by Mughal emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal. It's renowned for its stunning architecture and is a UNESCO World Heritage Site. 
+      
+                  </p>
+                </div>
+              </div>
+    
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+    
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                    Explore Delhi's vibrant cultural scene in neighborhoods like Hauz Khas Village and Lodhi Colony, where historic sites, contemporary art, and unique shops narrate the city's rich and artistic heritage. These areas provide an intimate glimpse into Delhi's cultural life, away from the usual tourist paths.
+                </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="hauz-khas">
+                    <h5>Hauz Khas Village</h5>
+                    <div class="hidden-content">
+                     
+                      <a href=" https://www.flickr.com/photos/varunshiv/3547599624/in/photostream/" >
+                        <img src="assets/delhihaz-credit.jpg" alt="Hauz Khas Village">
+                      </a>
+                      <p> 
+                        A trendy area known for its blend of medieval history and modern urban culture. It features a 13th-century mosque, a tomb, and a water tank, all surrounded by a vibrant community of artists, designers, and boutique shops. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="lodhi-colony">
+                    <h5>Lodhi Colony</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Famous for its collection of 15th-century tombs, this neighborhood has transformed into an open-air art gallery. The Lodhi Art District showcases colorful murals and street art, making it a haven for art enthusiasts. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="sarojini-market">
+                    <h5>Sarojini Nagar Market</h5>
+                    <div class="hidden-content">
+                      <p>
+                        A bustling market offering a wide array of clothing, accessories, and home decor at bargain prices. It's a shopper's paradise for those seeking trendy items without breaking the bank.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="chandni-chowk">
+                    <h5>Chandni Chowk</h5>
+                    <div class="hidden-content">
+                      
+                      <a href="https://www.flickr.com/photos/travelourplanet/53554390537" >
+                        <img src="assets/delhichadni-credit.jpg" alt="Chandi Chowk">
+                      </a>
+                      <p>
+                        One of the oldest and busiest markets in Old Delhi, it offers a sensory overload of sights, sounds, and smells. From traditional sweets to spices and jewelry, this market is a microcosm of Delhi's rich history and diversity. 
+                      </p>
+                    </div>
+                  </div>
+    
+    
+    
+                  <div class="tourist-spot-box" id="central-park">
+                    <h5>Central Park, Connaught Place</h5>
+                    <div class="hidden-content">
+                      <p>
+                        A serene green space amidst the bustling commercial district of Connaught Place. It's an ideal spot to relax, people-watch, and enjoy occasional cultural performances. 
+                      </p>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Delhi, India's bustling capital, is a city where tradition intertwines with modernity, influencing various facets of daily life, including language, commerce, religion, attire, and transportation.
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Language</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Delhi's linguistic diversity is a testament to its rich history and multicultural populace. Hindi, written in the Devanagari script, serves as the official language. Urdu, with its roots in Mughal influence, is also widely spoken. English is prevalent in business, education, and governmental affairs.
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="gold">
+                  <h5>Gold and Commerce</h5>
+                  <div class="hidden-content">
+                    <p>
+                        The city boasts a vibrant gold market, with areas like Chandni Chowk offering an array of gold jewelry that melds traditional craftsmanship with contemporary designs. The art of gold embroidery, known as zardozi, highlights Delhi's rich artisanal heritage.
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="religion">
+                  <h5>Religion</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Delhi is a microcosm of India's pluralistic society, with Hinduism, Islam, Sikhism, and Christianity practiced freely. This diversity is evident in the multitude of places of worship, including temples, mosques, gurudwaras, and churches, each providing unique insights into the city's spiritual life.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="dress">
+                  <h5>Style of Dress</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Reflecting its cultural diversity and climate, Delhi's attire ranges from traditional clothing like sarees and salwar kameez for women, and kurtas or sherwanis for men, to Western attire such as jeans and shirts. Modesty is observed at religious sites, where visitors are expected to cover shoulders and knees.
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="festivals">
+                    <h5>Festivals</h5>
+                    <div class="hidden-content">
+                      <p>
+                        <ul>
+                            <li><strong>Holi:</strong> Celebrated in March, this festival of colors marks the arrival of spring. Participants joyfully throw colored powders, dance, and enjoy traditional sweets.
+                              <img src="assets/delhidiwali.jpg" alt="Diwali">
+                            <li><strong>Diwali:</strong> The festival of lights illuminates the city with diyas (lamps), fireworks, and vibrant decorations, symbolizing the victory of light over darkness.
+                            <li><strong>Dussehra:</strong> Marking the victory of good over evil, this festival features effigy burnings and cultural performances.
+                          </ul>  
+                      </p>
+                    </div>
+                  </div>
+    
+    
+    
+                  <div class="tourist-spot-box" id="driving">
+                    <h5>Driving Practices</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Navigating Delhi's roads can be challenging due to dense traffic and unique driving customs. Lane discipline is often flexible, and honking is common. To alleviate congestion, measures like the odd-even scheme have been implemented, restricting vehicles based on license plate numbers during peak pollution periods. Visitors are advised to utilize ride-hailing services or the extensive Delhi Metro to navigate the city efficiently.
+      
+                      </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                Delight in Delhi's rich culinary scene, as your trip concludes, you'll find yourself missing these unique tastes and Delhi's authentic flavors. *All can be veganized or vegetarianized.*
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                          
+                            <li><strong>Chana Masala:</strong>
+                              <img src="assets/delichanamasala.jpg" alt="Chana Masala">
+                              A spicy and tangy chickpea curry cooked in a tomato-based sauce, commonly enjoyed with rice or Indian breads like naan and roti.
+                            </li>
+                            <li><strong>Aloo Paratha:</strong>
+                              A popular North Indian breakfast dish consisting of a whole wheat flatbread stuffed with a spiced potato filling, served with yogurt, pickle, and sometimes butter. 
+                            </li>
+                            <li><strong>Dal:</strong>
+                              A staple in Indian cuisine, dal refers to lentils cooked in various styles, often spiced with turmeric, cumin, and garam masala. It's commonly served with rice or Indian breads.
+                            </li>
+
+                            
+                            <li><strong>Samosas:</strong>
+                              <img src="assets/delhisamosas.jpg" alt="Samosas">
+                              Popular street food, samosas are triangular pastries filled with spiced potatoes, peas, or lentils, then deep-fried to a crispy golden brown. They're typically accompanied by tamarind or mint chutney.
+                            </li>
+                            <li><strong>Lassi:</strong>
+                              A traditional yogurt-based drink, lassi can be sweet or salty. The sweet version is often flavored with fruits like mango, while the salty variant includes spices like cumin. It's a refreshing complement to spicy meals.
+                            </li>
+            
+            
+            
+            
+                          </ul>
+    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li>Veg Gulati
+                            </li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                Explore Delhi's vibrant neighborhoods, each offering a unique blend of history, culture, and excitement.
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="karol-bagh">
+                  <h5>Karol Bagh</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Situated in North Delhi, Karol Bagh is renowned for its bustling markets and vibrant atmosphere. It's an excellent base for first-time visitors, offering easy access to major attractions and a wide range of accommodations. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="hauz-khas">
+                  <h5>Hauz Khas Village</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Located in South Delhi, Hauz Khas Village is known for its lively nightlife, art galleries, and historic sites. The area offers a blend of modern amenities and cultural experiences, making it popular among both locals and tourists. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="connaught-place">
+                  <h5>Connaught Place</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Situated in the heart of New Delhi, Connaught Place is a major commercial and shopping hub. Its colonial-era architecture houses numerous shops, restaurants, and entertainment venues, offering a lively urban experience. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="old-delhi">
+                  <h5>Old Delhi (Chandni Chowk)</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Steeped in history, Old Delhi offers a glimpse into the city's Mughal past. The narrow lanes of Chandni Chowk are lined with shops, markets, and street food vendors, providing a sensory overload of sights, sounds, and flavors. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>
+                Things to remember Delhi by:              
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="gold-jewelry">
+                  <h5>Gold Jewelry</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Delhi is renowned for its exquisite gold jewelry, featuring intricate designs like Kundan and Meenakari work. These pieces are not only beautiful but also hold significant cultural value. Notable markets such as Chandni Chowk offer a wide array of options. Remember, bargaining is customary in these markets, so don't hesitate to negotiate the price. 
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="silk-ties">
+                  <h5>Silk Ties</h5>
+                  <div class="hidden-content">
+                    <p>
+                        High-quality silk ties, often adorned with traditional Indian patterns and motifs, make for elegant and practical souvenirs. They blend classic style with a touch of Indian artistry. Markets like Dilli Haat are excellent places to find such items. </p>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="spices">
+                  <h5>Spices</h5>
+                  <div class="hidden-content">
+                    <img src="assets/delhispice.jpg" alt="Spices">
+                    <p>
+                        Delhi's markets, especially Khari Baoli, Asia's largest spice market, offer a vibrant array of spices. From aromatic cardamom to fiery red chilies, these spices can add authentic flavors to your culinary endeavors. Bargaining is common here; starting with a price about half of the initial quote is a good strategy. </p>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="handicrafts">
+                  <h5>Handicrafts</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Artisans in Delhi produce a variety of handcrafted items, including brassware, pottery, and textiles, reflecting the city's rich artisanal traditions. Dilli Haat is a great place to explore these crafts, with artisans from different states showcasing their work. </p>
+    
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="tourist-spot-box" id="pashmina-shawls">
+                    <h5>Pashmina Shawls</h5>
+                    <div class="hidden-content">
+                      <img src="assets/delhimarket.jpg" alt="Delhi Shawls">
+                      <p>
+                        Soft and luxurious, these shawls are woven from fine cashmere wool and are known for their warmth and intricate designs. Markets like Janpath and Dilli Haat offer a variety of options. Remember to negotiate the price, starting with an offer about half of the quoted price.</p>
+      
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                  <div class="tourist-spot-box" id="wooden-carvings">
+                    <h5>Wooden Carvings</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Delicately carved wooden artifacts, such as boxes and figurines, showcase traditional craftsmanship and make for unique souvenirs. Explore markets like Dilli Haat and the India Craft House for a wide selection. </p>
+      
+                      </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+    
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="food-drinks">
+                  <h5>Exercise Caution with Food and Drink</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                            <li><strong>Choose Reputable Eateries:</strong>
+                              <p>Opt for dining at well-established restaurants or those recommended by trusted sources to minimize the risk of foodborne illnesses. 
+                            </li>
+                            <li><strong>Be Careful with Street Food:</strong>
+                              <p>While street food is a significant part of Delhi's culture, ensure that the food is prepared in hygienic conditions to avoid health issues.
+                            </li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="tourist-scams">
+                  <h5>Be Vigilant Against Common Tourist Scams</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                            <li><strong>Fake Hotel Closures:</strong>
+                              <p>Be cautious of individuals claiming your booked hotel is closed or full, who then offer to take you to alternative accommodations. These are often scams to redirect you to overpriced or subpar lodgings. Always confirm your reservation directly with the hotel. </p>
+                            </li>
+                            <li><strong>Overcharging and Fake Fees:</strong>
+                              <p>Some taxi drivers or rickshaw pullers may attempt to overcharge tourists or claim additional fees. Agree on the fare beforehand or insist on using the meter. Be wary of unsolicited offers for assistance that may come with hidden costs. </p>
+                            </li>
+                            <li><strong>Distraction Scams:</strong>
+                              <p>Be cautious of individuals who create distractions, such as spilling something on you or asking for help, while accomplices attempt to steal your belongings. Always keep an eye on your possessions, especially in crowded areas. </p>
+                            </li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="personal-safety">
+                  <h5>Prioritize Personal Safety as a Solo Female Traveler</h5>
+                  <div class="hidden-content">
+                    <p>
+    
+                        <ul>
+                        <li><strong>Dress Conservatively:</strong>
+                          <p>Wearing modest clothing helps avoid unwanted attention and shows respect for local customs. Covering shoulders, chest, and knees is advisable, especially when visiting religious sites. </p>
+                        </li>
+                        <li><strong>Stay Confident and Assertive:</strong>
+                          <p>Projecting confidence can deter unwanted attention. If you encounter harassment, don't hesitate to speak out or seek help. Being assertive is important, but always prioritize your safety. </p>
+                        </li>
+                        <li><strong>Use Reputable Transportation Services:</strong>
+                          <p>Opt for registered taxis or ride-sharing services instead of accepting rides from unsolicited offers. Always agree on fares beforehand or insist on using the meter. Avoid traveling alone in tuk-tuks or rickshaws, as they offer no security. </p>
+                        </li>
+                        <li><strong>Stay in Safe and Convenient Areas:</strong>
+                          <p>Choose accommodations in well-populated, well-lit areas. South and Central Delhi are recommended for solo female travelers due to their proximity to attractions and good connectivity. </p>
+                        </li>
+                        <li><strong>Be Cautious with Strangers:</strong>
+                          <p>Be wary of overly friendly individuals offering unsolicited assistance, as this can be a tactic used by scammers. Trust your instincts and remove yourself from uncomfortable situations. </p>
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+
+
+                <div class="tourist-spot-box" id="blending-in">
+                  <h5>Blending In with Local Culture</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Respect the Local Customs:</strong> Delhi has a rich cultural heritage. Be mindful of local traditions, such as removing your shoes when entering temples and shrines.</li>
+                        <li><strong>Dress Modestly:</strong> While Delhi is more relaxed than other parts of India, dressing modestly, especially when visiting religious sites, is appreciated by the locals.</li>
+                        <li><strong>Be Cautious with Photography:</strong> Always ask for permission before photographing people, especially in religious contexts, as some locals may find it disrespectful.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+           
+    
+    
+                <div class="tourist-spot-box" id="transportation-safety">
+                  <h5>Transportation Safety</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Use Reputable Ride-Sharing Services:</strong> When traveling by car, use reputable ride-sharing apps like Uber or 99. Avoid accepting rides from unmarked vehicles or unsolicited offers.
+                        <li><strong>Be Cautious with Taxi Services:</strong> If using taxis, ensure they are registered and use the meter. Agree on the fare beforehand if the meter is not available.
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+               
+                <div class="tourist-spot-box" id="informed-prepared">
+                  <h5>Stay Informed and Prepared</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate. </li>
+                        <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                            <ul>
+                              <li><strong>Address:</strong> Shantipath, Chanakyapuri, New Delhi - 110021, India</li>
+                              <li><strong>Phone:</strong> +91-11-2419-8000</li>
+                              <li><strong>Emergency After-Hours Phone:</strong> +91-11-2419-8000 (ask for American Citizen Services)</li>
+                              <li><strong>Fax:</strong> +91-11-2419-0017</li>
+                              <li><strong>Email:</strong> <a href="mailto:acsnd@state.gov">acsnd@state.gov</a></li>
+                              <li><strong>Website:</strong> <a href="https://in.usembassy.gov/embassy-consulates/new-delhi/">U.S. Embassy New Delhi</a></li>
+                              <li><strong>Travel Information:</strong> <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/India.html">U.S. Department of State: India Travel Information</a></li>
+                            </ul>
+                          </li>
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across Delhi:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="shopping-tour">
+                  <h5>Private Full Day Shopping Tour in New Delhi</h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.tripadvisor.com/AttractionProductReview-g304551-d13886379-Private_Full_Day_Shopping_Tour_in_New_Delhi-New_Delhi_National_Capital_Territory_o.html" >More Info</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="tourist-spot-box" id="delhi-tour">
+                  <h5>Full Day Old and New Delhi City Tour</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.tripadvisor.com/AttractionProductReview-g304551-d13072599-Full_Day_Old_and_New_Delhi_City_Tour-New_Delhi_National_Capital_Territory_of_Delhi.html" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="taj-agra">
+                  <h5>From Delhi: Taj Mahal & Agra Private Day Trip with Transfers</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.getyourguide.com/new-delhi-l231/delhi-taj-mahal-agra-private-day-tour-t451806/?ranking_uuid=ded5fd3d-7451-4a63-abc9-21301c170f65" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="language-container">
+              <h4>Language</h4>
+              <p>
+                Google Translate becomes your BFF:            
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Practice</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+    
+    
+                            <li><strong>Namaste</strong> (Hello)</li>
+                            <li><strong>Shukriya</strong> (Thank you)</li>
+                            <li><strong>Madad kijiye!</strong> (Help!)</li>
+                            <li><strong>Dhanyavaad</strong> (Thank you)</li>
+            
+                          </ul>
+                      
+                        <p><strong>Language Learning Resources:</strong></p>
+                        <ul>
+                          <li><strong>Duolingo:</strong> A free app to learn Hindi with interactive lessons. [Learn Hindi on Duolingo](https://www.duolingo.com/course/hi/en/Learn-Hindi)</li>
+                          <li><strong>Memrise:</strong> A free platform with courses in Hindi, focusing on vocabulary and pronunciation. [Learn Hindi with Memrise](https://www.memrise.com/course/2021572/hindi-1/)</li>
+                          <li><strong>Rosetta Stone:</strong> Offers comprehensive Hindi courses with immersive learning methods. [Learn Hindi with Rosetta Stone](https://www.rosettastone.com/learn-hindi/)</li>
+                          <li><strong>Busuu:</strong> A free language learning app that helps with speaking, listening, and reading Hindi. [Learn Hindi with Busuu](https://www.busuu.com/en)</li>
+            
+            
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+         
+              
+            </p>
+            </div>
+        </div>
+
+
+</section>
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map  -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+ 
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([28.6139, 77.2090], 12);  // Coordinates
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+// Add markers for important locations in Delhi
+var qutubMinar = L.marker([28.5244, 77.1855]).addTo(map);
+qutubMinar.bindPopup("<b>Qutub Minar</b><br>A UNESCO World Heritage Site, this 73-meter high tower is renowned for its historical significance and intricate carvings.");
+
+// Add markers for other notable locations
+var redFort = L.marker([28.6562, 77.2410]).addTo(map);
+redFort.bindPopup("<b>Red Fort</b><br>A 17th-century fort complex, symbolizing India's rich history and Mughal architecture.");
+
+var humayunsTomb = L.marker([28.5932, 77.2507]).addTo(map);
+humayunsTomb.bindPopup("<b>Humayun's Tomb</b><br>The tomb of the Mughal emperor Humayun, showcasing Persian-style architecture.");
+
+var indiaGate = L.marker([28.6128, 77.2295]).addTo(map);
+indiaGate.bindPopup("<b>India Gate</b><br>A war memorial honoring soldiers who died during the First World War.");
+
+var connaughtPlace = L.marker([28.6355, 77.2247]).addTo(map);
+connaughtPlace.bindPopup("<b>Connaught Place</b><br>A commercial and financial hub, known for its Georgian-style architecture and vibrant shopping scene.");
+
+// Add marker for Taj Mahal in nearby Agra
+var tajMahal = L.marker([27.1751, 78.0421]).addTo(map);
+tajMahal.bindPopup("<b>Taj Mahal</b><br>A UNESCO World Heritage Site, this white marble mausoleum is a symbol of India's rich history.");
+
+
+
+
+    // Optionally, add a circle marker to indicate a location
+    L.circle([28.6139, 77.2090], {
+      color: 'green',
+      radius: 500
+    }).addTo(map).bindPopup("This is the center of Delhi!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>PARIS Guide</h3>
+      <h6>Are you happy to be in Paris? Oui.</h6>
+      
+        <!-- Container for Images -->
+        <div class="parisimage-container">
+          <!-- Left image -->
+          <div class="paris-guide-image-container">
+            <img src="assets/parisguideimage1.jpg" alt="Eiffel Tower">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-paris-images">
+            <!-- Top right image -->
+            <div class="paris-guide-2-image-container">
+              <img src="assets/parisguideimage2.jpg" alt="Paris Street">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="paris-guide-3-image-container">
+              <img src="assets/parisguideimage3.jpg" alt="Bakery">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+
+      <section class="city-info">
+
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            See that one tower     
+         </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="eiffel-tower">
+              <h5>Eiffel Tower</h5>
+              <div class="hidden-content">
+                <img src="assets/pariseif.jpg" alt="Eiffel Tower">
+                <p>
+                    An iconic wrought-iron lattice tower located on the Champ de Mars, it offers panoramic views of Paris from its observation decks. Built for the 1889 Exposition Universelle, it's a must-visit landmark.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="louvre-museum">
+              <h5>Louvre Museum</h5>
+              <div class="hidden-content">
+                <img src="assets/parislouvre.jpg" alt="Louvre Museum">
+                <p>
+                    The world's largest art museum and a historic monument in Paris, it houses thousands of works from civilizations across the globe, including the famous "Mona Lisa."
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="notre-dame-cathedral">
+              <h5>Notre-Dame Cathedral</h5>
+              <div class="hidden-content">
+                <img src="assets/parisnotre.jpg" alt="Notre Dame">
+                <p>
+                 
+                    ​Notre-Dame Cathedral, Paris's iconic Gothic masterpiece, reopened in December 2024, inviting visitors to experience its renewed splendor.    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="musée-dorsay">
+              <h5>Musée d'Orsay</h5>
+              <div class="hidden-content">
+                <img src="assets/parisdorsay.jpg" alt="Musée d'Orsay">
+                
+                <p>
+                    Housed in a former railway station, this museum features an extensive collection of 19th and early 20th-century art, including works by Monet, Van Gogh, and Degas. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="arc-de-triomphe">
+              <h5>Arc de Triomphe</h5>
+              <div class="hidden-content">
+                <img src="assets/paricarc.jpg" alt="Arc de Triomphe">
+                <p>
+                    Commissioned by Napoleon after his victory at Austerlitz, this monumental arch honors those who fought for France. Located at the western end of the Champs-Élysées, it offers a panoramic view of the city from its summit. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="canal-saint-martin">
+                <h5>Canal Saint-Martin</h5>
+                <div class="hidden-content">
+                  
+                  <p>
+                    A picturesque canal lined with trendy boutiques and cafés, it's a perfect spot for a leisurely stroll or a boat ride, offering a glimpse into Paris's more laid-back side. 
+      
+                  </p>
+                </div>
+              </div>
+    
+    
+            
+            
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+   
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                    Explore Paris beyond its famous landmarks by visiting these lesser-known spots that showcase the city's rich history, culture, and unique charm.
+                </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="goutte">
+                    <h5>Goutte d'Or</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located in the 18th arrondissement, Goutte d'Or, meaning 'Drop of Gold' in French, is affectionately known as 'Little Africa'. This vibrant neighborhood is celebrated for its rich African heritage, evident in its bustling markets, diverse shops, and cultural establishments. Visitors can immerse themselves in a tapestry of African cultures, cuisines, and traditions, making it a dynamic and enriching destination. 
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="josephine-baker">
+                    <h5>Place Josephine Baker</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Situated in the 13th arrondissement, this square honors the legendary entertainer and civil rights activist Josephine Baker. The area features a modern floating swimming pool and offers a unique riverside experience.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="cafe-de-flor">
+                    <h5>Cafe de Flor</h5>
+                    <div class="hidden-content">
+                      
+                  
+                      <p>
+                        Located in the 6th arrondissement, Café de Flore is one of Paris's oldest and most iconic cafés. Renowned for its classic Art Deco interior, it has been a gathering place for influential writers and philosophers. Notably, American writer James Baldwin penned much of his first novel, 'Go Tell It on the Mountain', while frequenting this café, contributing to its rich literary heritage. 
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="torres-de-cayma">
+                    <h5>Printemps Haussman</h5>
+                    <div class="hidden-content">
+                      <p>
+                        A historic department store offering a wide range of luxury goods. Beyond shopping, visitors can enjoy panoramic views of Paris from its rooftop terrace.
+                    </p>
+                    </div>
+                  </div>
+
+                 
+    
+                </div>
+              </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Paris, often dubbed the "City of Light," is a vibrant tapestry of art, fashion, cuisine, and traditions. The city seamlessly blends its rich history with modern influences, offering a unique cultural experience.
+            </p>
+            <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="art-and-architecture">
+                  <h5>Art and Architecture</h5>
+                  <div class="hidden-content">
+                    <img src="assets/parisachitecture.jpg" alt="Architecture">
+                    <p>
+                      Paris's streets are akin to an open-air museum, with its historic architecture and numerous art galleries. The Musée d'Orsay, for instance, showcases Parisian poster art from the 1880s and 1890s, reflecting the city's artistic evolution.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="fashion-capital">
+                  <h5>Fashion Capital</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Paris is renowned as a global fashion hub, hosting prestigious events like Paris Fashion Week. The city's boutiques and ateliers set trends that influence the world.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="culinary-delights">
+                  <h5>Culinary Delights</h5>
+                  <div class="hidden-content">
+                    <img src="assets/parisfood.jpg" alt="Restaruant in Paris">
+                    <p>
+                      Parisian cuisine is a gastronomic journey, from Michelin-starred establishments to charming cafés. The city's diverse food scene reflects its multicultural heritage, with influences from various immigrant communities. The tradition of the "apéro" is a cherished pre-meal ritual, fostering social connections over drinks and light bites.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="everyday-life">
+                  <h5>Everyday Life</h5>
+                  <div class="hidden-content">
+                    <img src="assets/parislifestyle.jpg" alt="Paris Lifestyle">
+                    <p>
+
+                      Parisians value a balanced lifestyle, often enjoying long, leisurely meals and frequenting local markets. The city's numerous parks and gardens provide serene spots for relaxation amidst urban life. The "bise," a customary cheek kiss greeting, exemplifies the warmth and formality of French social interactions.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="festivals-and-events">
+                  <h5>Festivals and Events</h5>
+                  <div class="hidden-content">
+                    <p>
+                      The city hosts a plethora of festivals, celebrating everything from music and film to food and fashion, reflecting its dynamic cultural scene. Events like Paris Fashion Week significantly influence both the fashion and culinary landscapes, with exclusive menus and soirées complementing the shows.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                Paris's culinary scene is a dynamic blend of tradition and innovation, where classic dishes like escargots and croissants are reimagined in contemporary settings, reflecting the city's evolving gastronomic landscape. *All can be veganized or vegetarianized.*        </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li><strong>Soufflé:</strong>
+                              <p>A light, fluffy dish made with a flavorful base, such as cheese or chocolate, and beaten egg whites, baked to a delicate rise. </p>
+                            </li>
+                            <li><strong>Steak Frites:</strong>
+                              <p>A classic Parisian meal consisting of a juicy steak paired with crispy, golden fries, often served with a variety of sauces. </p>
+                            </li>
+                            <li><strong>Escargots de Bourgogne:</strong>
+                              <p>A delicacy of tender snails baked in a rich garlic and parsley butter, offering a unique and savory taste experience. </p>
+                            </li>
+                            <li><strong>Foie Gras:</strong>
+                              <p>A luxurious pâté made from the liver of a duck or goose, celebrated for its rich, buttery flavor and smooth texture. </p>
+                            </li>
+                            <li><strong>Crêpes:</strong>
+                                <img src="assets/pariscrepe.jpg" alt="Crepe">
+                              <p>Thin, delicate pancakes that can be filled with a variety of sweet or savory fillings, making for a versatile meal or dessert. </p>
+                            </li>
+                            <li><strong>French Onion Soup:</strong>
+                              <p>A comforting soup made from caramelized onions in a rich broth, topped with melted cheese and toasted bread. </p>
+                            </li>
+                            <li><strong>Boeuf Bourguignon:</strong>
+                              <p>A hearty beef stew braised in red wine, often Burgundy, with onions, mushrooms, and bacon, embodying the essence of French country cooking.</p>
+                            </li>
+                            <li><strong>Coq au Vin:</strong>
+                              <p>A traditional French dish where chicken is slowly cooked in red wine, lardons, mushrooms, and garlic, resulting in a rich and flavorful meal. </p>
+                            </li>
+                            <li><strong>Quiche Lorraine:</strong>
+                                <img src="assets/parisquiche.jpg" alt="Quiche">
+                              <p>A savory tart filled with a creamy custard of eggs, cream, and bacon, encased in a flaky pastry crust. </p>
+                            </li>
+                            <li><strong>Madeleines:</strong>
+                              <p>Small, shell-shaped sponge cakes with a distinctive hump, often flavored with lemon or almonds, and dusted with powdered sugar. </p>
+                            </li>
+                          </ul>
+                        
+                         
+                    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li>Cafe Ragueneau
+                            </li>
+      
+                            <li>Café Jade
+                            </li>
+                            <li>Coffee Crepes
+                            </li>
+                            <li>Cloud Cakes
+                            </li>
+                            <li>
+                                New Soul Food Le Maquis </li>
+                            <li>Yo Mac and Cheese</li>
+                           
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                Paris's 20 arrondissements, each with its own unique personality and charm, collectively contribute to the city's rich and diverse character.            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="bourgogneo">
+                    <h5>Résidence de Bourgogne </h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located at 15 Rue du Faubourg Saint-Martin in the 10th arrondissement, this residence offers comfortable accommodations with amenities like free Wi-Fi, a bar, and a restaurant. It's conveniently situated near the Strasbourg-Saint-Denis metro station, providing easy access to various parts of the city. 
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="christopher">
+                    <h5>St. Christopher's Inn Paris Canal</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Situated along the Canal Saint-Martin, this award-winning hostel features modern pod beds, free Wi-Fi, and a lively bar with regular events. It's just three metro stops from Gare du Nord. 
+                    </p>
+                    </div>
+                  </div>
+    
+                <div class="tourist-spot-box" id="people-paris">
+                  <h5>The People Paris Nation</h5>
+                  <div class="hidden-content">
+                    
+                    <p>
+                        Located at Place de la Nation, this hostel offers stylish spaces inspired by the dynamic neighborhood. Guests can enjoy a variety of activities and a vibrant atmosphere.
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="tourist-spot-box" id="le-marias">
+                    <h5>Le Marais</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located in the 3rd and 4th arrondissements, Le Marais is known for its historic architecture, trendy boutiques, and vibrant art scene. It's a lively area with a mix of old and new, offering a unique Parisian experience.
+                    </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>Things to remember Paris by:</p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="scarf">
+                  <h5>Parisian Scarves</h5>
+                  <div class="hidden-content">
+                    <img src="assets/parisscarf.jpg" alt="Scarf">
+                    <p>
+
+                        A stylish scarf is a quintessential Parisian accessory. Available in various materials and designs, it's a fashionable and practical souvenir. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="french-soaps">
+                  <h5>French Soaps</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Luxurious soaps from renowned French brands like L'Occitane make for aromatic and useful keepsakes. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="parisian-art">
+                  <h5>Parisian Art Prints</h5>
+                  <div class="hidden-content">
+                    <img src="assets/parisartprint.jpg" alt="Art Prints">
+                    <p>
+                        Affordable art prints from local galleries or flea markets capture the city's artistic flair and make for memorable souvenirs. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="vintage-postcards">
+                  <h5>Vintage Postcards</h5>
+                  <div class="hidden-content">
+                    <img src="assets/parispostcard.jpg" alt="Postcards">
+                    <p>
+                        Discover vintage postcards capturing Paris's timeless beauty, offering a nostalgic glimpse into the city's rich history.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="macarons">
+                    <h5>Macarons</h5>
+                    <div class="hidden-content">
+                        <img src="assets/parismacaroons.jpg" alt="Macarons">
+                      <p>
+                        Indulge in Paris's iconic macarons, available in a variety of flavors and colors, perfect for satisfying your sweet tooth.
+                    </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+
+                  <div class="tourist-spot-list">
+                    <h5>Beware of Pickpockets</h5>
+        <div class="hidden-content">
+          <p>
+            Pickpocketing is common in crowded areas, especially near major tourist attractions. Keep your valuables secure and be cautious of distractions. 
+          </p>
+        </div>
+      </div>
+      <div class="tourist-spot-box" id="common-scams">
+        <h5>Be Aware of Common Scams</h5>
+        <div class="hidden-content">
+          <p>
+            Scams such as the gold ring trick, friendship bracelet approach, and petition fraud are prevalent. Politely decline and walk away if approached.
+          </p>
+        </div>
+      </div>
+      <div class="tourist-spot-box" id="transportation">
+        <h5>Use Reputable Transportation Services</h5>
+        <div class="hidden-content">
+          <p>
+            To avoid potential scams, use registered taxi services or ride-sharing apps, and agree on fares beforehand if meters are not available. 
+          </p>
+        </div>
+      </div>
+      <div class="tourist-spot-box" id="valuables">
+        <h5>Avoid Displaying Valuables</h5>
+        <div class="hidden-content">
+          <p>
+            Refrain from displaying expensive items like jewelry, cameras, or electronics that might attract unwanted attention. 
+          </p>
+        </div>
+      </div>
+      <div class="tourist-spot-box" id="street-vendors">
+        <h5>Exercise Caution with Street Vendors</h5>
+        <div class="hidden-content">
+          <p>
+            Be cautious when engaging with street vendors, as some may sell counterfeit goods or use aggressive tactics. Purchase from licensed vendors and stores to ensure authenticity. 
+          </p>
+        </div>
+        </div>
+
+        <div class="tourist-spot-box" id="phone-safety">
+            <h5>Phone Safety</h5>
+            <div class="hidden-content">
+              <p>
+                ​To protect your phone from theft in Paris, keep it secure in a zipped bag or front pocket, avoid using it near metro doors, and remain vigilant in crowded areas.               </p>
+            </div>
+            </div>
+              
+                  
+              
+              
+    
+    
+                
+    
+    
+    
+    
+    
+               
+                <div class="tourist-spot-box" id="informed-prepared">
+                    <h5>Stay Informed and Prepared</h5>
+                    <div class="hidden-content">
+                      <p>
+                        <ul>
+                          <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate.</li>
+                          <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                            <ul>
+                                <li><strong>Address:</strong> 2 Avenue Gabriel, 75008 Paris, France</li>
+                                <li><strong>Phone:</strong> +33 (1) 43-12-22-22</li>
+                                <li><strong>Emergency After-Hours Phone:</strong> +33 (1) 43-12-22-22 (Press 0 after the automated greeting)</li>
+                                <li><strong>Fax:</strong> +33 (1) 42-66-97-83</li>
+                                <li><strong>Email:</strong> <a href="mailto:Citizeninfo@state.gov">Citizeninfo@state.gov</a></li>
+                                <li><strong>Website:</strong> <a href="https://fr.usembassy.gov/">U.S. Embassy Paris</a></li>
+                                <li><strong>Travel Information:</strong> <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/France.html">U.S. Department of State: France Travel Information</a></li>
+                              </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+              </div>
+            </div>
+          
+    
+    
+    
+    
+    
+ 
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across Paris:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="walk-tour">
+                  <h5>Historic Paris Tour by Walkative!
+
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.freetour.com/paris/historic-paris-free-walking-tour" >More Info</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="tourist-spot-box" id="delhi-tour">
+                  <h5>CLUB IN BARCELONA 90S
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="louvre">
+                  <h5>Louvre Museum Guided Tour Options with Timed Entry
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.viator.com/tours/Paris/Louvre-Skip-The-Line-Tickets-with-A-Host-and-Choice-of-Itineraries/d479-47475P8" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+           
+    
+    
+    
+    
+    
+    
+              <div class="info-container">
+                <div class="info-box" id="language-container">
+                  <h4>Language</h4>
+                  <p>
+                    Je ne parle pas français:            
+                    <div class="tourist-spot-list">
+                    <div class="tourist-spot-box" id="language">
+                      <h5>Practice</h5>
+                      <div class="hidden-content">
+                        <p>
+                            <ul>
+                                
+                                    <li><strong>Bonjour</strong> (bohn-zhoor) – Hello</li>
+                                    <li><strong>Merci</strong> (mehr-see) – Thank you</li>
+                                    <li><strong>S'il vous plaît</strong> (seel voo pleh) – Please</li>
+                                    <li><strong>Excusez-moi</strong> (ex-kew-zay mwah) – Excuse me</li>
+                                    <li><strong>Parlez-vous anglais ?</strong> (par-lay voo ahn-glay) – Do you speak English?</li>
+                                    <li><strong>Où est... ?</strong> (oo eh) – Where is...?</li>
+                                    <li><strong>Combien ça coûte ?</strong> (kohm-byen sah koot) – How much does it cost?</li>
+                                    <li><strong>Je ne parle pas bien français.</strong> (zhuh nuh parl pah byan frahn-say) – I don't speak French very well.</li>
+                                    <li><strong>Au revoir</strong> (oh ruh-vwar) – Goodbye</li>
+                                    <li><strong>À bientôt</strong> (ah byan-toh) – See you soon</li>
+                                 
+                              <p><strong>Language Learning Resources:</strong></p>
+                              <li><strong>Duolingo:</strong> A free app offering interactive lessons for beginners to advanced learners. [Learn French on Duolingo](https://www.duolingo.com/course/fr/en/Learn-French)</li>
+                              <li><strong>Rosetta Stone:</strong> Provides immersive language courses with a focus on speaking and listening. [Learn French with Rosetta Stone](https://www.rosettastone.com/learn-french/)</li>
+                              <li><strong>FluentU:</strong> Utilizes real-world videos to teach French in context. [Learn French with FluentU](https://www.fluentu.com/en/french/)</li>
+                              <li><strong>Busuu:</strong> Offers personalized feedback from native speakers and structured courses. [Learn French with Busuu](https://www.busuu.com/en)</li>
+                              <li><strong>Lingoda:</strong> Provides online group and private classes with qualified teachers. [Learn French with Lingoda](https://www.lingoda.com/en/learn-french-online)</li>
+                            </ul>
+                        </p>
+                      </div>
+                    </div>
+                   
+        
+                  </div>
+                </div>
+              </div>
+                   
+              
+                
+                                
+                        
+    
+    
+               
+    
+    
+    
+                    </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map  -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([48.8566, 2.3522], 12);  // Coordinate
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+   // Add markers for important locations in Paris
+var eiffelTower = L.marker([48.8584, 2.2945]).addTo(map);
+eiffelTower.bindPopup("<b>Éiffel Tower</b><br>The iconic symbol of Paris, offering spectacular views of the city from its observation decks.");
+
+var louvreMuseum = L.marker([48.8606, 2.3376]).addTo(map);
+louvreMuseum.bindPopup("<b>The Louvre</b><br>One of the largest and most famous museums in the world, home to the Mona Lisa and countless other masterpieces.");
+
+var museeOrsay = L.marker([48.8600, 2.3266]).addTo(map);
+museeOrsay.bindPopup("<b>Musée d'Orsay</b><br>A museum housed in a former railway station, featuring an extensive collection of Impressionist and Post-Impressionist art.");
+
+var arcDeTriomphe = L.marker([48.8738, 2.2950]).addTo(map);
+arcDeTriomphe.bindPopup("<b>Arc de Triomphe</b><br>A monumental arch built to honor those who fought and died for France during the French Revolutionary and Napoleonic Wars.");
+
+var notreDame = L.marker([48.8529, 2.3500]).addTo(map);
+notreDame.bindPopup("<b>Notre-Dame Cathedral</b><br>One of the most famous Gothic cathedrals in the world, known for its stunning architecture and historical significance.");
+
+var canalSaintMartin = L.marker([48.8691, 2.3630]).addTo(map);
+canalSaintMartin.bindPopup("<b>Canal Saint-Martin</b><br>A picturesque canal lined with trendy cafes, shops, and beautiful bridges, perfect for a leisurely stroll.");
+
+  // Optionally, add a circle marker to indicate a location
+  L.circle([48.8566, 2.3522], {
+    color: 'green',
+    radius: 500
+  }).addTo(map).bindPopup("This is the center of Paris!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  //this js is so that the mini boxes can open indivudlaly
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>
+
+
+            

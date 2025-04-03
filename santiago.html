@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>SANTIAGO Guide</h3>
+      <h6>See both paris and london!</h6>
+
+
+      
+        <!-- Container for Images -->
+        <div class="santiagoimage-container">
+          <!-- Left image -->
+          <div class="santiago-guide-image-container">
+            <img src="assets/santiagoguideimage1.jpg" alt="Chile Flag">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-santiago-images">
+            <!-- Top right image -->
+            <div class="santiago-guide-2-image-container">
+              <img src="assets/santiagoguideimage2.jpg" alt="Santiago Buildings">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="santiago-guide-3-image-container">
+              <img src="assets/santaigoguideimage3.jpg" alt="Temple in Santiago">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="city-info">
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            ​Santiago de Chile seamlessly blends colonial heritage with modern innovation, offering a rich tapestry of cultural and historical experiences.         </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="santa-lucia">
+              <h5>Cerro Santa Lucia</h5>
+              <div class="hidden-content">
+                <img src="assets/santicerrosanta.jpg" alt="Santa Lucia">
+                <p>
+                    A historic hill in the heart of the city, Cerro Santa Lucía offers panoramic views of Santiago. Its lush gardens and the Hidalgo Castle add to its charm. 
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="barrio-lastarria">
+              <h5>Barrio Lastarria</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    Known for its bohemian atmosphere, Barrio Lastarria is filled with art galleries, theaters, and cozy cafes. It's a cultural hub that captures the essence of Santiago's creative spirit.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="memory-human">
+              <h5>Museum of Memory and Human Rights</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    This museum is dedicated to preserving the memory of human rights violations during Chile's military dictatorship, offering visitors a profound and educational experience. 
+                    
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="metropolitan-cathedral">
+              <h5>Metropolitan Cathedral</h5>
+              <div class="hidden-content">
+               
+                
+                <p>
+                    Located in Plaza de Armas, the Metropolitan Cathedral showcases stunning Baroque architecture and is a testament to Santiago's colonial past. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="san-cristobal">
+              <h5>Cerro San Cristobal</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    Offering breathtaking views of the city and the Andes Mountains, Cerro San Cristóbal is a must-visit for nature lovers. The hill features a zoo, Japanese garden, and the iconic Virgin Mary statue at its summit.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            
+            
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="hidden-gems">
+          <h4>Hidden Gems</h4>
+          <p>
+            ​Santiago de Chile's lesser-known cultural and artistic spots, such as Barrio Yungay, Barrio Italia, and La Chascona, offer unique insights into the city's vibrant neighborhoods beyond typical tourist paths.          </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="paris-london">
+              <h5>Santiago Barrio Paris-London</h5>
+              <div class="hidden-content">
+                <p>
+                    Located in the heart of Santiago, Barrio París-Londres is a picturesque neighborhood reminiscent of Europe's Latin Quarter. Developed in the 1920s and 1930s, it features cobblestone streets and European-style architecture, offering a charming escape from the city's hustle. 
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="temple-south">
+              <h5>Bahá'í Temple of South America</h5>
+              <div class="hidden-content">
+                <p>
+                    <img src="assets/santibahai.jpg" alt="Bahá'í Temple">
+                    Nestled in the foothills of the Andes, the Bahá'í Temple is a stunning architectural marvel. Its nine glass veils create a luminous space for prayer and meditation, welcoming visitors from all backgrounds. 
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="drugstore">
+              <h5>Drugstore Boulevard</h5>
+              <div class="hidden-content">
+                <p>
+                    Situated in the Providencia neighborhood, Drugstore Boulevard is a lively street lined with a variety of shops, cafes, and entertainment venues, offering a vibrant atmosphere for both locals and tourists.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="san-fransico">
+              <h5>Igelsia San Fransico</h5>
+              <div class="hidden-content">
+                <p>
+                    This historic church, located near Barrio París-Londres, showcases colonial architecture and is one of the oldest religious buildings in Santiago, offering a serene spot for reflection.
+                </p>
+              </div>
+            </div>
+
+            <div class="tourist-spot-box" id="moneda">
+              <h5>La Moneda Palace</h5>
+              <div class="hidden-content">
+                <p>
+                    <img src="assets/santimoneda.jpg" alt="Moneda Buildings">
+                    The presidential palace of Chile, La Moneda, is an iconic building that stands as a symbol of the nation's history and political significance, offering guided tours that provide insight into its rich heritage.
+                </div>
+            </div>
+
+
+            <div class="tourist-spot-box" id="craft-fair">
+                <h5>Santa Lucia Craft Fair</h5>
+                <div class="hidden-content">
+                  <p>
+                    Held in the picturesque Santa Lucía Hill park, this craft fair features local artisans showcasing handmade goods, providing a perfect opportunity to experience Chile's vibrant arts and crafts scene.
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="casa-costanera">
+                <h5>Mall Casa Costanera </h5>
+                <div class="hidden-content">
+                  <p>
+                    Located in the Vitacura neighborhood, Mall Casa Costanera offers a luxurious shopping experience with a variety of high-end retailers, gourmet dining options, and panoramic city views from its rooftop.
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="cultural-encounters">
+          <h4>Cultural Encounters</h4>
+          <p>
+            From its vibrant nightlife to its traditional customs, the city offers a rich cultural experience that embraces its deep-rooted traditions while pushing the boundaries of modernity.        </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="party">
+              <h5>Vibrant Nightlife in Bellavista</h5>
+              <div class="hidden-content">
+                <p>
+                    The Bellavista neighborhood is Santiago's premier nightlife district, offering a variety of bars, nightclubs, and live music venues that come alive after sunset. 
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="cueca">
+              <h5>Cueca Dance Performances</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    Experience Chile's national dance, the Cueca, characterized by lively footwork and colorful handkerchiefs, reflecting the country's rich cultural heritage. 
+
+                </p>
+              </div>
+            </div>
+
+
+            <div class="tourist-spot-box" id="cuisne">
+              <h5>Traditional Chilean Cuisine</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    Indulge in Santiago's culinary delights, from classic dishes like empanadas and pastel de choclo to innovative fusion cuisine, showcasing the city's gastronomic diversity.
+                </p>
+              </div>
+            </div>
+           
+          
+
+
+          
+             
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="gastronomic-delights">
+          <h4>Gastronomic Delights</h4>
+          <p>
+            ​Santiago's dynamic culinary scene melds Italian, Spanish, and indigenous influences, offering everything from traditional Chilean dishes like pastel de choclo and cazuela to innovative fusion cuisine in both casual eateries and upscale restaurants. *All can be veganized or vegetarianized.*         
+             <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="to eat">
+              <h5>To Eat</h5>
+              <div class="hidden-content">
+                <p>
+                
+                    <ul>
+                        <li><strong>Completos:</strong> 
+                            A Chilean twist on the classic hot dog, the completo is a hearty sandwich featuring a sausage nestled in a soft roll, generously topped with mashed avocado, diced tomatoes, mayonnaise, and sauerkraut. The 'Completo Italiano' variant adds tomato to represent the colors of the Italian flag.
+                        </li>
+                        <li><strong>Chorrillanas:</strong>
+                           
+                            Originating from Valparaíso but beloved in Santiago, chorrillana is a filling platter of crispy French fries topped with sautéed onions, tender beef slices, and fried eggs. It's a popular choice for sharing among friends, especially during late-night gatherings. 
+                        </li>
+                        <li><strong>Sopaipillas:</strong>
+                            Fried dough pastries that are crispy on the outside and soft inside, sopaipillas are often enjoyed with pebre (a Chilean condiment) or chancaca (a sweet syrup made from raw sugar). 
+                        </li>
+                        <li><strong>Empanadas de Pino:</strong>
+                            These savory pastries are filled with a mixture of seasoned beef, onions, olives, hard-boiled eggs, and raisins, all encased in a flaky dough. They are a staple at any Chilean gathering. 
+                        </li>
+                       
+                    </ul>
+                     
+                
+
+                </p>
+              </div>
+            </div>
+
+
+
+
+            <div class="tourist-spot-box" id="restaurants">
+              <h5>Restaurants</h5>
+              <div class="hidden-content">
+                <p>
+                
+                    <ul>
+                        <li>Fuente Rica Rica
+                        </li>
+  
+                        <li>Catapilcana Vegana
+                        </li>
+                        <li>Holy Bao
+                        </li>
+                        <li>Banchan Nara
+                        </li>
+                        <li>Dominó
+                        </li>
+                        <li>Pandería Fufu Bakery
+                        </li>
+                       
+                      </ul>
+                </p>
+              </div>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="where-to-stay">
+          <h4>Where to Stay</h4>
+          <p>
+            ​Santiago de Chile offers a diverse range of accommodations, from historic boutique hotels in the bohemian Bellavista neighborhood to luxurious modern stays in the upscale Vitacura district, ensuring travelers experience both cultural charm and contemporary comfort.          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="chimba-hostel">
+              <h5>La Chimba Hostel</h5>
+              <div class="hidden-content">
+                <p>
+                    La Chimba Hostel is a vibrant and sociable accommodation located in the heart of Santiago. It's an excellent choice for budget travelers seeking a lively atmosphere, offering modern amenities and easy access to local attractions.
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="bellavista">
+              <h5>Barrio Bellavista</h5>
+              <div class="hidden-content">
+                <p>
+                    Renowned for its bohemian vibe, Barrio Bellavista is Santiago's nightlife hub, featuring numerous bars, restaurants, and live music venues. It's also home to cultural landmarks like La Chascona, one of Pablo Neruda's former residences. 
+
+                </p>
+              </div>
+            </div>
+
+            <div class="tourist-spot-box" id="lastarria">
+              <h5>Barrio Lastarria</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    Situated near cultural institutions, Barrio Lastarria offers a blend of historic charm and modern amenities. Visitors can enjoy art galleries, theaters, and a variety of dining options in this vibrant neighborhood. 
+
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="tourist-spot-box" id="italia">
+                <h5>Barrio Italia</h5>
+                <div class="hidden-content">
+                  
+                  <p>
+                    Known for its bohemian atmosphere, Barrio Italia is filled with antique shops, design stores, and cozy cafes. It's an ideal spot for travelers interested in art, design, and culinary experiences. 
+  
+                  </p>
+                </div>
+              </div>
+
+
+
+        
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="souvenir-ideas">
+          <h4>Souvenir Ideas</h4>
+          <p>
+            Things to remember Santiago by:              
+            <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="lapis-lazuli-jewelry">
+              <h5>Lapis Lazuli Jewelry</h5>
+              <div class="hidden-content">
+                <p>
+                    Lapis lazuli, a deep-blue semi-precious stone, is native to Chile and Afghanistan. In Santiago, you can find a variety of jewelry pieces, such as necklaces, earrings, and bracelets, crafted from this beautiful stone. 
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="greda-pottery">
+              <h5>Mapuche Textiles</h5>
+              
+              <div class="hidden-content">
+                
+                <p>
+                    Greda refers to handmade clay pottery, traditionally used for cooking. Items such as bowls, plates, and cooking pots are crafted from this durable material, enhancing the flavors of Chilean cuisine. 
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="pablo-neruda-books">
+              <h5>Pablo Neruda Poetry Books</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    As the birthplace of Nobel laureates Pablo Neruda and Gabriela Mistral, Chile offers a rich literary heritage. Acquiring a collection of Neruda's poetry provides insight into the nation's soul. 
+
+                </p>
+              </div>
+            </div>
+            
+
+          
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="staying-safe">
+          <h4>Staying Safe</h4>
+          <p>
+            To do:
+          </p>
+          <p>
+            1: Have Fun 
+          </p>
+          <p>
+            2: Stay Safe
+          </p>  
+
+            <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="phone-safety">
+              <h5>Phone Safety</h5>
+              <div class="hidden-content">
+                <p>
+                  
+                    <ul>
+                        <li><strong>Keep Your Phone Secure:</strong> Petty theft is common in busy areas like tourist attractions and public transport. Avoid using your phone in crowded spaces and always keep it in a secure pocket or bag. Consider using a phone pouch that’s hard to access from the outside.</li>
+                        <li><strong>Avoid Flashy Displays of Wealth:</strong> Buenos Aires is a vibrant city, but like many large cities, it’s important to be discreet. Avoid flaunting expensive jewelry, high-end cameras, or large amounts of cash. Keep a low profile to minimize attention and reduce the risk of theft.</li>
+                    </ul>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="tourist-spot-box" id="avoid-demonstrations">
+              <h5>Avoid Demonstrations</h5>
+              <div class="hidden-content">
+                <p>
+                    Chile has experienced demonstrations that can disrupt transportation and pose safety risks. It's advisable to avoid demonstrations and follow the instructions of local authorities, including movement restrictions and curfews.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="tourist-spot-box" id="natural-disasters">
+                <h5>Be Prepared for Natural Disasters</h5>
+                <div class="hidden-content">
+                  <p>
+                    Chile is located in a highly active seismic zone, and earthquakes are relatively common. Familiarize yourself with safety or evacuation procedures at your accommodation. 
+                  </p>
+                </div>
+              </div>
+
+
+          
+
+
+
+
+            <div class="tourist-spot-box" id="informed-prepared">
+                <h5>Stay Informed and Prepared</h5>
+                <div class="hidden-content">
+                  <p>
+                    <ul>
+                      <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate.</li>
+                      <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+
+           
+
+
+
+            <div class="tourist-spot-box" id="embassy">
+              <h5>Embassy and Contact Information</h5>
+              <div class="hidden-content">
+                <p>
+                    <li><strong>Embassy and Contact Information:</strong>
+                        <ul>
+                            <li><strong>Address:</strong> Av. Andrés Bello 2800, Las Condes, Santiago, Chile</li>
+                            <li><strong>Phone:</strong> +(56-2) 2330-3000</li>
+                            <li><strong>Emergency After-Hours Phone:</strong> +(56-2) 2330-3000</li>
+                            <li><strong>Fax:</strong> +(56-2) 2330-3710</li>
+                            <li><strong>Email:</strong> <a href="mailto:santiagoUSA@state.gov">santiagoUSA@state.gov</a></li>
+                            <li><strong>Website:</strong> <a href="https://cl.usembassy.gov/">U.S. Embassy Santiago</a></li>
+                        </ul>
+                        
+                      </li>
+                </p>
+              </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="info-container">
+          <div class="info-box" id="events">
+            <h4>Tours + Parties</h4>
+            <p>
+              Can't miss events across Santiago:
+            </p>             
+              <div class="tourist-spot-list">
+              <div class="tourist-spot-box" id="strawberry-tours">
+                <h5>Strawberry Tours--Free Walking Tours Santiago</h5>
+                <div class="hidden-content">
+                  <p>
+                <a href="https://strawberrytours.com/santiago" >More Info</a>
+              </p>
+            </div>
+              </div>
+              <div class="tourist-spot-box" id="clubs">
+                <h5>Fraternidad de Cammpus Central & La Facultad Club</h5>
+                <div class="hidden-content">
+                  <p>
+                   <!--- <a href="" >More Info</a> -->
+  
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="day-tour">
+                <h5>Santiago: Vina Del Mar, Valparaiso, Casablanca & Reñaca Tour
+                </h5>
+                <div class="hidden-content">
+                  <p>
+                      <a href="https://www.getyourguide.com/santiago-chile-l226/full-day-tour-to-vina-del-mar-and-valparaiso-renaca-t83961/?ranking_uuid=9fc65f49-cb80-4690-9501-1910a08f6a3f" >More Info</a>
+  
+                  </p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="info-container">
+          <div class="info-box" id="language-container">
+            <h4>Language</h4>
+            <p>
+              Buenasssss:
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Practice</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                            <li><strong>¿Dónde está...?</strong> (Where is...?)</li>
+                            <li><strong>¿Cuánto cuesta?</strong> (How much does it cost?)</li>
+                            <li><strong>No entiendo.</strong> (I don't understand.)</li>
+                            <li><strong>¿Habla inglés?</strong> (Do you speak English?)</li>
+                            <li><strong>¡Buenos días!</strong> (Good morning!)</li>
+                            <li><strong>¡Buenas tardes!</strong> (Good afternoon!)</li>
+                            <li><strong>¡Buenas noches!</strong> (Good evening!)</li>
+                            <li><strong>Gracias</strong> (Thank you)</li>
+                            <li><strong>Por favor</strong> (Please)</li>
+                            <li><strong>De nada</strong> (You're welcome)</li>
+                            <li><strong>Perdón</strong> (Sorry)</li>
+                            
+                        </ul>
+                        
+                        <p><strong>Language Learning Resources:</strong></p>
+                        <ul>
+                            <li><strong>Duolingo:</strong> A free app offering interactive lessons for beginners. [Learn Spanish on Duolingo](https://www.duolingo.com/course/es/en/Learn-Spanish)</li>
+                            <li><strong>Babbel:</strong> Provides practical, real-world oriented lessons focusing on essential phrases. [Learn Spanish with Babbel](https://www.babbel.com/learn-spanish-online)</li>
+                            <li><strong>Rosetta Stone:</strong> Offers immersive language learning with speech-recognition technology. [Learn Spanish with Rosetta Stone](https://www.rosettastone.com/learn-spanish/)</li>
+                        </ul>
+                        
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+
+
+
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+    <!--<h3>Interactive Map  -->
+    
+    <!-- Independent Map Container -->
+    <div class="map-container">
+      <div class="map-wrapper">
+        <div id="map"></div> <!-- Your map here -->
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+    </main>
+
+
+
+
+
+
+    <footer>
+
+        <div class="footer-left">
+    
+          <p>WONDERWOMEN</p>
+          <ul>
+            <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+            </li>
+            <li><a href="about.html">About</a>
+            </li>
+            <li><a href="faq.html">FAQ</a>
+            </li>
+            <li><a href="travelsuggestions.html">Where next?</a>
+            </li>
+          </ul>
+        </div>
+    
+    
+    
+        <div class="footer-center">
+          <p>&copy; 2025 WANDERWOMEN</p>
+          <p>Website created with HTML, CSS, and JavaScript</p>
+        </div>
+    
+      
+       
+    
+    
+        <div class="footer-right">
+          <p>DESTINATIONS</p>
+          
+            <ul>
+              <li><a href="africa.html">Africa</a></li>
+              <li><a href="asia.html">Asia</a></li>
+              <li><a href="australia.html">Australia</a></li>
+              <li><a href="europe.html">Europe</a></li>
+            <li><a href="northamerica.html">North America</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+              
+            </ul>
+          
+        </div>
+      </footer>
+    
+    
+    
+    
+    
+    
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      
+      <script>
+        // Initialize the map
+    
+        
+    var map = L.map('map').setView([-33.4489, -70.6693], 13);  // Coordinates for Santiago, Chile
+    
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    
+    // Add markers for important locations
+    var cerroSantaLucia = L.marker([-33.4378, -70.6483]).addTo(map);
+    cerroSantaLucia.bindPopup("<b>Cerro Santa Lucía</b><br>Un parque histórico en el corazón de Santiago, con vistas panorámicas de la ciudad.");
+    
+    var barrioLastarria = L.marker([-33.4363, -70.6452]).addTo(map);
+    barrioLastarria.bindPopup("<b>Barrio Lastarria</b><br>Un barrio bohemio y cultural, conocido por sus cafés, teatros y galerías.");
+    
+    var museoMemoriaDerechosHumanos = L.marker([-33.4679, -70.6483]).addTo(map);
+    museoMemoriaDerechosHumanos.bindPopup("<b>Museo de la Memoria y los Derechos Humanos</b><br>Un museo dedicado a la memoria de las víctimas de violaciones a los derechos humanos durante la dictadura.");
+    
+    var catedralMetropolitana = L.marker([-33.4372, -70.6473]).addTo(map);
+    catedralMetropolitana.bindPopup("<b>Catedral Metropolitana de Santiago</b><br>Una de las principales iglesias de la ciudad, ubicada en la Plaza de Armas.");
+    
+    var cerroSanCristobal = L.marker([-33.4374, -70.6439]).addTo(map);
+    cerroSanCristobal.bindPopup("<b>Cerro San Cristóbal</b><br>Un gran cerro en Santiago, conocido por su santuario y vistas espectaculares de la ciudad.");
+
+
+
+      // Optionally, add a circle marker to indicate a location
+     
+  
+    L.circle([-33.4489, -70.6693], {
+      color: 'green',
+      radius: 500
+    }).addTo(map).bindPopup("This is the center of Santiago!");
+      </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
+      //this js is so that the mini boxes can open indivudlaly
+      $(document).ready(function() {
+        // Toggle the 'expanded' class for each tourist spot box when clicked
+        $('.tourist-spot-box').click(function() {
+          $(this).toggleClass('expanded');
+        });
+      });
+      
+      </script>
+    
+      
+    </body>
+    </html>

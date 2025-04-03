@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>AREQUIPA Guide</h3>
+      <h6>Stay for the queso helado</h6>
+      
+        <!-- Container for Images -->
+        <div class="arequipaimage-container">
+          <!-- Left image -->
+          <div class="arequipa-guide-image-container">
+            <img src="assets/aremisit.jpg" alt="El misti">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-arequipa-images">
+            <!-- Top right image -->
+            <div class="arequipa-guide-2-image-container">
+              <img src="assets/arearch.jpg" alt="Arches of Arequipa">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="arequipa-guide-3-image-container">
+              <img src="assets/arewhitebuikd.jpg" alt="White Building in Arequipa">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+
+      <section class="city-info">
+
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Arequipa: The White City of Peru.      
+         </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="santa-catalina">
+              <h5>Monasterio de Santa Catalina</h5>
+              <div class="hidden-content">
+                <img src="assets/aremonastery.jpeg" alt="Monasterio de Santa Catalina">
+                <p>
+                    A masterpiece of colonial architecture, this monastery is a large complex of rooms, picturesque plazas, ornate fountains, and a maze of narrow, cobblestone streets. 
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="plaza-de-armas">
+              <h5>Plaza de Armas</h5>
+              <div class="hidden-content">
+                <img src="assets/aresquare.jpeg" alt="Plaza de armas">
+                <p>
+                    The main square of Arequipa, surrounded by historic buildings made from white volcanic stone, reflecting the city's nickname, "The White City." 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="misti-volcano">
+              <h5>Volcán Misti</h5>
+              <div class="hidden-content">
+                <img src="assets/areelmisti.jpeg" alt="El Misti">
+                <p>
+                    An iconic 5,822-meter (19,101-foot) active volcano that offers trekking opportunities with panoramic views of Arequipa. 
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="yanahuara-viewpoint">
+              <h5>Yanahuara Viewpoint</h5>
+              <div class="hidden-content">
+                
+                <p>
+                    A scenic spot offering panoramic views of Arequipa and its surrounding volcanoes, framed by traditional sillar arches. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="colca-canyon">
+              <h5>Colca Canyon</h5>
+              <div class="hidden-content">
+                <img src="assets/arecolca.jpeg" alt="Colca Canyon">
+                <p>
+                    One of the deepest canyons in the world, known for its breathtaking scenery and as a habitat for the Andean condor. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="basilica-cathedral">
+                <h5>Basilica Cathedral of Arequipa</h5>
+                <div class="hidden-content">
+                  <img src="assets/arebasilica.jpg" alt="Basilica Cathedral of Arequipa">
+                  <p>
+                    Situated on the Plaza de Armas, this imposing cathedral is renowned for its construction in white ashlar stone and its magnificent size. Visitors can explore its interior, which houses art and jewels from the early era.                
+      
+                  </p>
+                </div>
+              </div>
+    
+    
+            
+            
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+    <!--change this to include soemthing about guris for hidden gems-->
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                    Discover Arequipa's lesser-known attractions that showcase its rich history, culture, and natural beauty beyond the typical tourist paths.
+                </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="mundo-aplaca">
+                    <h5>Mundo Alpaca Arequipa</h5>
+                    <div class="hidden-content">
+                      <p>
+                        This attraction provides visitors with the opportunity to learn about alpacas, their significance in Peruvian culture, and the process of transforming alpaca wool into textiles.                 </p>
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="arequipa-museum">
+                    <h5>Arequipa Museum</h5>
+                    <div class="hidden-content">
+                      <p>
+                        This museum houses a collection of artifacts, including the famous Juanita Mummy, offering insights into the region's pre-Columbian history. 
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="sillar-route">
+                    <h5>Sillar Route</h5>
+                    <div class="hidden-content">
+                      <img src="assets/aresillar.jpeg" alt="Sillar Route">
+                  
+                      <p>
+                        A route showcasing the extraction and carving of sillar, the white volcanic stone used in Arequipa's architecture. 
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="torres-de-cayma">
+                    <h5>Torres de Cayma</h5>
+                    <div class="hidden-content">
+                      <p>
+                        A historic district known for its colonial-era architecture and panoramic views of the city and surrounding volcanoes. 
+                    </p>
+                    </div>
+                  </div>
+
+                  <div class="tourist-spot-box" id="san-camilo">
+                    <h5>San Camilo Market</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located just south of the Plaza de Armas, this bustling market offers a sensory feast with vendors selling fresh produce, arts, crafts, and a variety of local street foods. It's an excellent spot to immerse yourself in local culture and cuisine.               
+                    </p>
+                    </div>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    <!--prayers-->
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Arequipa, often referred to as the "White City," is a place where indigenous traditions blend seamlessly with Spanish influences, creating a unique cultural tapestry that permeates language, commerce, religion, attire, and festivals.
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Language</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Spanish is the predominant language spoken in Arequipa. However, indigenous languages like Quechua are also prevalent, especially in rural areas. This linguistic diversity reflects the region's rich history and multicultural heritage.
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="shopping">
+                  <h5>Shopping</h5>
+                  <div class="hidden-content">
+                    <img src="assets/areshopping.jpeg" alt="Streets of Arequipa">
+                    <p>
+                        Arequipa's markets, such as Mercado San Camilo, are bustling centers of commerce where vendors sell a variety of goods, including traditional textiles, pottery, and jewelry. The city is also famous for its "picanterías," traditional eateries serving spicy local dishes. These establishments have been recognized as Cultural Heritage of the Nation. 
+
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="sunshine">
+                  <h5>Sunshine in Arequipas</h5>
+                  <div class="hidden-content">
+               
+                    <p>
+                        Arequipa, Peru, is renowned for its abundant sunshine, boasting approximately 300 sunny days each year,  which equates to about 82% of the year. This consistent sunlight contributes to the city's vibrant atmosphere and is ideal for outdoor activities and exploration.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tourist-spot-box" id="natural-beauty">
+                  <h5>Natural Beauty</h5>
+                  <div class="hidden-content">
+                    <img src="assets/arenatural.jpeg" alt="Mountain, Flag, & Basilica of Arequipa">
+                    <p>
+                        Surrounded by volcanoes like El Misti and Chachani, Arequipa offers breathtaking natural landscapes, including the Colca Canyon, one of the deepest canyons in the world, providing opportunities for trekking and wildlife observation.
+    
+                    </p>
+                  </div>
+                </div>
+                 
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                Delight in Arequipa's rich culinary scene, where traditional flavors and unique dishes await. *All can be veganized or vegetarianized.*
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li><strong>Rocoto Relleno:</strong>
+                          
+                              A spicy stuffed pepper made from rocoto peppers native to the region, filled with a mixture of meat, butter, cream, and pecans, topped with melted cheese. 
+                            </li>
+                            <li><strong>Chupe de Camarones:</strong>
+                            
+                              A flavorful shrimp chowder combining shrimp, potatoes, corn, and a variety of spices, often enjoyed as a hearty soup. 
+                            </li>
+                            <li><strong>Adobo Arequipeño:</strong>
+                           
+                              A traditional pork stew marinated in chicha (fermented corn beverage) and spices, then slow-cooked to tender perfection.
+                            </li>
+                            <li><strong>Queso Helado:</strong>
+                             
+                              Despite its name meaning 'frozen cheese,' this sweet treat is made from milk, coconut, vanilla, cloves, and cinnamon, offering a refreshing end to any meal. 
+                            </li>
+                            <li><strong>Cuy Chactado:</strong>
+                            
+                              A traditional dish featuring guinea pig, seasoned and fried until crispy, commonly served with potatoes and salad. 
+                            </li>
+                            <li><strong>Coca Tea (Mate de Coca):</strong>
+                                <img src="assets/aremate.jpg" alt="Coca Tea Leaves">
+                                An herbal infusion made from coca leaves, traditionally used to alleviate altitude sickness and aid digestion.
+                              </li>
+                              <li><strong>Inca Kola:</strong>
+                                
+                                A sweet, bright yellow soda often referred to as 'Peru's national drink,' known for its unique flavor.
+                              </li>
+                          </ul>
+                        
+                         
+                    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li>Lounge del Brujo
+                            </li>
+      
+                            <li>Satiba Therapy
+                            </li>
+                            <li>Kafi Wasi Cafe
+                            </li>
+                            <li>Prana Veagn Club
+                            </li>
+                            <li>Eco Brunch</li>
+                            
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                Explore Arequipa's diverse neighborhoods, each offering a unique blend of history, culture, and ambiance.
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="vallecito">
+                    <h5>Vallecito</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located just south of the Plaza de Armas, Vallecito is a peaceful neighborhood known for its historic and artistic vibe. It's within walking distance to the main square, making it convenient for tourists. 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="yanahuara">
+                    <h5>Yanahuara</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Situated northwest of the city center, Yanahuara offers tranquil streets and panoramic views of Arequipa. It's famous for its iconic viewpoint and colonial-era architecture. 
+                      </p>
+                    </div>
+                  </div>
+    
+                
+    
+    
+    
+                <div class="tourist-spot-box" id="historical-center">
+                    <h5>Historical Center</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Staying in the heart of Arequipa means being surrounded by colonial architecture, bustling markets, and vibrant street life. The Plaza de Armas is the main hub, offering easy access to various attractions.
+                      </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>Things to remember Arequipa by:</p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="alpaca-clothing">
+                  <h5>Alpaca Clothing</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Arequipa offers a variety of alpaca wool garments, including sweaters, hats, scarves, and blankets. These items are lightweight, hypoallergenic, and warm, making them both practical and luxurious souvenirs.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="chullo-hats">
+                  <h5>Chullo Hats</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Traditional Peruvian chullo hats, characterized by earflaps, are made from alpaca or sheep wool. They are practical accessories for cooler climates and reflect the region's cultural heritage.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="ceramics">
+                  <h5>Hand-Painted Ceramics</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Colorful hand-painted ceramic items, such as bowls and figurines, are popular souvenirs in Arequipa. These pieces often feature traditional designs and vibrant colors, showcasing local artistry.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="silver-jewelry">
+                  <h5>Silver Jewelry</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Arequipa is known for its high-quality silver jewelry, including necklaces, bracelets, and earrings. These pieces often incorporate traditional designs and local gemstones, making them unique keepsakes.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="superfoods-herbs">
+                    <h5>Superfoods and Herbs</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Arequipa's markets offer a variety of native superfoods and herbs, including maca powder, quinoa, and coca leaves. These items are popular for their health benefits and make unique culinary souvenirs.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+
+                  <div class="tourist-spot-list">
+                    <div class="tourist-spot-box" id="food-drinks">
+                      <h5>Exercise Caution with Food and Drink</h5>
+                      <div class="hidden-content">
+                        <p>
+                          <ul>
+                            <li><strong>Choose Reputable Eateries:</strong>
+                              Opt for dining at well-established restaurants or those recommended by trusted sources to minimize the risk of foodborne illnesses.
+                            </li>
+                            <li><strong>Be Careful with Street Food:</strong>
+                              While street food is a significant part of Arequipa's culture, ensure that the food is prepared in hygienic conditions to avoid health issues.
+                            </li>
+                            <li><strong>Drink Bottled Water:</strong>
+                              To prevent waterborne illnesses, it's advisable to consume bottled water and avoid ice in drinks.
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+              
+                    <div class="tourist-spot-box" id="personal-safety">
+                      <h5>Be Vigilant Against Common Tourist Scams</h5>
+                      <div class="hidden-content">
+                        <p>
+                          <ul>
+                            <li><strong>Stay Alert in Public Areas:</strong>
+                              Petty crime, such as pickpocketing, can occur in crowded places. Keep your belongings secure and be cautious of distractions.
+                            </li>
+                            <li><strong>Use Reputable Transportation Services:</strong>
+                              To avoid potential scams, use registered taxi services or ride-sharing apps, and agree on fares beforehand if meters are not available. 
+                            </li>
+                            <li><strong>Avoid Flashing Valuables:</strong>
+                              Refrain from displaying expensive items like jewelry, cameras, or electronics that might attract unwanted attention. 
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+              
+                    <div class="tourist-spot-box" id="health-safety">
+                      <h5>Prioritize Health and Wellness</h5>
+                      <div class="hidden-content">
+                        <p>
+                          <ul>
+                            <li><strong>Acclimate to the Altitude:</strong>
+                              Arequipa is situated at 2,335 meters (7,661 feet) above sea level. To prevent altitude sickness, take it easy for the first day, stay hydrated, and consider drinking coca tea, which is traditionally used to alleviate symptoms. 
+                            </li>
+                            <li><strong>Stay Hydrated:</strong>
+                              The high altitude can lead to dehydration. Drink plenty of water throughout the day.
+                            </li>
+                            <li><strong>Be Cautious with Alcohol and Smoking:</strong>
+                              Both can exacerbate altitude sickness. It's advisable to avoid alcohol and smoking, especially during the initial days of your visit.
+                            </li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+              
+                  
+              
+              
+    
+    
+                
+    
+           
+    
+    
+                <div class="tourist-spot-box" id="transportation-safety">
+                  <h5>Transportation Safety</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Use Reputable Ride-Sharing Services:</strong> When traveling by car, use reputable ride-sharing apps like Uber or 99. Avoid accepting rides from unmarked vehicles or unsolicited offers.
+                        <li><strong>Be Cautious with Taxi Services:</strong> If using taxis, ensure they are registered and use the meter. Agree on the fare beforehand if the meter is not available.
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+               
+                <div class="tourist-spot-box" id="informed-prepared">
+                    <h5>Stay Informed and Prepared</h5>
+                    <div class="hidden-content">
+                      <p>
+                        <ul>
+                          <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate.</li>
+                          <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                            <ul>
+                              <li><strong>Address:</strong>    Avenida La Encalada cdra. 17 s/n
+                                Surco, Lima 33
+                                Peru</li>
+                              <li><strong>Phone:</strong> +51 (1) 618-2000</li>
+                              <li><strong>Emergency After-Hours Phone:</strong> +51 (1) 618-2000</li>
+                              <li><strong>Fax:</strong> +51 (1) 618-2724</li>
+                              <li><strong>Email:</strong> <a href="mailto:LimaACS@state.gov">LimaACS@state.gov</a></li>
+                              <li><strong>Website:</strong> <a href="https://pe.usembassy.gov/">U.S. Embassy Lima</a></li>
+                              <li><strong>Travel Information:</strong> <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Peru.html">U.S. Department of State: Peru Travel Information</a></li>
+                            </ul>
+                          </li>
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+              </div>
+            </div>
+          
+    
+    
+    
+    
+    
+ 
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across Arequipa:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="shopping-tour">
+                  <h5>Sillar Route in Arequipa and viewpoint of the Volcanoes
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.viator.com/tours/Arequipa/Sillar-Route-half-Day-in-Arequipa/d5020-198838P6" >More Info</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="tourist-spot-box" id="delhi-tour">
+                  <h5>Colca Full Day Tour
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.viator.com/tours/Arequipa/Colca-Full-Day-Tour/d5020-75388P2" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="taj-agra">
+                  <h5>Free Tour Arequipa</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://freetourperu.com/product/free-tour-arequipa/" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+              <!--include more bars that i liked -->
+    
+    
+    
+    
+    
+    
+              <div class="info-container">
+                <div class="info-box" id="souvenir-ideas">
+                  <h4>Language</h4>
+                  <p>
+                    ¿No hablas??? Español es el idioma oficial::            
+                    <div class="tourist-spot-list">
+                    <div class="tourist-spot-box" id="language">
+                      <h5>Practice</h5>
+                      <div class="hidden-content">
+                        <p>
+                            <ul>
+                                <li><strong>¿Dónde está...?</strong> (Where is...?)</li>
+                                <li><strong>¿Cuánto cuesta?</strong> (How much does it cost?)</li>
+                                <li><strong>No entiendo.</strong> (I don't understand.)</li>
+                                <li><strong>¿Habla inglés?</strong> (Do you speak English?)</li>
+                                <li><strong>¡Buenos días!</strong> (Good morning!)</li>
+                                <li><strong>¡Buenas tardes!</strong> (Good afternoon!)</li>
+                                <li><strong>¡Buenas noches!</strong> (Good evening!)</li>
+                                <li><strong>Gracias</strong> (Thank you)</li>
+                                <li><strong>Por favor</strong> (Please)</li>
+                                <li><strong>De nada</strong> (You're welcome)</li>
+                                <li><strong>Perdón</strong> (Excuse me / Sorry)</li>
+                              
+                              <p><strong>Language Learning Resources:</strong></p>
+                                  <li><strong>Duolingo:</strong> A free app to learn Spanish with interactive lessons. [Learn Spanish on Duolingo](https://www.duolingo.com/course/es/en/Learn-Spanish)</li>
+                                  <li><strong>Memrise:</strong> A free platform with courses in Spanish, focusing on vocabulary and pronunciation. [Learn Spanish with Memrise](https://www.memrise.com/course/2021572/spanish-1/)</li>
+                                  <li><strong>Rosetta Stone:</strong> Offers comprehensive Spanish courses with immersive learning methods. [Learn Spanish with Rosetta Stone](https://www.rosettastone.com/learn-spanish/)</li>
+                                  <li><strong>Busuu:</strong> A free language learning app that helps with speaking, listening, and reading Spanish. [Learn Spanish with Busuu](https://www.busuu.com/en)</li>
+                                </ul>
+                        </p>
+                      </div>
+                    </div>
+                   
+        
+                  </div>
+                </div>
+              </div>
+                   
+              
+                
+                                
+                        
+    
+    
+               
+    
+    
+    
+                    </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map of Rio de Janeiro</h3> -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([-16.3992342, -71.5370862], 14);  // Coordinates for Rio de Janeiro
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add markers for important locations
+    var santaMonastery = L.marker([-16.3984, -71.5356]).addTo(map);
+  santaMonastery.bindPopup("<b>Monasterio de Santa Catalina</b><br>A historic convent that is a maze of narrow streets, plazas, and courtyards, rich in history and culture.");
+
+  var plazaDeArmas = L.marker([-16.4097, -71.7223]).addTo(map);
+  plazaDeArmas.bindPopup("<b>Plaza de Armas</b><br>The central square of Arequipa, surrounded by colonial architecture, and a vibrant spot for locals and tourists alike.");
+
+  var elMisti = L.marker([-16.2550, -71.5375]).addTo(map);
+  elMisti.bindPopup("<b>El Misti Volcano</b><br>A majestic and active volcano that dominates Arequipa's skyline, perfect for hiking and adventure seekers.");
+
+  var yanahuaraView = L.marker([-16.3975, -71.5338]).addTo(map);
+  yanahuaraView.bindPopup("<b>Yanahuara Viewpoint</b><br>A famous spot offering breathtaking views of the city and the majestic El Misti volcano.");
+
+  var colcaCanyon = L.marker([-15.6969, -71.9692]).addTo(map);
+  colcaCanyon.bindPopup("<b>Colca Canyon</b><br>One of the deepest canyons in the world, known for its stunning scenery and the chance to see condors soaring above.");
+
+  var basilicaCathedral = L.marker([-16.3985, -71.5356]).addTo(map);
+  basilicaCathedral.bindPopup("<b>Basilica Cathedral of Arequipa</b><br>A beautiful example of colonial architecture, located at the Plaza de Armas.");
+
+  // Optionally, add a circle marker to indicate a location
+  L.circle([-16.3992342, -71.5370862], {
+    color: 'green',
+    radius: 500
+  }).addTo(map).bindPopup("This is the center of Arequipa!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  //this js is so that the mini boxes can open indivudlaly
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>

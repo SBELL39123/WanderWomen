@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "nodemailer": "^6.10.0",
+    "serverless-http": "^3.2.0"
+  },
+  "name": "wanderwomen",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBELL39123/WanderWomen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SBELL39123/WanderWomen/issues"
+  },
+  "homepage": "https://github.com/SBELL39123/WanderWomen#readme",
+  "description": "**WanderWomen** is your go-to travel guide website designed specifically for solo female travelers. Whether you're looking for inspiration, itineraries, or helpful resources to navigate your solo journey, WanderWomen has everything you need to explore the world confidently."
+}

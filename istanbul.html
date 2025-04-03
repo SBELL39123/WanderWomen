@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>ISTANBUL Guide</h3>
+      <h6>The city itself is a Turkish Delight</h6>
+      
+        <!-- Container for Images -->
+        <div class="istanbulimage-container">
+          <!-- Left image -->
+          <div class="istanbul-guide-image-container">
+            <img src="assets/istanbulguideimage1.jpg" alt="Popular Turkish Building">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-istanbul-images">
+            <!-- Top right image -->
+            <div class="istanbul-guide-2-image-container">
+              <img src="assets/istanbulguideimage2.jpg" alt="Vendor">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="istanbul-guide-3-image-container">
+              <img src="assets/istanbulguideimage3.jpg" alt="Coloful Houses">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+
+
+      <section class="city-info">
+
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Discover Istanbul's rich history and vibrant culture through its iconic landmarks.
+  
+         </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="grand-bazaar">
+              <h5>Grand Bazaar</h5>
+              <div class="hidden-content">
+                <img src="assets/istangrand.jpg" alt="Grand Bazaar">
+                <p>
+                    One of the world's largest and oldest covered markets, offering a labyrinth of shops selling everything from spices to jewelry. It's a shopper's paradise and a cultural experience. 
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="blue-mosque">
+              <h5>The Blue Mosque</h5>
+              <div class="hidden-content">
+                <img src="assets/istanblue.jpg" alt="Blue Mosque">
+                <p>
+                    Officially known as the Sultan Ahmed Mosque, this 17th-century architectural marvel is renowned for its six minarets and stunning blue Iznik tiles adorning its interior. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="hagia-sofia">
+              <h5>Hagia Sofia Grand Mosque</h5>
+              <div class="hidden-content">
+                <img src="assets/istanhagia.jpg" alt="Hagia Sofia">
+                <p>
+                    A masterpiece of Byzantine architecture, Hagia Sophia has served as a church, mosque, and museum, reflecting Istanbul's diverse cultural heritage. 
+ 
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="basilica-cistern">
+              <h5>Basilica Cistern</h5>
+              <div class="hidden-content">
+                <img src="assets/istancistern.jpg" alt="Basilica Cistern">
+                
+                <p>
+                    An ancient underground water reservoir featuring a forest of columns and a serene atmosphere, offering a unique glimpse into the city's engineering prowess. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="topkapi">
+              <h5>Topkapi Palace Museum</h5>
+              <div class="hidden-content">
+               
+                <p>
+                    The former palace of Ottoman sultans, now a museum showcasing imperial collections, including the famous Topkapi Dagger and the Spoonmaker's Diamond. 
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="sultanahmet">
+                <h5>Sultanahmet Square</h5>
+                <div class="hidden-content">
+                    <img src="assets/istansquare.jpg" alt="Sultananhmet Square">
+                  
+                  <p>
+                    The heart of Istanbul's historic district, surrounded by major landmarks and offering a lively atmosphere with cafes and shops. It's a great starting point for exploring the city's rich history. 
+      
+                  </p>
+                </div>
+              </div>
+    
+    
+            
+            
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+ 
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                    Not-so touristy places on the European and Asian side.                
+                  </p>
+                <div class="tourist-spot-list">
+                  <div class="tourist-spot-box" id="anadolu">
+                    <h5>Anadolu Kavağı</h5>
+                    <div class="hidden-content">
+                        <img src="assets/istananadolu.jpg" alt="Anadolu ">
+                      <p>
+                        A picturesque fishing village on Istanbul's Asian shore, offering fresh seafood restaurants and panoramic views of the Bosphorus from its hilltop castle.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="hammam">
+                    <h5>Hammam</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Immerse yourself in Istanbul's rich bathing culture by visiting these historic hammams, each offering a unique and rejuvenating experience.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="hill">
+                    <h5>Çamlica Hill</h5>
+                    <div class="hidden-content">
+                      
+                  
+                      <p>
+                        The highest point in Istanbul, offering panoramic views of the city and the Bosphorus, surrounded by a large public park perfect for picnics and relaxation.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="obelisk">
+                    <h5>Obelisk of Theodosius</h5>
+                    <div class="hidden-content">
+                      <p>
+                        An ancient Egyptian obelisk located in Sultanahmet Square, dating back to the 4th century AD, showcasing intricate carvings and historical inscriptions.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="pudding-shop">
+                    <h5>Pudding Shop Lale: Hippie Trail</h5>
+                    <div class="hidden-content">
+                      <p>
+                        ​The Pudding Shop, officially Lale Restaurant, became a central meeting point for travelers on the 1960s and 1970s Hippie Trail, offering traditional Turkish desserts like Tavuk Göğsü.                     </p>
+                    </div>
+                  </div>
+
+                 
+    
+                </div>
+              </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Istanbul, a city where East meets West, boasts a rich tapestry of cultures, blending Byzantine and Ottoman influences with vibrant contemporary arts, fashion, and culinary scenes.
+            </p>
+            <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="crafts">
+                  <h5>Traditional Crafts</h5>
+                  <div class="hidden-content">
+                    <img src="assets/istancrafts.jpg" alt="Lights at market">
+                    <p>
+                        Explore Istanbul's rich tradition of craftsmanship, including ceramics, mosaics, and the art of ceramic evil eye amulets. Engage in hands-on workshops to create your own piece of this cultural heritage. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="religious-diversity">
+                  <h5>Religious Diversity</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Istanbul's rich history as a former capital of both the Byzantine and Ottoman empires has fostered a diverse religious landscape. The city is predominantly Muslim, with numerous mosques such as the iconic Blue Mosque gracing its skyline. However, Istanbul also hosts communities practicing Christianity and Judaism, contributing to its multicultural identity. This blend of religious traditions is evident in the city's festivals, rituals, and daily life, offering visitors a glimpse into its complex spiritual heritage.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="culinary-delights">
+                  <h5>Culinary Delights</h5>
+                  <div class="hidden-content">
+                    
+                    <p>
+                        Istanbul's culinary scene is a fusion of Middle Eastern, Mediterranean, and Balkan flavors. From street food like simit and dürüm to fine dining, the city offers a gastronomic journey for every palate.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="cultural-practice">
+                  <h5>Cultural Practices</h5>
+                  <div class="hidden-content">
+                    
+                    <p>
+
+                        Traditional practices such as communal bathing in hammams play a significant role in Istanbul's social life. These baths, like the historic Zeyrek Çinili Hamam, offer not only physical cleansing but also foster community bonds, providing emotional benefits and a sense of belonging.  
+                    </p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+             
+            
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                A harmonious fusion of diverse cultures, with rich Ottoman heritage meeting modern tastes, creating a vibrant food scene that spans from street food stalls to fine dining. *All can be veganized or vegetarianized.*
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li><strong>Kebabs:</strong>
+                                <p>Grilled meats, often lamb or chicken, served with rice or flatbread and a side of vegetables, are a staple of Turkish cuisine, showcasing the bold flavors of the region.</p>
+                            </li>
+                            <li><strong>Meze:</strong>
+                                <p>A selection of small dishes that can include dips, salads, and cold appetizers, offering a variety of flavors such as hummus, baba ganoush, and tzatziki.</p>
+                            </li>
+                            <li><strong>Baklava:</strong>
+                                <img src="assets/istanbaklava.jpg" alt="Baklava">
+                                <p>A sweet pastry made of layers of filo dough filled with ground nuts and sweetened with syrup or honey, perfect for those with a sweet tooth.</p>
+                            </li>
+                            
+                            <li><strong>Turkish Delight (Lokums):</strong>
+                                <img src="assets/istanturkishdelight.jpg" alt="Turkish Delights">
+                                <p>A soft, chewy confectionery flavored with rosewater, lemon, or pomegranate, often dusted with powdered sugar, a perfect treat to enjoy with Turkish coffee.</p>
+                            </li>
+                            <li><strong>Roasted Chestnuts (Kestane):</strong>
+                                <img src="assets/istanchestnuts.jpg" alt="Chestnuts">
+                                <p>A popular street snack, especially during the cooler months, where chestnuts are roasted over hot coals, offering a warm and nutty flavor. Vendors can be found throughout Istanbul, particularly in busy areas like Istiklal Street. [Discover more about Istanbul's roasted chestnuts](https://thegaboronerunner.com/2024/06/25/three-iconic-street-foods-in-istanbul-gluten-free-diaries/)</p>
+                            </li>
+                            <li><strong>Dolma:</strong>
+                                <p>Vegetables such as grape leaves, peppers, or zucchinis stuffed with a mixture of rice, pine nuts, and herbs, offering a delightful blend of flavors.</p>
+                            </li>
+                            <li><strong>Hummus:</strong>
+                                <p>A creamy blend of mashed chickpeas, tahini, lemon juice, and garlic, commonly served as a dip or spread, reflecting the Middle Eastern influence on Turkish cuisine.</p>
+                            </li>
+                           
+                          </ul>
+                        
+                         
+                    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li>Turkish deliht: Haci Ismail Zade Hafiz Mustafa
+                            </li>
+      
+                            <li>VeganCommunity Kitchen
+                            </li>
+                            <li>Vegan Istanbul Restaurant
+                            </li>
+                            <li>Vegan Dükkan Lokanta</li>
+                            
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                ​Istanbul's neighborhoods, each with its own unique character and charm, collectively contribute to the city's rich and diverse identity.              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="bahaus">
+                    <h5>Bahaus Hostel Otel </h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located in Sultanahmet, Bahaus Guesthouse Hostel offers comfortable dormitories and private rooms, a lively rooftop terrace with panoramic city views, and is within walking distance of major attractions like the Hagia Sophia and Blue Mosque.
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="beyoglu">
+                    <h5>Beyoğlu</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Beyoğlu is renowned for its vibrant nightlife, diverse dining options, and bustling shopping streets. The area around Taksim Square and Istiklal Avenue is especially lively, offering numerous bars, clubs, and entertainment venues. It's also home to cultural sites like the historic Galata Tower. 
+                    </p>
+                    </div>
+                  </div>
+    
+                <div class="tourist-spot-box" id="kadikoy">
+                  <h5>Kadıköy</h5>
+                  <div class="hidden-content">
+                    
+                    <p>
+                        Situated on the Asian side of Istanbul, Kadıköy is known for its youthful atmosphere, lively markets, and a wide array of cafes and bars. The area offers a more laid-back vibe compared to the European side, with a thriving arts scene and a variety of music venues. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="tourist-spot-box" id="fener-balat">
+                    <h5>Fener and Balat</h5>
+                    <div class="hidden-content">
+                      <p>
+                        These neighboring districts offer a glimpse into Istanbul's rich history, with colorful houses, antique shops, and a growing number of cafes and art spaces. The area's unique blend of cultures and histories provides a fascinating backdrop for exploration.
+                    </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>Things to remember Istanbul by:</p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="turkish-towels">
+                  <h5>Turkish Towels (Pestemal)</h5>
+                  <div class="hidden-content">
+              
+                    <p>
+
+                        Lightweight and absorbent, these cotton towels come in various colors and patterns, making them both practical and stylish souvenirs. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="turkish-coffee-sets">
+                  <h5>Turkish Coffee Sets</h5>
+                  <div class="hidden-content">
+                    <img src="assets/istanbulturkishcoffeeset.jpg" alt="Coffee Set">
+                    <p>
+                        Elegant porcelain or copper sets, including a cezve (coffee pot) and demitasse cups, perfect for recreating the authentic Turkish coffee experience at home. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="blue-evil-eyet">
+                  <h5>Blue Evil Eye (Nazar Boncuğu)</h5>
+                  <div class="hidden-content">
+                    <img src="assets/istanevileye.jpg" alt="Evil Eye">
+                    <p>
+                        A traditional amulet believed to protect against negative energy, available in various forms like keychains, jewelry, and wall hangings. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="iznik-ceramics">
+                  <h5>Iznik Ceramics</h5>
+                  <div class="hidden-content">
+                    <img src="assets/istanceramic.jpg" alt="Ceamics">
+                    <p>
+                        Hand-painted pottery featuring intricate floral designs and vibrant colors, reflecting centuries of Turkish craftsmanship. 
+                    </p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+      
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+
+               
+              
+              <div class="tourist-spot-box" id="cultural-respect">
+                <h5>Respecting Local Culture</h5>
+                <div class="hidden-content">
+                  <p>
+                    While Istanbul is cosmopolitan, dressing modestly, especially when visiting religious sites, is appreciated. Women should cover their shoulders and knees, and carry a scarf to cover their head when entering mosques. 
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="common-scams">
+                <h5>Be Aware of Common Scams</h5>
+                <div class="hidden-content">
+                  <p>
+                    Be cautious of scams targeting tourists, such as the gold ring trick or aggressive street vendors. Politely decline offers that seem suspicious. 
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="alcohol-consumption">
+                <h5>Be Cautious with Alcohol Consumption</h5>
+                <div class="hidden-content">
+                  <p>
+                    Be wary of consuming alcohol from unlicensed sources. There have been incidents of counterfeit alcohol leading to serious health issues and fatalities. Stick to reputable establishments for alcoholic beverages.
+                  </p>
+                </div>
+              </div>
+              
+    
+    
+                
+    
+    
+    
+    
+    
+               
+                <div class="tourist-spot-box" id="informed-prepared">
+                    <h5>Stay Informed and Prepared</h5>
+                    <div class="hidden-content">
+                      <p>
+                        <ul>
+                          <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate. </li>
+                          <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                            <ul>
+                                <li><strong>Address:</strong> Poligon Mahallesi, Sarıyer Caddesi No: 75, İstinye 34460, Istanbul, Turkey</li>
+                                <li><strong>Phone:</strong> +90 (212) 335-9000</li>
+                                <li><strong>Emergency After-Hours Phone:</strong> +90 (212) 335-9000</li>
+                                <li><strong>Fax:</strong> +90 (212) 335-9102</li>
+                                <li><strong>Email:</strong> <a href="mailto:istanbul-webmaster@state.gov">istanbul-webmaster@state.gov</a></li>
+                                <li><strong>Website:</strong> <a href="https://tr.usembassy.gov/embassy-consulates/istanbul/">U.S. Consulate General Istanbul</a></li>
+                                <li><strong>Travel Information:</strong> <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Turkey.html">U.S. Department of State: Turkey Travel Information</a></li>
+                              </ul>
+                              
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+              </div>
+            </div>
+          
+    
+    
+    
+    
+    
+ 
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across Istanbul:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="walk-tour">
+                  <h5>The tour of ISTANBUL Old City; Byzantine and Ottoman Tales
+
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.guruwalk.com/walks/32639-the-tour-of-istanbul-old-city-byzantine-and-ottoman-tales" >More Info</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="tourist-spot-box" id="party-pub">
+                  <h5>Istanbul Party Pub Crawl
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://istanbulpartypubcrawl.com/" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="pinces">
+                  <h5>From Istanbul: Full-Day Princes Island Tour with Lunch
+
+
+                  </h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.getyourguide.com/istanbul-l56/istanbul-princes-island-tour-t58004/?ranking_uuid=e8e61cd0-43fc-4110-a40d-8637bdca6545" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+             
+    
+    
+    
+    
+    
+    
+              <div class="info-container">
+                <div class="info-box" id="language-container">
+                  <h4>Language</h4>
+                  <p>
+                    English + Google Translate of course:            
+                    <div class="tourist-spot-list">
+                    <div class="tourist-spot-box" id="language">
+                      <h5>Practice</h5>
+                      <div class="hidden-content">
+                        <p>
+                            <ul>
+                                
+                                <li><strong>Merhaba</strong> (mehr-hah-bah) – Hello</li>
+                                <li><strong>Günaydın</strong> (goo-nahy-dun) – Good morning</li>
+                                <li><strong>İyi akşamlar</strong> (ee-yee ak-sham-lar) – Good evening</li>
+                                <li><strong>Hoş geldiniz</strong> (hosh gel-dee-neez) – Welcome</li>
+                                <li><strong>Nasılsınız?</strong> (nah-suhl-suhn-uhz) – How are you? (formal)</li>
+                                <li><strong>Adım...</strong> (ah-duhm) – My name is...</li>
+                                <li><strong>Lütfen</strong> (loot-fen) – Please</li>
+                                <li><strong>Teşekkürler</strong> (teh-shehk-oor-ler) – Thank you</li>
+                                <li><strong>Affedersiniz</strong> (af-eh-der-sin-iz) – Excuse me</li>
+                                <li><strong>İngilizce konuşabilir misiniz?</strong> (een-gee-leez-jeh koh-noo-sha-bee-leer mee-see-neez) – Do you speak English?</li>
+                                 
+                              <p><strong>Language Learning Resources:</strong></p>
+                              <ul>
+                                <li><strong>Duolingo:</strong> A free app offering interactive lessons for beginners to advanced learners. <a href="https://www.duolingo.com/course/tr/en/Learn-Turkish" target="_blank">Learn Turkish on Duolingo</a></li>
+                                <li><strong>Rosetta Stone:</strong> Provides immersive language courses with a focus on speaking and listening. <a href="https://www.rosettastone.com/learn-turkish/" target="_blank">Learn Turkish with Rosetta Stone</a></li>
+                                <li><strong>FluentU:</strong> Utilizes real-world videos to teach Turkish in context. <a href="https://www.fluentu.com/en/turkish/" target="_blank">Learn Turkish with FluentU</a></li>
+                                <li><strong>Busuu:</strong> Offers personalized feedback from native speakers and structured courses. <a href="https://www.busuu.com/en" target="_blank">Learn Turkish with Busuu</a></li>
+                                <li><strong>Lingoda:</strong> Provides online group and private classes with qualified teachers. <a href="https://www.lingoda.com/en/learn-turkish-online" target="_blank">Learn Turkish with Lingoda</a></li>
+                            </ul>
+                        </p>
+                      </div>
+                    </div>
+                   
+        
+                  </div>
+                </div>
+              </div>
+                   
+              
+                
+                                
+                        
+    
+    
+               
+    
+    
+    
+                    </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map  -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+  
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([41.0082, 28.9784], 14);  // Coordinates 
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+   // Add markers for important locations in Paris
+// Add markers for Istanbul landmarks
+        var grandBazaar = L.marker([41.0103, 28.9682]).addTo(map);
+        grandBazaar.bindPopup("<b>Grand Bazaar</b><br>One of the largest and oldest covered markets in the world, featuring over 4,000 shops.");
+
+        var blueMosque = L.marker([41.0085, 28.9802]).addTo(map);
+        blueMosque.bindPopup("<b>Blue Mosque</b><br>A historic mosque known for its blue tiles surrounding its interior walls.");
+
+        var hagiaSophia = L.marker([41.0087, 28.9802]).addTo(map);
+        hagiaSophia.bindPopup("<b>Hagia Sophia</b><br>A former Greek Orthodox Christian basilica, later an Ottoman mosque, and now a museum.");
+
+        var basilicaCistern = L.marker([41.0082, 28.9770]).addTo(map);
+        basilicaCistern.bindPopup("<b>Basilica Cistern</b><br>An ancient underground water reservoir with 336 marble columns.");
+
+        var topkapiPalace = L.marker([41.0102, 28.9844]).addTo(map);
+        topkapiPalace.bindPopup("<b>Topkapi Palace</b><br>The former palace of Ottoman sultans, now a museum showcasing imperial collections.");
+
+        var sultanahmetSquare = L.marker([41.0084, 28.9794]).addTo(map);
+        sultanahmetSquare.bindPopup("<b>Sultanahmet Square</b><br>A historic square that was the site of the ancient Hippodrome, now a public space surrounded by landmarks.");
+   
+  // Optionally, add a circle marker to indicate a location
+  L.circle([41.0082, 28.9784], {
+    color: 'green',
+    radius: 500
+  }).addTo(map).bindPopup("This is the center of Istanbul!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  //this js is so that the mini boxes can open indivudlaly
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>

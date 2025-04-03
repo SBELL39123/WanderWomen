@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+
+
+
+
+<body>
+    <header>
+        <div class="header-content">
+          <h1>
+            <a href ="index.html">
+            <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+          </a>
+          </h1>
+          <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+
+
+
+      <div class="planner-container">
+        <h1>Find Your Ideal Travel Destination</h1>
+        <form id="plannerForm">
+          <div class="selection-group">
+            <h2>Preferred Climate:</h2>
+            <!--chose radio buttons for look and ease-->
+            <div class="radio-buttons">
+              <label>
+                <input type="radio" name="climate" value="hot" required>
+                Hot
+              </label>
+              <label>
+                <input type="radio" name="climate" value="temperate" required>
+                Temperate
+              </label>
+              <label>
+                <input type="radio" name="climate" value="cold" required>
+                Cold
+              </label>
+            </div>
+          </div>
+      
+          <div class="selection-group">
+            <h2>Select Activities:</h2>
+            <div class="checkbox-buttons">
+              <label>
+                <input type="checkbox" name="activities" value="beach">
+                Beach Escape
+              </label>
+              <label>
+                <input type="checkbox" name="activities" value="eat">
+                Culinary Delights
+              </label>
+
+              <label>
+                <input type="checkbox" name="activities" value="cultural">
+                Cultural & History 
+              </label>
+
+          
+              <label>
+                <input type="checkbox" name="activities" value="party">
+                Vibrant Nightlife
+              </label>
+
+              <label>
+                <input type="checkbox" name="activities" value="adventure">
+                Adventure & Nature
+              </label>
+
+
+
+            </div>
+          </div>
+      
+          <div class="selection-group">
+            <h2>Price Group ($):</h2>
+            <div class="radio-buttons">
+              <label>
+                <input type="radio" name="price" value="budget-friendly" required>
+                Budget-friendly 
+              </label>
+              <label>
+                <input type="radio" name="price" value="mid-range" required>
+                Mid-Range
+              </label>
+              <label>
+                <input type="radio" name="price" value="luxury" required>
+                Luxury 
+              </label>
+              
+            </div>
+          </div>
+
+
+
+
+          <!-- Travel Pace -->
+    <div class="selection-group">
+      <h2>Type of Location:</h2>
+      <div class="radio-buttons">
+        <label>
+          <input type="radio" name="pace" value="relaxed" required>
+          Relaxed/ Calm
+        </label>
+        <label>
+          <input type="radio" name="pace" value="moderate" required>
+          Moderate
+        </label>
+        <label>
+          <input type="radio" name="pace" value="active" required>
+          Active (Big City)
+        </label>
+      </div>
+    </div>
+
+    <!-- Travel Season -->
+    <div class="selection-group">
+      <h2>Preferred Travel Season:</h2>
+      <div class="radio-buttons">
+        <label>
+          <input type="radio" name="season" value="spring" required>
+          March, April, May
+        </label>
+        <label>
+          <input type="radio" name="season" value="summer" required>
+          June, July, August
+        </label>
+        <label>
+          <input type="radio" name="season" value="fall" required>
+          September, October, November
+        </label>
+        <label>
+          <input type="radio" name="season" value="winter" required>
+          December, January, Febuary
+        </label>
+      </div>
+    </div>
+
+
+      
+          <button type="submit">Discover My Destination</button>
+        </form>
+        <div id="result"></div>
+      </div>
+      
+
+
+
+      <script>
+        // Form submission handling
+        
+
+//destination data set: so each destination is associate with possible selections
+//doing springtime/wintertime etc because having issues matching keys and values (has to be unique)
+          const destinations = {
+
+
+          arequipa_springtime: { climate: 'temperate', activities: ['adventure'], price: 'budget-friendly', pace: 'moderate', season: 'spring', page:'arequipa.html' },
+          arequipa_summertime: { climate: 'temperate', activities: ['adventure'], price: 'budget-friendly', pace: 'moderate', season: 'summer', page: 'arequipa.html'  },
+          arequipa_winter: { climate: 'temperate', activities: ['adventure'], price: 'budget-friendly', pace: 'moderate', season: 'winter', page: 'arequipa.html'  },
+          arequipa_falltime: { climate: 'temperate', activities: ['adventure'], price: 'budget-friendly', pace: 'moderate', season: 'fall', page: 'arequipa.html'  },
+
+
+
+          amsterdam_springtime: { climate: 'temperate', activities: ['cultural', 'party'], price: 'luxury', pace: 'moderate', season: 'spring', page: 'amsterdam.html' },
+          amsterdam_falltime: { climate: 'temperate', activities: ['cultural', 'party'], price: 'luxury', pace: 'moderate', season: 'fall', page: 'amsterdam.html' },
+          amsterdam_summertime: { climate: 'temperate', activities: ['cultural', 'party'], price: 'luxury', pace: 'moderate', season:'summer', page: 'amsterdam.html' },
+          amsterdam_wimtertime: { climate: 'cold', activities: ['cultural', 'party'], price: 'luxury', pace: 'moderate', season: 'winter', page: 'amsterdam.html' },
+
+
+
+
+          barcelona_wintergtime: { climate: 'temperate', activities: ['beach', 'cultural', 'party'], price: 'mid-range', pace: 'active', season: 'winter', page: 'barcelona.html'},
+          barcelona_springtime: { climate: 'temperate', activities: ['beach', 'cultural', 'party'], price: 'mid-range', pace: 'active', season: 'spring', page: 'barcelona.html'},
+          barcelona_falltime: { climate: 'temperate', activities: ['beach', 'cultural', 'party'], price: 'mid-range', pace: 'active', season: 'fall', page: 'barcelona.html' },
+          barcelona_summertime: { climate: 'hot', activities: ['beach', 'cultural', 'party'], price: 'mid-range', pace: 'active', season: 'summer', page: 'barcelona.html' },
+
+
+
+
+          buenos_aires_sprinttime: { climate: 'temperate', activities: ['cultural', 'party'], price: 'mid-range', pace: 'active', season: ['spring', 'summer'], page: 'buenosaires.html' },
+          buenos_aires_summertime: { climate: 'temperate', activities: ['cultural', 'party'], price: 'mid-range', pace: 'active', season: 'summer', page: 'buenosaires.html' },
+          buenos_aires_falltime: { climate: 'hot', activities: ['cultural', 'party'], price: 'mid-range', pace: 'active', season: 'fall', page: 'buenosaires.html' },
+          buenos_aires_wintertime: { climate: 'hot', activities: ['cultural', 'party'], price: 'mid-range', pace: 'active', season: 'winter', page: 'buenosaires.html' },
+
+
+
+
+
+          canary_islands_summertime: { climate: 'hot', activities: ['beach', 'adventure'], price: 'luxury', pace: 'relaxed', season: 'summer', page: 'canaryislands.html' },
+          canary_islands_sprinttime: { climate: 'hot', activities: ['beach', 'adventure'], price: 'luxury', pace: 'relaxed', season: 'spring', page: 'canaryislands.html' },
+          canary_islands_falltime: { climate: 'hot', activities: ['beach', 'adventure'], price: 'luxury', pace: 'relaxed', season:  'fall', page: 'canaryislands.html' },
+          canary_islands_wintertime: { climate: 'hot', activities: ['beach', 'adventure'], price: 'luxury', pace: 'relaxed', season: 'winter', page: 'canaryislands.html' },
+
+
+
+          chicago_falltime: { climate: 'temperate', activities: ['cultural', 'eat'], price: 'luxury', pace: 'active', season: 'fall', page: 'chicago.html' },
+          chicago_springtime: { climate: 'temperate', activities: ['cultural', 'eat'], price: 'luxury', pace: 'active', season: 'spring', page: 'chicago.html'  },
+          chicago_wintertime: { climate: 'cold', activities: ['cultural','eat'], price: 'luxury', pace: 'active', season: 'winter', page: 'chicago.html'  },
+          chicago_summertime: { climate: 'hot', activities: ['eat', 'beach', 'party'], price: 'luxury', pace: 'active', season: 'summer', page: 'chicago.html'  },
+          
+
+          
+          delhi_springtime: { climate: 'hot', activities: ['cultural', 'eat'], price: 'budget-friendly', pace: 'active', season: 'spring', page: 'delhi.html' },
+          delhi_summertime: { climate: 'hot', activities: ['cultural', 'eat'], price: 'budget-friendly', pace: 'active', season: 'summer', page: 'delhi.html'},
+          delhi_falltime: { climate: 'hot', activities: ['cultural', 'eat'], price: 'budget-friendly', pace: 'active', season: 'fall', page: 'delhi.html'},
+          delhi_wintertime: { climate: 'temperate', activities: ['cultural', 'eat'], price: 'budget-friendly', pace: 'active', season: 'winter', page: 'delhi.html'},
+
+
+
+
+          essaouira_springtime: { climate: 'temperate', activities: ['beach', 'cultural', 'eat'], price: 'mid-range', pace: 'moderate', season: 'spring', page: 'essaouira.html'},
+          essaouira_summertime: { climate: 'temperate', activities: ['beach', 'cultural', 'eat'], price: 'mid-range', pace: 'moderate', season: 'summer', page: 'essaouira.html'},
+          essaouira_falltime: { climate: 'temperate', activities: ['beach', 'cultural', 'eat'], price: 'mid-range', pace: 'moderate', season: 'fall', page: 'essaouira.html'},
+          essaouira_wintertime: { climate: 'temperate', activities: ['beach', 'cultural', 'eat'], price: 'mid-range', pace: 'moderate', season: 'winter', page: 'essaouira.html'},
+
+          
+
+
+
+
+          istanbul_falltime: { climate: 'temperate', activities: ['cultural', 'eat', 'party'], price: 'mid-range', pace: 'active', season: 'fall', page: 'istanbul.html' },
+          istanbul_springtime: { climate: 'temperate', activities: ['cultural', 'eat', 'party'], price: 'mid-range', pace: 'active', season:  'spring', page: 'istanbul.html' },
+          istanbul_summertime: { climate: 'hot', activities: ['cultural', 'eat', 'party'], price: 'mid-range', pace: 'active', season: 'summer', page: 'istanbul.html'},
+          istanbul_wintertime: { climate: 'cold', activities: ['cultural', 'eat', 'party'], price: 'mid-range', pace: 'active', season: 'winter', page: 'istanbul.html' },
+
+
+
+
+          kathmandu_wintertime: { climate: 'temperate', activities: ['adventure', 'cultural', 'eat'], price: 'mid-range', pace: 'active', season: 'winter', page: 'kathmandu.html' },
+          kathmandu_summertime: { climate: 'hot', activities: ['adventure', 'cultural', 'eat'], price: 'mid-range', pace: 'active', season: 'summer', page: 'kathmandu.html'  },
+          kathmandu_springtime: { climate: 'hot', activities: ['adventure', 'cultural', 'eat'], price: 'mid-range', pace: 'active', season: 'spring', page: 'kathmandu.html'  },
+          kathmandu_falltime: { climate: 'hot', activities: ['adventure', 'cultural', 'eat'], price: 'mid-range', pace: 'active', season: 'fall', page: 'kathmandu.html'  },
+
+
+
+          marrakesh: { climate: 'temperate', activities: ['cultural', 'adventure', 'eat'], price: 'mid-range', pace: 'active', season: 'winter', page: 'marrakesh.html'  },
+          marrakesh_springtime: { climate: 'hot', activities: ['cultural', 'adventure', 'eat'], price: 'mid-range', pace: 'active', season:'spring', page: 'marrakesh.html' },
+          marrakesh_summertime: { climate: 'hot', activities: ['cultural', 'adventure', 'eat'], price: 'mid-range', pace: 'active', season: 'summer', page: 'marrakesh.html' },
+          marrakesh_falltime: { climate: 'hot', activities: ['cultural', 'adventure', 'eat'], price: 'mid-range', pace: 'active', season: 'fall', page: 'marrakesh.html' },
+
+
+
+
+
+          paris_wintertime: { climate: 'cold', activities: ['cultural', 'eat', 'party'], price: 'luxury', pace: 'active', season: 'winter', page: 'paris.html' },
+          paris_falltime: { climate: 'cold', activities: ['cultural', 'eat', 'party'], price: 'luxury', pace: 'active', season: 'fall', page: 'paris.html' },
+          paris_springtime: { climate: 'temperate', activities: ['cultural', 'eat', 'party'], price: 'luxury', pace: 'active', season: 'spring', page: 'paris.html' },
+          paris_summertime: { climate: 'hot', activities: ['cultural', 'eat', 'party'], price: 'luxury', pace: 'active', season: 'summer', page: 'paris.html' },
+
+
+
+
+          rio_springtime: { climate: 'hot', activities: ['beach', 'party', 'adventure', 'eat'], price: 'budget-friendly', pace: 'active', season: 'spring', page: 'rio.html' },
+          rio_wintertime: { climate: 'hot', activities: ['beach', 'party', 'adventure', 'eat'], price: 'budget-friendly', pace: 'active', season: 'winter', page: 'rio.html' },
+          rio_summertime: { climate: 'hot', activities: ['beach', 'party', 'adventure', 'eat'], price: 'budget-friendly', pace: 'active', season: 'summer', page: 'rio.html' },
+          rio_falltime: { climate: 'hot', activities: ['beach', 'party', 'adventure', 'eat'], price: 'budget-friendly', pace: 'active', season: 'fall', page: 'rio.html' },
+
+
+  
+
+          santiago_springtime: { climate: 'temperate', activities: ['adventure', 'pary'], price: 'mid-range', pace: 'active', season: 'spring', page: 'santiago.html' },
+          santiago_summertime: { climate: 'temperate', activities: ['adventure', 'pary'], price: 'mid-range', pace: 'active', season: 'summer', page: 'santiago.html'},
+          santiago_falltime: { climate: 'temperate', activities: ['adventure', 'pary'], price: 'mid-range', pace: 'active', season: 'fall', page: 'santiago.html' },
+          santiago_wintertime: { climate: 'hot', activities: ['adventure', 'party'], price: 'mid-range', pace: 'active', season: 'winter', page: 'santiago.html' },
+
+
+          stl_wintertime: { climate: 'cold', activities: ['cultural', 'eat'], price: 'luxury', pace: 'moderate', season: 'winter', page: 'stl.html'},
+          stl_springtime: { climate: 'temperate', activities: ['cultural', 'eat'], price: 'luxury', pace: 'moderate', season: 'spring', page: 'stl.html'},
+          stl_falltime: { climate: 'temperate', activities: ['cultural', 'eat'], price: 'luxury', pace: 'moderate', season: 'fall', page: 'stl.html' },
+          stl_summertime: { climate: 'hot', activities: ['cultural', 'eat'], price: 'luxury', pace: 'moderate', season: 'summer', page: 'stl.html' },
+
+
+
+          transylvania_wintertime: { climate: 'cold', activities: ['cultural', 'adventure'], price: 'budget-friendly', pace: 'relaxed', season: 'winter', page: 'transylvania.html' },
+          transylvania_summertime: { climate: 'hot', activities: ['cultural', 'adventure'], price: 'budget-friendly', pace: 'relaxed', season: 'summer', page: 'transylvania.html' },
+          transylvania_springtime: { climate: 'temperate', activities: ['cultural', 'adventure'], price: 'budget-friendly', pace: 'relaxed', season: 'spring', page: 'transylvania.html'},
+          transylvania_falltime: { climate: 'temperate', activities: ['cultural', 'adventure'], price: 'budget-friendly', pace: 'relaxed', season: 'fall', page: 'transylvania.html' },
+
+
+      };
+
+
+      
+      //select the ID plannerFrom (from user inpu)
+          document.getElementById('plannerForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          //prevents default action for form submission (Page refreesh)
+
+          //selects box inpiuts within the forms
+          const climate = document.querySelector('input[name="climate"]:checked')?.value;
+          const activities = Array.from(document.querySelectorAll('input[name="activities"]:checked')).map(checkbox => checkbox.value);
+          const price = document.querySelector('input[name="price"]:checked')?.value;
+          const pace = document.querySelector('input[name="pace"]:checked')?.value;
+          const season = document.querySelector('input[name="season"]:checked')?.value;
+
+          //Initlizazes a string ariable guide that will hodl the recommendation message to be displayed by the user.
+          let guide = 'Based on your selections, consider the following destinations: ';
+          let recommendations = [];
+          //Empty array to store destinations
+
+          //destinations becomes key value paris: destination name + attributes from data set 
+          //iterates over destinations and attributes
+          for (const [destination, attributes] of Object.entries(destinations)) {
+
+            // Check if there's at least one matching activity
+              const activityMatch = activities.length === 0 || activities.every(activity => attributes.activities.includes(activity));
+              //activities.every so that only the activites that the city has are shown
+         
+       
+            //checks if destination maktes users preference
+            if (
+              (climate === 'any' || attributes.climate === climate) &&
+              activityMatch &&
+              //destination must have all activites user pressed
+              (price === 'any' || attributes.price === price) &&
+              (pace === 'any' || attributes.pace === pace) &&
+              (season === 'any' || attributes.season === season)
+            ) {
+            recommendations.push(destination.replace('_', ' ').toUpperCase());
+            //name of destination is uppercase for boldness
+            }
+        }
+
+        //checks if there are any destinations that are made
+             guide += recommendations.length > 0 ? recommendations.join(', ') : 'Get inspired & send us a guide suggestion';
+              document.getElementById('result').innerText = guide;
+          });
+
+          
+      </script>
+      
+      
+
+
+
+
+      
+    
+      
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <footer>
+
+        <div class="footer-left">
+    
+          <p>WONDERWOMEN</p>
+          <ul>
+            <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+            </li>
+            <li><a href="about.html">About</a>
+            </li>
+            <li><a href="faq.html">FAQ</a>
+            </li>
+            <li><a href="travelsuggestions.html">Where next?</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+    
+    
+    
+        <div class="footer-center">
+          <p>&copy; 2025 WANDERWOMEN</p>
+          <p>Website created with HTML, CSS, and JavaScript</p>
+        </div>
+    
+      
+       
+    
+    
+        <div class="footer-right">
+          <p>DESTINATIONS</p>
+          
+            <ul>
+              <li><a href="africa.html">Africa</a></li>
+              <li><a href="asia.html">Asia</a></li>
+              <li><a href="australia.html">Australia</a></li>
+              <li><a href="europe.html">Europe</a></li>
+            <li><a href="northamerica.html">North America</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+              
+            </ul>
+          
+        </div>
+      </footer>
+
+<!--put at bottom-->
+      <script src="server.js"></script>
+
+
+      </body>
+      </html>
+
+
+
+     

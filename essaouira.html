@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>ESSAOUIRA Guide</h3>
+      <h6>Hippie hangout</h6>
+        <!-- Container for Images -->
+        <div class="essaouiraimage-container">
+          <!-- Left image -->
+          <div class="essaouira-guide-image-container">
+            <img src="assets/essaouiraguideimage1.jpg" alt="Blue and White Buildings">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-essaouira-images">
+            <!-- Top right image -->
+            <div class="essaouira-guide-2-image-container">
+              <img src="assets/essaouiraguideimage2.jpg" alt="Boats of Essaouira">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="rio-guide-3-image-container">
+              <img src="assets/essaouiraguideimage3.jpg" alt="Architecture">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <section class="city-info">
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Essaouira, a UNESCO World Heritage city, is renowned for its rich history, beautiful beaches, and stunning architecture, offering a perfect blend of culture and relaxation.
+        </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="beach">
+              <h5>Essaouira Beach</h5>
+              <div class="hidden-content">
+                <img src="assets/essbeach.jpg" alt="Beach and Camel">
+                <p>
+                  
+                  Essaouira Beach is a serene stretch of coastline perfect for relaxation, watersports, and enjoying a peaceful sunset. Its clean sands and gentle waves make it ideal for both locals and tourists.                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="skala">
+              <h5>Skala du Por</h5>
+              <div class="hidden-content">
+                <img src="assets/essskala.jpg" alt="Medina">
+                <p>
+                  
+                    Skala du Port is a historic fortress that offers breathtaking views of the Atlantic Ocean and Essaouira's old medina. This well-preserved site once protected the city’s port and is a must-see for its impressive architecture.
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="moulay-hassan">
+              <h5>Place Moulay Hassan</h5>
+              <div class="hidden-content">
+                <p>
+                    Place Moulay Hassan is a vibrant square at the heart of Essaouira, offering a mix of lively markets, street performers, and cafes. It's the perfect spot to enjoy local food and watch the hustle and bustle of city life.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="souk">
+              <h5>Le Souk Essaouira </h5>
+              <div class="hidden-content">
+                <img src="assets/esssouk.jpg" alt="Souk">
+                <p>
+                    The souk of Essaouira is a bustling marketplace where visitors can explore a variety of local goods such as spices, textiles, and handmade jewelry. It’s an excellent place to immerse yourself in the vibrant culture of the city.
+    
+                </p>
+              </div>
+            </div>
+            
+    
+    
+        
+    
+    
+    
+    
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+      
+    
+      
+      
+    
+    
+    
+    
+    
+    
+            <div class="info-container">
+              <div class="info-box" id="hidden-gems">
+                <h4>Hidden Gems</h4>
+                <p>
+                    Beyond these well-known attractions, the city also offers lesser-known spots that provide unique experiences away from the typical tourist paths.
+                </p>
+                <div class="tourist-spot-list">                
+
+              
+                
+                  <div class="tourist-spot-box" id="le-jardin">
+                    <h5> Place Chrib Atay</h5>
+                    <div class="hidden-content">
+                      <p>
+                        A tranquil square located in the heart of Essaouira's medina, Place Chrib Atay is surrounded by a variety of Moroccan restaurants and shops. The square is known for its relaxed atmosphere, making it an ideal spot to unwind and enjoy local cuisine. Notable establishments such as Restaurant Zaytouna and La Rose Du Sud are situated here, offering authentic Moroccan dishes. Visitors can also enjoy a leisurely breakfast at Le Medina Café, which welcomes guests every morning. The surrounding architecture features arches and simple yet beautiful portals, providing a picturesque setting for photography enthusiasts. 
+                    </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="bayt-dakira">
+                    <h5>Bayt Dakira (House of Memory)</h5>
+                    <div class="hidden-content">
+                      <p>
+                        
+                        A museum dedicated to the Jewish heritage of Essaouira, showcasing artifacts, photographs, and documents that highlight the city's history of coexistence between Muslim and Jewish communities.
+                      </p>
+                    </div>
+                    <div class="tourist-spot-box" id="jardin-des-douars">
+                        <h5>Jardin des Douars</h5>
+                        <div class="hidden-content">
+                          <p>
+                           
+                            A serene garden offering a peaceful environment to relax, featuring lush greenery, traditional Moroccan architecture, and a glimpse into local life.
+                          </p>
+                        </div>
+                      </div>
+                  
+    
+                </div>
+              </div>
+            </div>
+    </div>
+    
+    
+    
+    
+    
+    
+   
+    
+          <div class="info-container">
+            <div class="info-box" id="cultural-encounters">
+              <h4>Cultural Encounters</h4>
+              <p>
+                Delve into Marrakesh's rich heritage by exploring its bustling souks and experiencing the Berber culture that permeates the city.            </p>
+            </p>
+            <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Language</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Arabic and Berber are Morocco's official languages, with French widely spoken in urban areas. In Essaouira, the local dialect, known as "Darija," incorporates elements from Arabic, Berber, French, and Portuguese, reflecting the city's diverse history.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="music">
+                  <h5>Music</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Essaouira is renowned for its vibrant music scene, notably the Gnaoua music, which blends African, Arab, and Berber influences. The annual Gnaoua World Music Festival attracts artists and enthusiasts from around the globe, offering performances that resonate with rich rhythms and melodies.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="climate">
+                  <h5>Climate</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Essaouira enjoys a mild, Mediterranean climate, moderated by its coastal location. The city experiences moderate temperatures year-round, with cool, wet winters and warm, dry summers, making it an ideal destination for comfortable exploration at any time.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="clothing">
+                  <h5>Clothing Styles</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Traditional attire in Essaouira includes the "djellaba" and "kaftan," long, loose-fitting garments suitable for the coastal climate. These garments are often made from light fabrics and come in various colors, reflecting the city's vibrant culture.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="berber">
+                  <h5>Berber People</h5>
+                  <div class="hidden-content">
+                    <p>
+                      The Berbers, or Amazigh, are Morocco's indigenous inhabitants, known for their unique language, traditions, and crafts. In Essaouira, the Berber community contributes significantly to the city's cultural diversity, evident in their art, music, and daily life. 
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="argan-oil">
+                  <h5>Argan Oil</h5>
+                  <div class="hidden-content">
+                    <p>
+                      Produced primarily by women's cooperatives in southwestern Morocco, argan oil is prized for its cosmetic and culinary uses. In Essaouira, visitors can explore local markets and cooperatives to learn about the traditional extraction process and purchase authentic argan products.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="architecture">
+                  <h5>Architecture</h5>
+                  <div class="hidden-content">
+                    <img src="assets/essarchitecture.jpg" alt="Architecture">
+                    <p>
+                      Essaouira's architecture showcases a blend of Arab, Berber, and European influences. The city's medina, a UNESCO World Heritage site, features narrow alleys, whitewashed buildings with blue shutters, and historic sites like the Skala de la Ville, reflecting its rich history and strategic coastal position.
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="respect-prayer-times">
+                    <h5>Respecting Prayer Times</h5>
+                    <div class="hidden-content">
+                      <p>
+                        In Morocco, the call to prayer (adhan) resonates from mosques five times daily, marking significant moments for reflection and community gathering. These prayer times are integral to Moroccan life and culture. Being mindful of prayer times not only shows respect for local customs but also enriches your cultural experience in Morocco.
+                      </p>
+                    </div>
+                  </div>
+                  
+    
+    
+          
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="gastronomic-delights">
+              <h4>Gastronomic Delights</h4>
+              <p>
+                ​Essaouira's culinary scene delights the senses by harmoniously blending traditional Moroccan flavors with fresh coastal influences, resulting in a diverse array of delectable dishes. *All can be veganized or vegetarianized*
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="to eat">
+                  <h5>To Eat</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <ul>
+                            <li><strong>Seafood Tagine:</strong>
+                             
+                              <p>
+                                A slow-cooked stew prepared in a traditional conical pot, combining fresh seafood with a blend of spices, dried fruits, and nuts, offering a rich and aromatic flavor profile.
+                              </p>
+                            </li>
+                            <li><strong>Couscous with Fish:</strong>
+                              <p>
+                                Made from steamed semolina wheat granules, couscous is served with a hearty fish stew, reflecting Essaouira's coastal heritage.
+                              </p>
+                            </li>
+                            <li><strong>Moroccan Salads:</strong>
+                              <p>
+                                Diverse salads ranging from fresh tomato and cucumber to cooked dishes like caramelized carrots and roasted peppers, typically seasoned with herbs and spices, and served as appetizers or side dishes.
+                              </p>
+                            </li>
+                            <li><strong>Grilled Sardines:</strong>
+                              <p>
+                                Fresh sardines grilled to perfection, often enjoyed at the port's seafood stalls, embodying the city's fishing tradition.
+                              </p>
+                            </li>
+                            <li><strong>Fresh Orange Juice:</strong>
+                              <p>
+                                Squeezed from local citrus, this refreshing drink is widely available, especially near the port and souks.
+                              </p>
+                            </li>
+                            <li><strong>Mint Tea:</strong>
+                              <img src="assets/marramint.jpg" alt="Mint Tea">
+                              <p>
+                                Known as "Moroccan whisky," this sweet green tea infused with fresh mint is a symbol of hospitality, traditionally served to guests in ornate glasses.
+                              </p>
+                            </li>
+                          </ul>
+    
+    
+                        
+    
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="tourist-spot-box" id="restaurants">
+                  <h5>Restaurants</h5>
+                  <div class="hidden-content">
+                    <p>
+                    
+                        <ul>
+                            <li>Zaytoune Restaurant
+                            </li>
+                          </ul>
+                    </p>
+                  </div>
+                </div>
+               
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="where-to-stay">
+              <h4>Where to Stay</h4>
+              <p>
+                Staying in a riad offers an authentic experience of Marrakesh's unique architecture and hospitality, providing a tranquil retreat amidst the city's vibrant life.           
+            </p>
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="hotel-atlas">
+                  <h5>Hôtel Cap Sim</h5>
+                  <div class="hidden-content">
+                    <p>
+                        Located just a stone's throw from the beach in the heart of the medina, Hôtel Cap Sim offers clean and comfortable rooms. Guests can enjoy a rooftop terrace with panoramic views of the city.
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="riad-chbanate">
+                    <h5>Riad Chbanate</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Situated in the medina, Riad Chbanate combines traditional Moroccan design with modern comforts. It features a rooftop terrace, an indoor pool, and elegantly decorated rooms.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="villa-quieta">
+                    <h5>Villa Quieta</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Located near Essaouira Beach, Villa Quieta offers a serene environment with lush gardens, an outdoor pool, and comfortable rooms with private balconies overlooking the ocean. 
+                      </p>
+                    </div>
+                  </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="souvenir-ideas">
+              <h4>Souvenir Ideas</h4>
+              <p>
+                Things to remember Essaouira by:              
+                <div class="tourist-spot-list">
+                    <div class="tourist-spot-box" id="thuya-wood">
+                        <h5>Thuya Wood Crafts</h5>
+                        <div class="hidden-content">
+                          <p>
+                            Essaouira is renowned for its Thuya wood craftsmanship. Artisans create various items such as jewelry boxes, chess sets, bowls, and tables, often inlaid with materials like bone, mother-of-pearl, or other woods. The wood's distinctive reddish-brown hue and pleasant aroma make these pieces unique souvenirs. 
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tourist-spot-box" id="argan-products">
+                        <h5>Argan Oil Products</h5>
+                        <div class="hidden-content">
+                          <p>
+                            Argan oil, endemic to the region around Essaouira, is used in both culinary and cosmetic products. Visitors can purchase pure argan oil or products infused with it, such as soaps, lotions, and culinary delights. Ensure authenticity by buying from reputable sources. 
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tourist-spot-box" id="ceramics">
+                        <h5>Handcrafted Ceramics</h5>
+                        <div class="hidden-content">
+                          <p>
+                            Essaouira's markets offer a variety of handcrafted ceramics, including plates, bowls, and decorative items. These pieces often feature traditional Moroccan designs and vibrant colors, making them excellent souvenirs.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tourist-spot-box" id="paintings">
+                        <h5>Local Artwork</h5>
+                        <div class="hidden-content">
+                            <img src="assets/essart.jpg" alt="Artwork">
+                          <p>
+                            The city's artistic heritage is reflected in the numerous galleries and street vendors showcasing paintings and artworks. These pieces capture the essence of Essaouira's landscapes, culture, and daily life, providing a lasting memory of your visit.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tourist-spot-box" id="spices">
+                        <h5>Spices and Dry Goods</h5>
+                        <div class="hidden-content">
+                          <p>
+                            The markets are filled with aromatic spices like saffron, cumin, and paprika. Purchasing these spices allows you to bring home a literal taste of Morocco. 
+                          </p>
+                        </div>
+                      </div>
+    
+              </div>
+            </div>
+          </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+          <div class="info-container">
+            <div class="info-box" id="staying-safe">
+              <h4>Staying Safe</h4>
+              <p>
+                To do:
+              </p>
+              <p>
+                1: Have Fun 
+              </p>
+              <p>
+                2: Stay Safe
+              </p>  
+    
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="modest-dress">
+                  <h5>Modest Dress</h5>
+                  <div class="hidden-content">
+                    <p>
+                        While Essaouira is known for its relaxed atmosphere, it's respectful to dress modestly, especially in public areas. Women are advised to cover shoulders, chests, and knees. Opt for lightweight, loose-fitting clothing such as long skirts, maxi dresses, or linen trousers paired with long-sleeved tops. This attire helps you blend in with the local community and shows cultural sensitivity. 
+    
+                    </p>
+                  </div>
+                </div>
+    
+    
+                <div class="tourist-spot-box" id="tourist-scams">
+                    <h5>Awareness of Scams</h5>
+                    <div class="hidden-content">
+                      <p>
+                        As in many tourist destinations, be vigilant about potential scams. Common tactics include unsolicited assistance followed by demands for payment, or offers of services that result in unexpected charges. Always agree on prices beforehand and be cautious of "free" services that may come with hidden fees.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="food-water">
+                    <h5>Food and Water Safety</h5>
+                    <div class="hidden-content">
+                      <p>
+                        To avoid foodborne illnesses, dine at reputable establishments where food is prepared hygienically. It's advisable to drink bottled water and avoid ice cubes, as tap water quality can vary.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="prices-before">
+                    <h5>Verify Prices Before Paying</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Always confirm the price of goods and services before accepting them. In markets (souks), haggling is customary, but ensure you agree on a final price before the transaction. For taxis, it's best to agree on the fare before starting your journey or ensure the meter is used. This practice helps prevent misunderstandings and ensures fair transactions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="tipping-etiquette">
+                    <h5>Tipping Etiquette</h5>
+                    <div class="hidden-content">
+                      <p>
+                        Tipping is customary in Morocco, but it's important to offer tips directly to the person providing the service. Be cautious of individuals who expect tips for unsolicited services or assistance. Being aware of any hidden fees added to bills can also help in managing expenses.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tourist-spot-box" id="marijuana-awareness">
+                    <h5>Marijuana in Essaouira</h5>
+                    <div class="hidden-content">
+                      <p>
+                        While marijuana is illegal in Morocco, it is known that the Rif Mountains in northern Morocco, which include areas not far from Essaouira, are a significant producer of cannabis. However, marijuana use is not openly tolerated in public spaces, and visitors should be cautious. It is important to respect local laws and customs. Possession and use of marijuana can result in serious legal consequences. Always stay informed about local regulations and exercise caution during your visit to Essaouira.
+                      </p>
+                    </div>
+                  </div>
+    
+    
+              
+    
+    
+    
+                <div class="tourist-spot-box" id="informed-prepared">
+                    <h5>Stay Informed and Prepared</h5>
+                    <div class="hidden-content">
+                      <p>
+                        <ul>
+                          <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate. </li>
+                          <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+    
+               
+    
+    
+    
+                <div class="tourist-spot-box" id="embassy">
+                  <h5>Embassy and Contact Information</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <li><strong>Embassy and Contact Information:</strong>
+                            <ul>
+                                <li><strong>Address:</strong> 8, Boulevard Moulay Youssef, Casablanca, Morocco</li>
+                                <li><strong>Phone:</strong> +212 522 642 099</li>
+                                <li><strong>Emergency After-Hours Phone:</strong> +212 661 13 19 39</li>
+                                <li><strong>Fax:</strong> +212 522 29 77 01</li>
+                                <li><strong>Email:</strong> <a href="mailto:acscasablanca@state.gov">acscasablanca@state.gov</a></li>
+                                <li><strong>Website:</strong> <a href="https://ma.usembassy.gov/embassy-consulate/rabat/">U.S. Embassy Rabat</a></li>
+                                <li><a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Morocco.html">More Info Before You Go</a></li>
+                              </ul>
+                          </li>
+                    </p>
+                  </div>
+                </div>
+    
+    
+    
+    
+    
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="events">
+              <h4>Tours + Parties</h4>
+              <p>
+                Can't miss events across Essaouira:
+              </p>             
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="tour">
+                  <h5>Essaouira: Historical & Cultural Sightseeing Tour - half day
+                </h5>
+                  <div class="hidden-content">
+                    <p>
+                  <a href="https://www.getyourguide.com/essaouira-l877/essaouira-cultural-historical-sightseeing-tour-half-day-t539694/?ranking_uuid=2266d0e0-b042-42a7-bee0-8965a5a23ea6" >More Info</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="tourist-spot-box" id="shopping-souk">
+                  <h5>Essaouira: 2-hour surf lessons</h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.getyourguide.com/essaouira-l877/essaouira-2-hour-surf-lessons-t687850/?ranking_uuid=2266d0e0-b042-42a7-bee0-8965a5a23ea6" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+                <div class="tourist-spot-box" id="waterfall">
+                  <h5>Essaouira Sand Dunes: Half Day Quad Bike Tour               
+                     </h5>
+                  <div class="hidden-content">
+                    <p>
+                        <a href="https://www.getyourguide.com/essaouira-l877/essaouira-sand-dunes-half-day-quad-bike-tour-t125555/?ranking_uuid=2266d0e0-b042-42a7-bee0-8965a5a23ea6" >More Info</a>
+    
+                    </p>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="info-container">
+            <div class="info-box" id="language-container">
+              <h4>Language</h4>
+              <p>
+                English, French, Arabic, or Amazigh            
+                <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Practice</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>As-salaam alaykum:</strong> Peace be upon you; a common greeting.</li>
+                        <li><strong>Shukran:</strong> Thank you.</li>
+                        <li><strong>La shukran:</strong> No thank you.</li>
+                        <li><strong>Ma'a as-salama:</strong> Goodbye.</li>
+                        <li><strong>Afak:</strong> Please.</li>
+                        
+            
+                        <p><strong>Language Learning Resources:</strong></p>
+                        <li><strong>Duolingo:</strong> A free app to learn Arabic with interactive lessons. [Learn Arabic on Duolingo](https://www.duolingo.com/course/ar/en/Learn-Arabic)</li>
+                        <li><strong>Rosetta Stone:</strong> Offers comprehensive Arabic courses with immersive learning methods. [Learn Arabic with Rosetta Stone](https://www.rosettastone.com/learn-arabic/)</li>
+                        <li><strong>Al Jazeera Learning Arabic:</strong> A free open educational source presenting the Arabic language interactively. [Learn Arabic with Al Jazeera](https://learning.aljazeera.net/en)</li>
+                        <li><strong>HelloTalk:</strong> An app that lets you chat with native Arabic speakers to enhance your learning. [Learn Arabic with HelloTalk](https://www.hellotalk.com/)</li>
+                        <li><strong>StoryLearning:</strong> Offers guides to essential Moroccan Arabic phrases to get you speaking with confidence. [Learn Moroccan Arabic Phrases](https://storylearning.com/learn/arabic/arabic-tips/moroccan-arabic-phrases)</li>
+            
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+               
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+            <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+  <!--<h3>Interactive Map -->
+  
+  <!-- Independent Map Container -->
+  <div class="map-container">
+    <div class="map-wrapper">
+      <div id="map"></div> <!-- Your map here -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+ 
+  <footer>
+
+    <div class="footer-left">
+
+      <p>WONDERWOMEN</p>
+      <ul>
+        <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+        </li>
+        <li><a href="about.html">About</a>
+        </li>
+        <li><a href="faq.html">FAQ</a>
+        </li>
+        <li><a href="travelsuggestions.html">Where next?</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="footer-center">
+      <p>&copy; 2025 WANDERWOMEN</p>
+      <p>Website created with HTML, CSS, and JavaScript</p>
+    </div>
+
+  
+   
+
+
+    <div class="footer-right">
+      <p>DESTINATIONS</p>
+      
+        <ul>
+          <li><a href="africa.html">Africa</a></li>
+          <li><a href="asia.html">Asia</a></li>
+          <li><a href="australia.html">Australia</a></li>
+          <li><a href="europe.html">Europe</a></li>
+        <li><a href="northamerica.html">North America</a></li>
+        <li><a href="southamerica.html">South America</a></li>
+          
+        </ul>
+      
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+  <script>
+    // Initialize the map
+
+    //edit 13 if too close 
+    var map = L.map('map').setView([31.5085, -9.7680], 14);  // Coordinates 
+
+    // Add the tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+          // Add markers for important locations
+     // Add markers for important locations in Essaouira
+  var essaouiraBeach = L.marker([31.5113, -9.7674]).addTo(map);
+  essaouiraBeach.bindPopup("<b>Essaouira Beach</b><br>Beautiful coastal stretch offering stunning views of the Atlantic Ocean, perfect for walking and windsurfing.");
+
+  var skalaDuPor = L.marker([31.5141, -9.7652]).addTo(map);
+  skalaDuPor.bindPopup("<b>Skala du Por</b><br>Historical ramparts and fortress with panoramic views of Essaouira's coastline, showcasing 18th-century military architecture.");
+
+  var placeMoulayHassan = L.marker([31.5145, -9.7650]).addTo(map);
+  placeMoulayHassan.bindPopup("<b>Place Moulay Hassan</b><br>The lively square in Essaouira, surrounded by cafes and historic sites, often hosting street performers and local markets.");
+
+  var leSoukEssaouira = L.marker([31.5143, -9.7661]).addTo(map);
+  leSoukEssaouira.bindPopup("<b>Le Souk Essaouira</b><br>A bustling market where you can explore local handicrafts, spices, and fresh produce, a perfect spot for shopping and immersing in the local culture.");
+
+
+
+    // Optionally, add a circle marker to indicate a location
+    L.circle([31.6295, -7.9811], {
+      color: 'green',
+      radius: 500
+    }).addTo(map).bindPopup("This is the center of Marrakesh!");
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(document).ready(function() {
+    // Toggle the 'expanded' class for each tourist spot box when clicked
+    $('.tourist-spot-box').click(function() {
+      $(this).toggleClass('expanded');
+    });
+  });
+  
+  </script>
+
+  
+</body>
+</html>

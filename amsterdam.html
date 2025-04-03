@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides - WANDER WOMEN</title>
+  <link rel="stylesheet" href="styl.css">
+
+
+<!--add image to boxes-->
+
+
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+<body>
+  <header>
+      <div class="header-content">
+        <h1>
+          <a href ="index.html">
+          <img src="assets/WANDERWOMENLOGO.png" alt="Logo" class="logo">WANDER WOMEN
+        </a>
+        </h1>
+        <p>A solo woman's guide to wanderlust</p>
+
+ 
+
+
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="guides.html" class="dropbtn">Guides</a>
+              <div class="dropdown-content">
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="australia.html">Australia</a>
+                <a href="europe.html">Europe</a>
+                <a href="northamerica.html">North America</a>
+                <a href="southamerica.html">South America</a>
+
+
+              </div>
+            </li>
+            
+            <li><a href="planner.html">Planner</a></li>
+            
+            
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section>
+      <h3>AMSTERDAM Guide</h3>
+      <h6>Not your average coffeeshops</h6>
+      
+        <!-- Container for Images -->
+        <div class="amsterdamimage-container">
+          <!-- Left image -->
+          <div class="amsterdam-guide-image-container">
+            <img src="assets/amsterdamguide1.jpg" alt="Canal">
+          </div>
+      
+          <!-- Right side container for images 2 and 3 -->
+          <div class="right-amsterdam-images">
+            <!-- Top right image -->
+            <div class="amsterdam-guide-2-image-container">
+              <img src="assets/amsterdamguide2.jpeg" alt="Tulips">
+            </div>
+      
+            <!-- Bottom right image -->
+            <div class="amsterdam-guide-3-image-container">
+              <img src="assets/amster.jpeg" alt="Houses of Amsterdam">
+            </div>
+          </div> 
+        </div>
+      </section>
+
+
+
+      <section class="city-info">
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="tourist-spots">
+          <h4>Top Tourist Spots</h4>
+          <p>
+            Amsterdam offers a blend of modern, artistic, and energetic spots perfect for young people. From trendy neighborhoods to vibrant nightlife and street art, this city is full of dynamic experiences.
+        </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="rijksmuseum">
+              <h5>Rijksmuseum</h5>
+              <div class="hidden-content">
+                <img src="assets/amstrijkismuseum.jpeg" alt="Rijksmuseum">
+                <p>
+                  This grand museum is home to masterpieces by Rembrandt, Vermeer, and other Dutch masters. It showcases Dutch art, history, and culture in a beautiful historic building.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="anne-frank-house">
+              <h5>Anne Frank House</h5>
+              <div class="hidden-content">
+                
+                <p>
+                  A poignant and emotional site, the Anne Frank House is where Anne Frank and her family hid during World War II. The museum offers a powerful glimpse into her life and the horrors of the Holocaust.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="vondelpark">
+              <h5>Vondelpark</h5>
+              <div class="hidden-content">
+                
+                <p>
+                  Amsterdam’s largest and most popular park, Vondelpark is a green oasis perfect for a walk, bike ride, or picnic. It also features open-air concerts, theaters, and cafes.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="tourist-spot-box" id="van-gogh-museum">
+              <h5>Van Gogh Museum</h5>
+              <div class="hidden-content">
+                
+                <p>
+                  Home to the world’s largest collection of Vincent van Gogh’s works, this museum offers insight into the life and artistry of one of the most influential painters in history.
+    
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="red-light-district">
+              <h5>Red Light District (De Wallen)</h5>
+              <div class="hidden-content">
+                <img src="assets/amstredlight.jpg" alt="Red Light">
+                <p>
+                  The heart of Amsterdam's nightlife and the world-renowned Red Light District is where visitors can explore its famous windows, lively bars, and diverse entertainment. While the area is known for its sex work, it's also home to an eclectic mix of restaurants, art galleries, and historic buildings.
+    
+                </p>
+              </div>
+            </div>
+    
+    
+            
+            
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="hidden-gems">
+          <h4>Hidden Gems</h4>
+          <p>
+            Amsterdam is full of hidden gems, from cozy canalside cafes and secret gardens to quirky museums tucked away in charming neighborhoods, offering a unique and intimate side of the city.          </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="oude-kerk">
+              <h5>Oude Kerk (Old Church)</h5>
+              <div class="hidden-content">
+                <p>
+                  The Oude Kerk is the oldest building in Amsterdam, dating back to the 13th century. Located in the heart of the Red Light District, it offers a peaceful and historic escape with beautiful architecture and fascinating exhibitions. It's one of the most significant landmarks in the city, blending centuries of history with contemporary art displays.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="popeye-coffeeshop">
+              <h5>Popeye Coffeeshop</h5>
+              <div class="hidden-content">
+                <p>
+                  A beloved spot for both locals and visitors, Popeye Coffeeshop is known for its relaxed atmosphere and friendly service. Located near the city center, it's a perfect place to enjoy cannabis in a laid-back environment. With its central location and classic Amsterdam vibe, Popeye has become a must-visit for those looking to experience the city's famed coffeeshop culture.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="kokopelli">
+              <h5>Kokopelli Coffeeshop</h5>
+              <div class="hidden-content">
+                <p>
+                  Kokopelli is one of Amsterdam's more popular and unique coffeeshops, known for its relaxed ambiance and artistic décor. Named after the Native American spirit of music and fertility, Kokopelli attracts both cannabis enthusiasts and those seeking a chill, creative environment. The coffeeshop offers a variety of cannabis products in a cozy, vibrant space with great music and a welcoming atmosphere.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="jordaan-district">
+              <h5>Jordaan District</h5>
+              <div class="hidden-content">
+                <p>
+                  A trendy and artsy neighborhood, the Jordaan is perfect for strolling through its narrow streets filled with boutiques, art galleries, and cozy cafes. The area has a relaxed vibe, and it’s one of the best places to experience local life and culture.
+                </p>
+              </div>
+            </div>
+
+            <div class="tourist-spot-box" id="art-spuit">
+              <h5>Art Amsterdam Spui Market</h5>
+              <div class="hidden-content">
+                <p>
+                  Every Sunday from March to December, Spui Square transforms into an open-air art market, where local and international artists showcase their diverse creations under the shade of plane trees.                 </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="cultural-encounters">
+          <h4>Cultural Encounters</h4>
+          <p>
+            Amsterdam is a city where history, modern culture, and open-mindedness come together in a vibrant and welcoming atmosphere. From the famous Red Light District to its views on marijuana and magic mushrooms, to the city’s love for veganism, canals, and tulips, Amsterdam offers a unique blend of experiences for every traveler.
+        </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="red-light-culture">
+              <h5>Red Light District Culture</h5>
+              <div class="hidden-content">
+                <p>
+                  The Red Light District (De Wallen) is one of Amsterdam's most famous and misunderstood areas. It’s known for its open approach to sex work, with women displaying themselves in windows, which is legal and regulated in the Netherlands. But beyond its famous windows, the district is also home to cultural venues, quirky bars, and historical landmarks like the Oude Kerk (Old Church). The area's open-minded atmosphere reflects Amsterdam's broader liberal and tolerant culture, where individuals are free to live their lives without judgment.
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="marijuana-and-magic-mushrooms">
+              <h5>Marijuana and Magic Mushrooms</h5>
+              <div class="hidden-content">
+                <img src="assets/amstmari.jpeg" alt="Smoking Sign">
+                <p>
+                    Amsterdam is globally recognized for its progressive stance on cannabis use. Cannabis is tolerated in "coffeeshops" around the city, where adults can buy and consume marijuana in a safe, regulated environment. The city also has a history of exploring psychedelics, including magic mushrooms, which were once sold openly before being banned. Today, "truffle" mushrooms (a legal form of psilocybin) are available in specialized shops, offering visitors a chance to experience the city's unique approach to alternative lifestyles.
+
+                </p>
+              </div>
+            </div>
+
+
+            <div class="tourist-spot-box" id="veganism">
+              <h5>Veganism in Amsterdam</h5>
+              <div class="hidden-content">
+                
+                <p>
+                  Amsterdam is a paradise for vegan food lovers, with an ever-growing number of restaurants and cafes dedicated to plant-based cuisine. Whether you're looking for a casual vegan burger, artisanal plant-based cheeses, or innovative dishes like vegan sushi, Amsterdam has something to satisfy every palate. The city's commitment to sustainability and healthy living makes it a great place for vegan travelers to explore and enjoy.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="canals">
+              <h5>Amsterdam Canals</h5>
+              <div class="hidden-content">
+                <img src="assets/amstcanal.jpeg" alt="Canals">
+                <p>
+                  Amsterdam’s iconic canals, with their charming bridges and historic buildings, are one of the city’s most beautiful features. The canals are perfect for leisurely boat tours or simply strolling along their banks. The UNESCO World Heritage-listed canal ring offers a picturesque setting, especially at sunset when the water reflects the vibrant lights of the city. It’s the ideal spot for relaxing, people-watching, or enjoying a peaceful moment in the heart of the city.
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="tulips">
+              <h5>Tulips in Amsterdam</h5>
+              <div class="hidden-content">
+                <img src="assets/amsttulip.jpeg" alt="Tulips in Amsterdam">
+                <p>
+                  No trip to Amsterdam is complete without experiencing its world-famous tulips. The city comes alive with vibrant colors during the spring months, with tulip fields stretching out just outside the city. The annual Keukenhof Gardens, located nearby, is a must-see, showcasing millions of tulips in breathtaking displays. The tulip is deeply rooted in Dutch culture and history, and Amsterdam’s streets, parks, and canalsides bloom with these flowers, offering an unforgettable visual feast for visitors.
+                </p>
+              </div>
+            </div>
+
+            <div class="tourist-spot-box" id="biking">
+              <h5>Biking Culture</h5>
+              <div class="hidden-content">
+                <img src="assets/amstbike.jpeg" alt="Bikes">
+                <p>
+                  Amsterdam's biking culture is legendary, with an extensive network of bike paths that stretch into the Amsterdam Metropolitan Area. Cyclists rule in Amsterdam, and great pains have been taken to accommodate them: the city is equipped with an elaborate network of cycle paths and lanes, so safe and comfortable that even toddlers and elderly people use bikes as the easiest mode of transport. This bike culture is symbolic of Amsterdam’s cultural norms, where both social and environmental sustainability are embedded into the city. Whether you're looking to rent a bike and explore the city like a local or simply observe the daily cycling routines, Amsterdam offers a unique and immersive experience for all.
+                </p>
+              </div>
+            </div>
+
+
+            <!--biking!!!-->
+             
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="gastronomic-delights">
+          <h4>Gastronomic Delights</h4>
+          <p>
+            Amsterdam's food scene is a dynamic blend of traditional Dutch flavors and innovative global influences, reflecting its rich cultural tapestry. *All can be veganized or vegetarianized.*         </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="to eat">
+              <h5>To Eat</h5>
+              <div class="hidden-content">
+                <p>
+                
+                        <ul>
+                          
+                            <li><strong>Stamppot:</strong>
+                              A traditional Dutch dish consisting of mashed potatoes mixed with various vegetables like kale, sauerkraut, or carrots, often served with smoked sausage. It's a hearty and comforting meal, especially popular during the colder months. 
+                            </li>
+                            <li><strong>Heineken:</strong>
+                              A popular Dutch chocolate milk drink, cherished for its rich and creamy flavor. 
+                            </li>
+                            <li><strong>Pannenkoeken (Dutch Pancakes):</strong>
+                              Larger and thinner than American pancakes, these are often topped with ingredients like bacon, apples, or syrup. They are a beloved treat in Amsterdam. 
+                            </li>
+                            
+                            <li><strong>Bitterballen:</strong>
+                            
+                              Deep-fried, crispy meatballs filled with a savory beef or veal ragout, commonly served as a snack with mustard during 'borreltijd' (happy hour). 
+                            </li>
+                            
+                            <li><strong>Stroopwafels:</strong>
+                             
+                              A sweet treat consisting of two thin waffles filled with a caramel-like syrup, best enjoyed with a hot beverage. 
+                            </li>
+                          </ul>
+                     
+                
+
+                </p>
+              </div>
+            </div>
+
+
+
+
+            <div class="tourist-spot-box" id="restaurants">
+              <h5>Restaurants</h5>
+              <div class="hidden-content">
+                <p>
+                
+                    <ul>
+                        <li>Vegan Junkfood Bar
+                        </li>
+  
+                        <li>Organic to Go
+                        </li>
+                        <li>TerraZen Centre
+                        </li>
+                       
+                      </ul>
+                </p>
+              </div>
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="where-to-stay">
+          <h4>Where to Stay</h4>
+          <p>
+          Amsterdam offers a wide range of accommodations, from historic canal-side hotels to modern design stays, ensuring a memorable visit for every traveler.        </p>
+          <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="bulldog">
+              <h5>Bulldog Hostel</h5>
+              <div class="hidden-content">
+                <p>
+                  Located in the heart of Amsterdam's vibrant Red Light District, The Bulldog Hostel is renowned as the world's first 5-star hostel. Established in 1975, it combines a rich history with modern amenities, offering both dormitory-style rooms and private accommodations. Guests can enjoy the lively atmosphere, 24/7 on-site staff, and proximity to major attractions. The hostel also features a bar-lounge, providing a perfect spot to unwind after a day of exploration. 
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="jordaan-neighborhood">
+              <h5>Jordaan Neighborhood</h5>
+              <div class="hidden-content">
+                <p>
+                  Situated in the heart of Amsterdam, the Jordaan is celebrated for its narrow streets, art galleries, and unique shops. Originally a working-class district, it has transformed into one of the city's most desirable areas, offering a blend of historical charm and modern amenities.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="tourist-spot-box" id="de-pijp">
+              <h5>De Pijp Neighborhood</h5>
+              <div class="hidden-content">
+                
+                <p>
+                  Known for its vibrant atmosphere, De Pijp is home to a diverse community and boasts a wide array of cafes, restaurants, and shops. The area is also famous for the Sarphatipark and the Albert Cuyp Market, attracting both locals and tourists alike.
+
+                </p>
+              </div>
+            </div>
+
+
+
+        
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="souvenir-ideas">
+          <h4>Souvenir Ideas</h4>
+          <p>
+            Things to remember Amsterdam by:              
+            <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="delftware">
+              <h5>Delftware Pottery</h5>
+              <div class="hidden-content">
+                <p>
+                  Hand-painted blue and white ceramic pieces, including tiles and figurines, reflecting Amsterdam's rich artistic heritage. 
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="dutch-cheese">
+              <h5>Dutch Cheese</h5>
+              
+              <div class="hidden-content">
+                
+                <p>
+                  Artisanal cheeses like Edam and Gouda, offering a flavorful slice of Dutch culinary tradition. 
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="wooden-clogs">
+              <h5>Wooden Clogs</h5>
+              <div class="hidden-content">
+                <img src="assets/amstclogs.jpg" alt="Clogs">
+                <p>
+                  Traditional handcrafted wooden footwear, often ornately decorated, symbolizing Dutch craftsmanship. 
+
+                </p>
+              </div>
+            </div>
+            <div class="tourist-spot-box" id="hagelslag">
+              <h5>Hagelslag</h5>
+              <div class="hidden-content">
+                
+                <p>
+                  Colorful sprinkles traditionally eaten on bread with butter for breakfast, a fun and sweet Dutch tradition.
+
+                </p>
+              </div>
+            </div>
+
+          
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="info-container">
+        <div class="info-box" id="staying-safe">
+          <h4>Staying Safe</h4>
+          <p>
+            To do:
+          </p>
+          <p>
+            1: Have Fun 
+          </p>
+          <p>
+            2: Stay Safe
+          </p>  
+
+            <div class="tourist-spot-list">
+            <div class="tourist-spot-box" id="substance-safety">
+              <h5>Substance Safety</h5>
+              <div class="hidden-content">
+                <p>
+                  <ul>
+                    <li><strong>Understand Local Drug Laws:</strong> In the Netherlands, the possession, sale, or production of drugs is illegal. However, the sale of soft drugs like cannabis is tolerated in licensed 'coffeeshops' under strict conditions. Consumption outside these establishments is not permitted. [Source](https://www.government.nl/topics/drugs)</li>
+                    <li><strong>Be Informed About Health Policies:</strong> While taking drugs is not illegal, possession is. Always be honest about your drug consumption when seeking medical assistance, as healthcare professionals prioritize your health and will not involve the police. [Source](https://www.jellinek.nl/en/information/information-for-tourists/)</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="tourist-spot-box" id="stay-vigilant">
+              <h5>Be Vigilant Against Scams</h5>
+              <div class="hidden-content">
+                <p>
+                    
+                    <ul>
+                      <li><strong>Stay Alert in Crowded Areas:</strong> Be extra aware of your surroundings in busy places such as public transportation, markets, and popular tourist sites, as these are common spots for pickpockets.</li>
+                      <li><strong>Be Wary of Common Scams:</strong> Watch out for distractions or approaches that may be tactics used by thieves. Always keep an eye on your possessions.</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+
+
+          
+
+
+
+
+            <div class="tourist-spot-box" id="informed-prepared">
+                <h5>Stay Informed and Prepared</h5>
+                <div class="hidden-content">
+                  <p>
+                    <ul>
+                      <li><strong>Know Emergency Contacts:</strong> Keep a list of emergency contacts, including local authorities and your country's embassy or consulate.</li>
+                      <li><strong>Trust Your Instincts:</strong> If a situation or area feels uncomfortable, trust your instincts and remove yourself from it. Prioritize your safety at all times.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+
+           
+
+
+
+            <div class="tourist-spot-box" id="embassy">
+              <h5>Embassy and Contact Information</h5>
+              <div class="hidden-content">
+                <p>
+                    <li><strong>Embassy and Contact Information:</strong>
+                      <ul>
+                        <li><strong>Address:</strong> Museumplein 19, 1071 DJ Amsterdam, Netherlands</li>
+                        <li><strong>Phone:</strong> +31 (0)20 575-5309</li>
+                        <li><strong>Emergency After-Hours Phone:</strong> +31 (0)70 310-2209</li>
+                        <li><strong>Fax:</strong> +31 (0)20 575-5330</li>
+                        <li><strong>Email:</strong> <a href="mailto:USCitizenServicesAms@state.gov">USCitizenServicesAms@state.gov</a></li>
+                        <li><strong>Website:</strong> <a href="https://nl.usembassy.gov/u-s-consulate-general-amsterdam/">U.S. Consulate General Amsterdam</a></li>
+                    </ul>
+                      </li>
+                </p>
+              </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="info-container">
+          <div class="info-box" id="events">
+            <h4>Tours + Parties</h4>
+            <p>
+              Can't miss events across Amsterdam:
+            </p>             
+              <div class="tourist-spot-list">
+              <div class="tourist-spot-box" id="free-walking">
+                <h5>Free Walking Tours Amsterdam</h5>
+                <div class="hidden-content">
+                  <p>
+                <a href="https://freewalkingtoursamsterdam.com/?utm_source=GMBlisting&utm_medium=organic" >More Info</a>
+              </p>
+            </div>
+              </div>
+              <div class="tourist-spot-box" id="casa-rosso">
+                <h5>Casa Rosso</h5>
+                <div class="hidden-content">
+                  <p>
+                     *NSFW* Research for yourself!
+  
+                  </p>
+                </div>
+              </div>
+              <div class="tourist-spot-box" id="pub-crawl">
+                <h5>Red Light District Pub Crawl</h5>
+                <div class="hidden-content">
+                  <p>
+                      <a href="https://www.tripadvisor.com/AttractionProductReview-g188590-d12016279-Amsterdam_Red_Light_District_Pub_Crawl-Amsterdam_North_Holland_Province.html" >More Info</a>
+  
+                  </p>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="info-container">
+          <div class="info-box" id="souvenir-ideas">
+            <h4>Language</h4>
+            <p>
+              You don't speak Dutch?!? :
+              <div class="tourist-spot-list">
+                <div class="tourist-spot-box" id="language">
+                  <h5>Practice</h5>
+                  <div class="hidden-content">
+                    <p>
+                      <ul>
+                        <li><strong>Waar is...?</strong> (Where is...?)</li>
+                        <li><strong>Hoeveel kost het?</strong> (How much does it cost?)</li>
+                        <li><strong>Ik begrijp het niet.</strong> (I don't understand.)</li>
+                        <li><strong>Spreekt u Engels?</strong> (Do you speak English?)</li>
+                        <li><strong>Goedemorgen!</strong> (Good morning!)</li>
+                        <li><strong>Goedemiddag!</strong> (Good afternoon!)</li>
+                        <li><strong>Goedenavond!</strong> (Good evening!)</li>
+                        <li><strong>Dank je wel</strong> (Thank you)</li>
+                        <li><strong>Alsjeblieft</strong> (Please)</li>
+                        <li><strong>Graag gedaan</strong> (You're welcome)</li>
+                        <li><strong>Sorry</strong> (Sorry)</li>
+                      
+                      <p><strong>Language Learning Resources:</strong></p>
+                      <ul>
+                        <li><strong>Duolingo:</strong> A free app offering interactive lessons for beginners. [Learn Dutch on Duolingo](https://www.duolingo.com/course/nl/en/Learn-Dutch)</li>
+                        <li><strong>Babbel:</strong> Provides practical, real-world oriented lessons focusing on essential phrases. [Learn Dutch with Babbel](https://www.babbel.com/learn-dutch-online)</li>
+                        <li><strong>Rosetta Stone:</strong> Offers immersive language learning with speech-recognition technology. [Learn Dutch with Rosetta Stone](https://www.rosettastone.com/learn-dutch/)</li>
+                      </ul>
+                        </ul>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+
+
+
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <!-- Add Leaflet map here -->
+<!-- Map Section -->
+<section>
+    <!--<h3>Interactive Map of Rio de Janeiro</h3> -->
+    
+    <!-- Independent Map Container -->
+    <div class="map-container">
+      <div class="map-wrapper">
+        <div id="map"></div> <!-- Your map here -->
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+    </main>
+
+
+
+
+
+
+    <footer>
+
+        <div class="footer-left">
+    
+          <p>WONDERWOMEN</p>
+          <ul>
+            <li><a href="https://travel.state.gov/content/travel.html">Travel.State.Gov</a>
+            </li>
+            <li><a href="about.html">About</a>
+            </li>
+            <li><a href="faq.html">FAQ</a>
+            </li>
+            <li><a href="travelsuggestions.html">Where next?</a>
+            </li>
+          </ul>
+        </div>
+    
+    
+    
+        <div class="footer-center">
+          <p>&copy; 2025 WANDERWOMEN</p>
+          <p>Website created with HTML, CSS, and JavaScript</p>
+        </div>
+    
+      
+       
+    
+    
+        <div class="footer-right">
+          <p>DESTINATIONS</p>
+          
+            <ul>
+              <li><a href="africa.html">Africa</a></li>
+              <li><a href="asia.html">Asia</a></li>
+              <li><a href="australia.html">Australia</a></li>
+              <li><a href="europe.html">Europe</a></li>
+            <li><a href="northamerica.html">North America</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+              
+            </ul>
+          
+        </div>
+      </footer>
+    
+    
+    
+    
+    
+    
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      
+      <script>
+        // Initialize the map
+    
+        //edit 13 if too close 
+        var map = L.map('map').setView([52.3676, 4.9041], 13);  // Coordinates 
+    
+        // Add the tile layer (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    
+        // Add markers for important locations
+    var rijksmuseum = L.marker([52.3600, 4.8852]).addTo(map);
+    rijksmuseum.bindPopup("<b>Rijksmuseum</b><br>A renowned museum featuring a vast collection of Dutch art, including masterpieces by Rembrandt and Vermeer.");
+    
+    var anneFrankHouse = L.marker([52.3752, 4.8836]).addTo(map);
+    anneFrankHouse.bindPopup("<b>Anne Frank House</b><br>The preserved home where Anne Frank wrote her diary during WWII, now a museum about her life and the Holocaust.");
+    
+    var vondelpark = L.marker([52.3584, 4.8683]).addTo(map);
+    vondelpark.bindPopup("<b>Vondelpark</b><br>A large, green public park in the heart of Amsterdam, perfect for relaxation, walking, and enjoying nature.");
+    
+    var vanGoghMuseum = L.marker([52.3584, 4.8810]).addTo(map);
+    vanGoghMuseum.bindPopup("<b>Van Gogh Museum</b><br>A museum dedicated to the works of Vincent van Gogh, housing the largest collection of his paintings and drawings.");
+    
+    var redLightDistrict = L.marker([52.3732, 4.9008]).addTo(map);
+    redLightDistrict.bindPopup("<b>Red Light District</b><br>Amsterdam's famous nightlife area, known for its unique blend of history, culture, and entertainment.");
+    
+      // Optionally, add a circle marker to indicate a location
+      L.circle([52.3676, 4.9041], {
+        color: 'green',
+        radius: 500
+      }).addTo(map).bindPopup("This is the center of Amsterdam!");
+      </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
+      //this js is so that the mini boxes can open indivudlaly
+      $(document).ready(function() {
+        // Toggle the 'expanded' class for each tourist spot box when clicked
+        $('.tourist-spot-box').click(function() {
+          $(this).toggleClass('expanded');
+        });
+      });
+      
+      </script>
+    
+      
+    </body>
+    </html>
