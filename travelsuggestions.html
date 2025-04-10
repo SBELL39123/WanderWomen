@@ -68,27 +68,51 @@
 
 <div class="suggestions-container">
 <div class="suggest-container">
-  <body>
+  
     <h1>Submit Your Travel Suggestion</h1>
     <p> Share a city you want to see—​we might already be crafting that guide!</p>
-    <!--The method="POST" ensures that the form sends data using the POST HTTP method.-->
-    <!--CORS TO handle 30000-->
-    <!--added netlify method for form handling-->
-    <form action="http://localhost:3000/submit-suggestion" method="POST">
-      <label for="suggestion"><strong>Your Travel Suggestion & General Questions:</strong></label><br>
-      <textarea id="suggestion" name="suggestion" required></textarea><br><br>
-      <button type="submit">Submit</button>
-      <!--since backend is running on localhost:3000 and html is being used via 5500, the form
-      in this html needs to send the backend to localhost:3---->
-  </form>
+    
+      <!--FORM HANDLING-->
+      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onsubmit="handleSubmit(event)">
+        <!-- Hidden form field for spam protection -->
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
+        <!-- Form fields -->
+        <p>
+          <label for="name">Your Name:</label>
+          <input type="text" name="name" id="name" required>
+        </p>
+        <p>
+          <label for="email">Your Email:</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+          <label for="message">Your Travel Suggestion or Comment:</label>
+          <textarea name="message" id="message" required></textarea>
+        </p>
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+      </form>
+      <div id="form-status"></div>
+<!--End of Form Handling-->
+
+
+<!--I originally used server and cors to run the 3000 and 5000 local server backend
+i swithced upon realizing the netlify handles forms backend so i had to change to script -->
+</div>
+</div>
+
+<div class="globeimage-container">
+  <img src="assets/wwglobe.jpg" alt="Globe">
+</div>
+
+
+
+<script src="script.js"></script>
+
 </body>
-</div>
-</div>
-
-
-<script src="server.js"></script>
-
-
 
 
 
@@ -148,6 +172,8 @@
 <!--issue is that this page is running on live server: port 5500 and tha backend is on 3000
 need to enable CORS (installing cors)
 to pull up siggestiosn go to suggestions.txt
+
+NO JUSTUSING NETLIFY BACKEND INSTEAD OF TXT
 -->
 
 

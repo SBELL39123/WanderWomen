@@ -291,7 +291,7 @@ margin-right: 10px; /* Space between the input and button */
     margin-bottom: 40px;
   }
   
-  section h2, section h3, section h4 {
+  section h2, section h3  {
     font-size: 2rem;
     margin-bottom: 10px;
     text-align: center;
@@ -349,7 +349,7 @@ margin-right: 10px; /* Space between the input and button */
     display: flex;
     flex-direction: column;
     
-   height: 400px;
+   height: auto; /*responsivenes*/
   }
   
   .guides a {
@@ -410,23 +410,10 @@ margin-right: 10px; /* Space between the input and button */
 
 
   
+
+
   
-/* Responsive Adjustments */
-/*so the guides are not directlyt on top of eachother*/
 
-/* Medium screens (tablet size) */
-@media (max-width: 1200px) {
-  .guides {
-    width: 48%; /* Two items per row */
-  }
-}
-
-/* Small screens (mobile size) */
-@media (max-width: 768px) {
-  .guides {
-    width: 100%; /* One item per row on mobile */
-  }
-}
 
 
 
@@ -463,9 +450,7 @@ margin-right: 10px; /* Space between the input and button */
     text-align: center;
   }
 
-  .resource-box h4 {
-    margin-bottom: 10px;
-  }
+  
   
   .resource-box p {
     font-size: 1rem;
@@ -482,19 +467,6 @@ margin-right: 10px; /* Space between the input and button */
 
 .resource-box a:hover {
   text-decoration: underline;
-}
-
-/*Responsive Styling for resource guide boxws*/
-@media (max-width: 768px) {
-  .resource-container {
-    grid-template-columns: repeat(2, 1fr); /* Two boxes per row on small screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .resource-container {
-    grid-template-columns: 1fr; /* One box per row on extra small screens */
-  }
 }
 
 
@@ -800,9 +772,10 @@ as index */
   display: flex;
   flex-direction: column;
   
-  height: 100%;
+  height: auto;
+ 
 
-  margin-top: 20px;
+ 
 }
 
 
@@ -822,7 +795,13 @@ as index */
     height: 100%; 
 
     min-height: 450px;
+  
     /*min heiught so all the boxes will be the same height regardless*/
+
+
+    width: 100%; /* Ensures the box takes full width on smaller screens */
+    box-sizing: border-box;
+    
    
   }
   
@@ -851,10 +830,13 @@ as index */
   }
   
   h4 {
+    font-size: 1.5rem; /* Base font size */
     margin: 0;
-    font-size: 1.2em;
     color: #333;
-  }
+    word-wrap: break-word; /* Ensures long words break and wrap within the container */
+    white-space: normal; /* Allows text to wrap within the box */
+    text-align: center; /* Center-aligns the text */
+}
   
 /*subtile on indiviudal guides*/ 
   h6 {
@@ -929,6 +911,8 @@ as index */
   gap: 20px; /* Space between left and right sections */
   justify-content: flex-start; /* Align images properly within the container */
   align-items: flex-start; /* Align the images to the top */
+  
+
 }
 
 /* Left image container */
@@ -961,7 +945,10 @@ as index */
   object-fit: cover;
 }
 
-
+/* Left image container */
+.barcelona-guide-image-container {
+  flex: 1 1 100%;
+}
 
 
 
@@ -1915,6 +1902,18 @@ button:hover {
   font-style: italic;
 }
 
+.globeimage-container {
+  width: 100%;
+  
+  margin: 0 auto;
+  
+}
+
+.globeimage-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
 
 
 
@@ -1924,15 +1923,69 @@ button:hover {
 
 
 
-/* Optional: Adjust the width of info-box on smaller screens */
+
+
+  
+/* Responsive Adjustments */
+/*so the guides are not directlyt on top of eachother*/
+
+/* Medium screens (tablet size) */
+@media (max-width: 1200px) {
+  .guides {
+    width: 48%; /* Two items per row */
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .info-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
   }
+  .guides {
+    width: 48%; /* Two items per row */
+  }
+  .resource-container {
+    grid-template-columns: repeat(2, 1fr); /* Two boxes per row on small screens */
+
+  }
+
+  
+  
+  
+
+
+
+
+
 }
 
 @media (max-width: 480px) {
   .info-container {
     grid-template-columns: 1fr; /* 1 column on very small screens */
   }
+  .guides {
+    width: 100%; /* One item per row on mobile */
+  }
+
+  .resource-container {
+    grid-template-columns: 1fr; /* One box per row on extra small screens */
+  }
+
+  h4 {
+    font-size: 1.2rem; /* Adjusted font size for smaller screens */
 }
+  
+ 
+  
+
+
+
+}
+
+
+
+
+
+
+
