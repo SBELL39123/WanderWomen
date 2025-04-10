@@ -1095,44 +1095,35 @@ as index */
   gap: 20px; /* Space between left and right sections */
   justify-content: flex-start; /* Align images properly within the container */
   align-items: flex-start; /* Align the images to the top */
-  /*flex-wrap: wrap;*/
-}
-
-
-
-/* Left image container (Image 1) */
-.amsterdam-guide-image-container {
-  width: 60%; /* Adjust width as needed */
 }
 
 /* Left image container */
 .amsterdam-guide-image-container img {
-  width: 100%; /* Makes the image fill its container */
-  height: auto; /* Maintains the image's aspect ratio */
-  display: block; /* Removes any unwanted space below the image */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  width: 100%; /* Make the image take full width of its container */
+  height: auto;
+  display: block; /* Ensure there's no unwanted space below the image */
+  object-fit: cover; /* Ensure the image covers the area */
 }
 
-/* Right-side container for imagees 2 and 3 */
+/* Right-side container for images 2 and 3 */
 .right-amsterdam-images {
   display: flex;
   flex-direction: column; /* Stack the right images vertically */
   gap: 20px; /* Space between the top and bottom right images */
-  width: 35%; /* Control the width of the right-side container */
- 
+  width: 45%; /* Control the width of the right-side container */
 }
 
 /* Top right image */
 .amsterdam-guide-2-image-container img {
   width: 100%; /* Make the image take full width of its container */
-  height: 175px;
+  height: 220px;
   object-fit: cover;
 }
 
 /* Bottom right image */
 .amsterdam-guide-3-image-container img {
   width: 100%; /* Make the image take full width of its container */
-  height: 175px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -1149,46 +1140,39 @@ as index */
   gap: 20px; /* Space between left and right sections */
   justify-content: flex-start; /* Align images properly within the container */
   align-items: flex-start; /* Align the images to the top */
-  /*flex-wrap: wrap;*/
-}
-
-
-
-/* Left image container (Image 1) */
-.buenosaires-guide-image-container {
-  width: 60%; /* Adjust width as needed */
 }
 
 /* Left image container */
 .buenosaires-guide-image-container img {
-  width: 100%; /* Makes the image fill its container */
-  height: auto; /* Maintains the image's aspect ratio */
-  display: block; /* Removes any unwanted space below the image */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  width: 100%; /* Make the image take full width of its container */
+  height: 500px;
+  display: block; /* Ensure there's no unwanted space below the image */
+  object-fit: cover; /* Ensure the image covers the area */
 }
 
-/* Right-side container for imagees 2 and 3 */
+/* Right-side container for images 2 and 3 */
 .right-buenosaires-images {
   display: flex;
   flex-direction: column; /* Stack the right images vertically */
   gap: 20px; /* Space between the top and bottom right images */
-  width: 35%; /* Control the width of the right-side container */
- 
+  width: 45%; /* Control the width of the right-side container */
 }
 
 /* Top right image */
 .buenosaires-guide-2-image-container img {
   width: 100%; /* Make the image take full width of its container */
-  height: 175px;
+  height: 235px;
   object-fit: cover;
 }
 
 /* Bottom right image */
 .buenosaires-guide-3-image-container img {
   width: 100%; /* Make the image take full width of its container */
-  height: 175px;
+  height: 235px;
   object-fit: cover;
 }
+
+
 
 
 
@@ -1256,7 +1240,7 @@ as index */
 
 /* Left image container */
 .paris-guide-image-container img {
-  width: 700px; /* Make the image take full width of its container */
+  width: 100%; /* Make the image take full width of its container */
   height: auto;
   display: block; /* Ensure there's no unwanted space below the image */
   object-fit: cover; /* Ensure the image covers the area */
@@ -1307,7 +1291,7 @@ as index */
 
 /* Left image container */
 .istanbul-guide-image-container img {
-  width: 700px; /* Make the image take full width of its container */
+  width: 100%; /* Make the image take full width of its container */
   height: auto;
   display: block; /* Ensure there's no unwanted space below the image */
   object-fit: cover; /* Ensure the image covers the area */
@@ -1337,7 +1321,7 @@ as index */
 
 
 
-/*ISTANBUL GUIDE PAGE STYLING*/
+
 
 
 /* Container for all images */
@@ -1350,7 +1334,7 @@ as index */
 
 /* Left image container */
 .canary-guide-image-container img {
-  width: 700px; /* Make the image take full width of its container */
+  width: 100%; /* Make the image take full width of its container */
   height: auto;
   display: block; /* Ensure there's no unwanted space below the image */
   object-fit: cover; /* Ensure the image covers the area */
@@ -1393,7 +1377,7 @@ as index */
 
 /* Left image container */
 .santiago-guide-image-container img {
-  width: 700px; /* Make the image take full width of its container */
+  width: 100%; /* Make the image take full width of its container */
   height: auto;
   display: block; /* Ensure there's no unwanted space below the image */
   object-fit: cover; /* Ensure the image covers the area */
@@ -1440,8 +1424,8 @@ as index */
 
 /* Left image container */
 .essaouira-guide-image-container img {
-  width: 700px; /* Make the image take full width of its container */
-  height: autox;
+  width: 100%; /* Make the image take full width of its container */
+  height: auto;
   display: block; /* Ensure there's no unwanted space below the image */
   object-fit: cover; /* Ensure the image covers the area */
 }
@@ -1522,7 +1506,6 @@ as index */
 
 /*CHICAGO GUIDE PAGE STYLING*/
 
-/* Container for all images */
 .chicagoimage-container {
   display: flex; /* Flexbox for horizontal alignment */
   gap: 20px; /* Space between left and right sections */
@@ -1532,7 +1515,7 @@ as index */
 
 /* Left image container */
 .chicago-guide-image-container img {
-  width: 700px; /* Make the image take full width of its container */
+  width: 100%; /* Make the image take full width of its container */
   height: 630px;
   display: block; /* Ensure there's no unwanted space below the image */
   object-fit: cover; /* Ensure the image covers the area */
@@ -1565,6 +1548,7 @@ as index */
 
 
 
+
 /*STL GUIDE PAGE STYLING*/
 
 /* Container for all images */
@@ -1577,7 +1561,7 @@ as index */
 
 /* Left image container */
 .stl-guide-image-container img {
-  width: 700px; /* Make the image take full width of its container */
+  width: 100%; /* Make the image take full width of its container */
   height: 630px;
   display: block; /* Ensure there's no unwanted space below the image */
   object-fit: cover; /* Ensure the image covers the area */
@@ -2003,7 +1987,55 @@ button:hover {
 
 
 
-
+  .right-barcelona-images {
+    display: none;
+  }
+  .right-amsterdam-images {
+    display: none;
+  }
+  .right-arequipa-images {
+    display: none;
+  }
+  .right-buenosaires-images {
+    display: none;
+  }
+  .right-canary-images {
+    display: none;
+  }
+  .right-chicago-images {
+    display: none;
+  }
+  .right-delhi-images {
+    display: none;
+  }
+  .right-essaouira-images {
+    display: none;
+  }
+  .right-istanbul-images {
+    display: none;
+  }
+  .right-kathmandu-images {
+    display: none;
+  }
+  .right-marrakesh-images {
+    display: none;
+  }
+  .right-paris-images {
+    display: none;
+  }
+  .right-rio-images {
+    display: none;
+  }
+  .right-santiago-images {
+    display: none;
+  }
+  .right-stl-images {
+    display: none;
+  }
+  .right-transylvania-images {
+    display: none;
+  }
+  
 
 
 
@@ -2064,6 +2096,9 @@ footer {
   text-align: center;
 }
   
+
+
+
 
 
 
