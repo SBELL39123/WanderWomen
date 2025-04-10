@@ -12,7 +12,7 @@ function handleSubmit(event) {
     body: new URLSearchParams(formData).toString(),
   })
     .then(() => {
-      status.innerHTML = '<p style="color: black;">Thank you for your message!</p>';
+      status.innerHTML = '<p class="bold-text">Thank you for your message!</p>';
       form.reset();
     })
     .catch((error) => {
