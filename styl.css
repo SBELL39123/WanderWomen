@@ -945,10 +945,7 @@ as index */
   object-fit: cover;
 }
 
-/* Left image container */
-.barcelona-guide-image-container {
-  flex: 1 1 100%;
-}
+
 
 
 
@@ -2003,6 +2000,15 @@ button:hover {
     padding-left: 0;
     text-align: center;
   }
+
+
+
+
+
+
+
+
+  
 }
 
 
@@ -2058,8 +2064,6 @@ footer {
   text-align: center;
 }
   
- 
-
 
 
 
