@@ -1660,6 +1660,8 @@ as index */
   width: 300%; /* Make the map take up full width of its container */
   height: 100%; /* Make the height of the map flexible to maintain the aspect ratio */
   min-height: 400px; /* Ensure a minimum height */
+
+  z-index: -1; /*map zoom controls moved*/
 }
 
 
@@ -1944,9 +1946,29 @@ button:hover {
 
 
 @media (max-width: 768px) {
-  .info-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  .city-info {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px;
   }
+
+
+  .info-container {
+    width: 100%; /* Ensures the container takes full width */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .info-box {
+    width: 100%; /* Ensures the box takes full width */
+    min-height: 400px; /* Adjust height for smaller screens */
+    box-sizing: border-box;
+  }
+
+
+
+
   .guides {
     width: 48%; /* Two items per row */
   }
@@ -1955,20 +1977,51 @@ button:hover {
 
   }
 
-  
-  
-  
+  header {
+    padding: 15px 20px; /* Increased padding for better spacing */
+  }
+  body {
+    padding-top: 80px; /* Adjust based on header height */
+  }
 
 
 
 
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
 
+  .footer-left, .footer-center, .footer-right {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-left ul, .footer-right ul {
+    padding-left: 0;
+    text-align: center;
+  }
 }
+
+
+
+
+
+
 
 @media (max-width: 480px) {
   .info-container {
     grid-template-columns: 1fr; /* 1 column on very small screens */
   }
+
+  .info-box {
+    min-height: 350px; /* Further adjust height for smaller screens */
+  }
+
+
+
   .guides {
     width: 100%; /* One item per row on mobile */
   }
@@ -1980,14 +2033,67 @@ button:hover {
   h4 {
     font-size: 1.2rem; /* Adjusted font size for smaller screens */
 }
+
+
+
+header {
+  padding: 20px 20px; /* Further increased padding */
+}
+body {
+  padding-top: 100px; /* Adjust based on header height */
+}
+
+
+footer {
+  padding: 15px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer-left ul, .footer-right ul {
+  padding-left: 0;
+  text-align: center;
+}
   
  
-  
+
 
 
 
 }
 
+
+
+@media (max-width: 360px) {
+  .info-box {
+    min-height: 300px; /* Further adjust height for extra small screens */
+  }
+
+
+  header {
+    padding: 25px 20px; /* Further increased padding */
+  }
+  body {
+    padding-top: 120px; /* Adjust based on header height */
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-left ul, .footer-right ul {
+    padding-left: 0;
+    text-align: center;
+  }
+}
 
 
 
