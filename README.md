@@ -38,6 +38,9 @@ This project was created to inspire and support women who want to experience the
 - **Responsive Design**: The website is mobile-friendly, allowing solo travelers to easily navigate the site on any device.
   
 - **Planner**: Tailor your next adventure with our **interactive travel planner**. After answering a few questions about your travel preferences, you'll get **instant personalized feedback** with destination suggestions, tips, and itineraries.
+- **Trip Suggestions**: Submit your idea; trip destination guides or overall travel comments. 
+
+
 
 
 
@@ -79,7 +82,7 @@ Ready to get started? Head to the **Planner** now and start discovering your nex
 
 ## Technologies Used
 
-The WanderWomen website features a locally hosted backend server built with Node.js and Express, utilizing a local database for data storage. The frontend is deployed on Netlify, providing a seamless and responsive user experience.
+The WanderWomen website features a frontend and backend deployment on Netlify with data storage, providing a seamless and responsive user experience.
 
 - **Frontend**:
   - HTML5: Used to structure the website’s content.
@@ -87,8 +90,9 @@ The WanderWomen website features a locally hosted backend server built with Node
   - JavaScript: Client-side interactivity (search bar functionality and event handling).
   
 - **Backend** :
-  - Node.js  backend integration for dynamic features like travel planner and suggestions.
-  - Express.js This web application framework for Node.js streamlines the creation of server routes and handling HTTP requests.
+  - Node.js:  Backend integration for dynamic features like travel planner and suggestions.
+  - Express.js: This web application framework for Node.js streamlines the creation of server routes and handling HTTP requests.
+  - Netlify: Live backend deployment and data storage.
 
 - **Libraries**:
   - **Leaflet.js**: For interactive maps that highlight top tourist attractions.
