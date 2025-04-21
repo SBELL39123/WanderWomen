@@ -1642,7 +1642,10 @@ as index */
   height: 100%; /* Make the height of the map flexible to maintain the aspect ratio */
   min-height: 400px; /* Ensure a minimum height */
 
-  z-index: -1; /*map zoom controls moved*/
+  z-index: 1; /*map zoom controls moved accidemtyly had -1*/
+  pointer-events: auto;
+
+
 }
 
 
